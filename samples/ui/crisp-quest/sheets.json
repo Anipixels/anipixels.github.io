@@ -1,0 +1,1309 @@
+[
+ {
+  "group": "wood",
+  "name": "button_medium_normal",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/wood/button_medium_normal.png",
+  "png_2x": "PNG/2x/wood/button_medium_normal.png",
+  "svg": "SVG/wood/button_medium_normal.svg",
+  "size_1x": [
+   144,
+   46
+  ],
+  "size_2x": [
+   288,
+   92
+  ],
+  "slice_1x": {
+   "left": 13,
+   "top": 10,
+   "right": 13,
+   "bottom": 14
+  },
+  "slice_2x": {
+   "left": 26,
+   "top": 20,
+   "right": 26,
+   "bottom": 28
+  },
+  "content_padding_1x": {
+   "left": 13,
+   "top": 5,
+   "right": 13,
+   "bottom": 9
+  }
+ },
+ {
+  "group": "wood",
+  "name": "button_medium_hover",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/wood/button_medium_hover.png",
+  "png_2x": "PNG/2x/wood/button_medium_hover.png",
+  "svg": "SVG/wood/button_medium_hover.svg",
+  "size_1x": [
+   144,
+   46
+  ],
+  "size_2x": [
+   288,
+   92
+  ],
+  "slice_1x": {
+   "left": 13,
+   "top": 10,
+   "right": 13,
+   "bottom": 14
+  },
+  "slice_2x": {
+   "left": 26,
+   "top": 20,
+   "right": 26,
+   "bottom": 28
+  },
+  "content_padding_1x": {
+   "left": 13,
+   "top": 5,
+   "right": 13,
+   "bottom": 9
+  }
+ },
+ {
+  "group": "wood",
+  "name": "button_medium_pressed",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/wood/button_medium_pressed.png",
+  "png_2x": "PNG/2x/wood/button_medium_pressed.png",
+  "svg": "SVG/wood/button_medium_pressed.svg",
+  "size_1x": [
+   144,
+   46
+  ],
+  "size_2x": [
+   288,
+   92
+  ],
+  "slice_1x": {
+   "left": 13,
+   "top": 10,
+   "right": 13,
+   "bottom": 14
+  },
+  "slice_2x": {
+   "left": 26,
+   "top": 20,
+   "right": 26,
+   "bottom": 28
+  },
+  "content_padding_1x": {
+   "left": 13,
+   "top": 8,
+   "right": 13,
+   "bottom": 7
+  }
+ },
+ {
+  "group": "wood",
+  "name": "button_medium_disabled",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/wood/button_medium_disabled.png",
+  "png_2x": "PNG/2x/wood/button_medium_disabled.png",
+  "svg": "SVG/wood/button_medium_disabled.svg",
+  "size_1x": [
+   144,
+   46
+  ],
+  "size_2x": [
+   288,
+   92
+  ],
+  "slice_1x": {
+   "left": 13,
+   "top": 10,
+   "right": 13,
+   "bottom": 14
+  },
+  "slice_2x": {
+   "left": 26,
+   "top": 20,
+   "right": 26,
+   "bottom": 28
+  },
+  "content_padding_1x": {
+   "left": 13,
+   "top": 5,
+   "right": 13,
+   "bottom": 9
+  }
+ },
+ {
+  "group": "wood",
+  "name": "button_square_normal",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/wood/button_square_normal.png",
+  "png_2x": "PNG/2x/wood/button_square_normal.png",
+  "svg": "SVG/wood/button_square_normal.svg",
+  "size_1x": [
+   52,
+   52
+  ],
+  "size_2x": [
+   104,
+   104
+  ],
+  "slice_1x": {
+   "left": 13,
+   "top": 10,
+   "right": 13,
+   "bottom": 14
+  },
+  "slice_2x": {
+   "left": 26,
+   "top": 20,
+   "right": 26,
+   "bottom": 28
+  },
+  "content_padding_1x": {
+   "left": 13,
+   "top": 5,
+   "right": 13,
+   "bottom": 9
+  }
+ },
+ {
+  "group": "wood",
+  "name": "button_square_pressed",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/wood/button_square_pressed.png",
+  "png_2x": "PNG/2x/wood/button_square_pressed.png",
+  "svg": "SVG/wood/button_square_pressed.svg",
+  "size_1x": [
+   52,
+   52
+  ],
+  "size_2x": [
+   104,
+   104
+  ],
+  "slice_1x": {
+   "left": 13,
+   "top": 10,
+   "right": 13,
+   "bottom": 14
+  },
+  "slice_2x": {
+   "left": 26,
+   "top": 20,
+   "right": 26,
+   "bottom": 28
+  },
+  "content_padding_1x": {
+   "left": 13,
+   "top": 8,
+   "right": 13,
+   "bottom": 7
+  }
+ },
+ {
+  "group": "wood",
+  "name": "button_close_normal",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/wood/button_close_normal.png",
+  "png_2x": "PNG/2x/wood/button_close_normal.png",
+  "svg": "SVG/wood/button_close_normal.svg",
+  "size_1x": [
+   32,
+   34
+  ],
+  "size_2x": [
+   64,
+   68
+  ]
+ },
+ {
+  "group": "wood",
+  "name": "panel",
+  "category": "Panels",
+  "png_1x": "PNG/1x/wood/panel.png",
+  "png_2x": "PNG/2x/wood/panel.png",
+  "svg": "SVG/wood/panel.svg",
+  "size_1x": [
+   96,
+   96
+  ],
+  "size_2x": [
+   192,
+   192
+  ],
+  "slice_1x": {
+   "left": 30,
+   "top": 30,
+   "right": 30,
+   "bottom": 30
+  },
+  "slice_2x": {
+   "left": 60,
+   "top": 60,
+   "right": 60,
+   "bottom": 60
+  },
+  "content_padding_1x": {
+   "left": 16,
+   "top": 14,
+   "right": 16,
+   "bottom": 14
+  }
+ },
+ {
+  "group": "wood",
+  "name": "panel_inset",
+  "category": "Panels",
+  "png_1x": "PNG/1x/wood/panel_inset.png",
+  "png_2x": "PNG/2x/wood/panel_inset.png",
+  "svg": "SVG/wood/panel_inset.svg",
+  "size_1x": [
+   64,
+   64
+  ],
+  "size_2x": [
+   128,
+   128
+  ],
+  "slice_1x": {
+   "left": 14,
+   "top": 14,
+   "right": 14,
+   "bottom": 14
+  },
+  "slice_2x": {
+   "left": 28,
+   "top": 28,
+   "right": 28,
+   "bottom": 28
+  },
+  "content_padding_1x": {
+   "left": 10,
+   "top": 10,
+   "right": 10,
+   "bottom": 10
+  }
+ },
+ {
+  "group": "wood",
+  "name": "window",
+  "category": "Panels",
+  "png_1x": "PNG/1x/wood/window.png",
+  "png_2x": "PNG/2x/wood/window.png",
+  "svg": "SVG/wood/window.svg",
+  "size_1x": [
+   240,
+   200
+  ],
+  "size_2x": [
+   480,
+   400
+  ],
+  "slice_1x": {
+   "left": 32,
+   "top": 46,
+   "right": 32,
+   "bottom": 36
+  },
+  "slice_2x": {
+   "left": 64,
+   "top": 92,
+   "right": 64,
+   "bottom": 72
+  },
+  "content_padding_1x": {
+   "left": 18,
+   "top": 48,
+   "right": 18,
+   "bottom": 22
+  },
+  "note": "title bar height 36 px; 6 px drop shadow under the frame"
+ },
+ {
+  "group": "wood",
+  "name": "tooltip",
+  "category": "Panels",
+  "png_1x": "PNG/1x/wood/tooltip.png",
+  "png_2x": "PNG/2x/wood/tooltip.png",
+  "svg": "SVG/wood/tooltip.svg",
+  "size_1x": [
+   120,
+   56
+  ],
+  "size_2x": [
+   240,
+   112
+  ],
+  "slice_1x": {
+   "left": 12,
+   "top": 12,
+   "right": 12,
+   "bottom": 12
+  },
+  "slice_2x": {
+   "left": 24,
+   "top": 24,
+   "right": 24,
+   "bottom": 24
+  },
+  "content_padding_1x": {
+   "left": 10,
+   "top": 8,
+   "right": 10,
+   "bottom": 8
+  }
+ },
+ {
+  "group": "wood",
+  "name": "dialog_box",
+  "category": "Dialogue",
+  "png_1x": "PNG/1x/wood/dialog_box.png",
+  "png_2x": "PNG/2x/wood/dialog_box.png",
+  "svg": "SVG/wood/dialog_box.svg",
+  "size_1x": [
+   320,
+   104
+  ],
+  "size_2x": [
+   640,
+   208
+  ],
+  "slice_1x": {
+   "left": 32,
+   "top": 32,
+   "right": 32,
+   "bottom": 38
+  },
+  "slice_2x": {
+   "left": 64,
+   "top": 64,
+   "right": 64,
+   "bottom": 76
+  },
+  "content_padding_1x": {
+   "left": 20,
+   "top": 16,
+   "right": 20,
+   "bottom": 22
+  },
+  "note": "6 px drop shadow under the frame"
+ },
+ {
+  "group": "wood",
+  "name": "dialog_name_plate",
+  "category": "Dialogue",
+  "png_1x": "PNG/1x/wood/dialog_name_plate.png",
+  "png_2x": "PNG/2x/wood/dialog_name_plate.png",
+  "svg": "SVG/wood/dialog_name_plate.svg",
+  "size_1x": [
+   128,
+   32
+  ],
+  "size_2x": [
+   256,
+   64
+  ],
+  "slice_1x": {
+   "left": 14,
+   "top": 0,
+   "right": 14,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 28,
+   "top": 0,
+   "right": 28,
+   "bottom": 0
+  },
+  "content_padding_1x": {
+   "left": 14,
+   "top": 4,
+   "right": 14,
+   "bottom": 4
+  },
+  "note": "fixed height; overlap the top-left of dialog_box"
+ },
+ {
+  "group": "wood",
+  "name": "slot",
+  "category": "Inventory",
+  "png_1x": "PNG/1x/wood/slot.png",
+  "png_2x": "PNG/2x/wood/slot.png",
+  "svg": "SVG/wood/slot.svg",
+  "size_1x": [
+   48,
+   48
+  ],
+  "size_2x": [
+   96,
+   96
+  ],
+  "slice_1x": {
+   "left": 12,
+   "top": 12,
+   "right": 12,
+   "bottom": 12
+  },
+  "slice_2x": {
+   "left": 24,
+   "top": 24,
+   "right": 24,
+   "bottom": 24
+  }
+ },
+ {
+  "group": "wood",
+  "name": "slot_hover",
+  "category": "Inventory",
+  "png_1x": "PNG/1x/wood/slot_hover.png",
+  "png_2x": "PNG/2x/wood/slot_hover.png",
+  "svg": "SVG/wood/slot_hover.svg",
+  "size_1x": [
+   48,
+   48
+  ],
+  "size_2x": [
+   96,
+   96
+  ],
+  "slice_1x": {
+   "left": 12,
+   "top": 12,
+   "right": 12,
+   "bottom": 12
+  },
+  "slice_2x": {
+   "left": 24,
+   "top": 24,
+   "right": 24,
+   "bottom": 24
+  }
+ },
+ {
+  "group": "wood",
+  "name": "slot_selected",
+  "category": "Inventory",
+  "png_1x": "PNG/1x/wood/slot_selected.png",
+  "png_2x": "PNG/2x/wood/slot_selected.png",
+  "svg": "SVG/wood/slot_selected.svg",
+  "size_1x": [
+   48,
+   48
+  ],
+  "size_2x": [
+   96,
+   96
+  ],
+  "slice_1x": {
+   "left": 14,
+   "top": 14,
+   "right": 14,
+   "bottom": 14
+  },
+  "slice_2x": {
+   "left": 28,
+   "top": 28,
+   "right": 28,
+   "bottom": 28
+  }
+ },
+ {
+  "group": "wood",
+  "name": "slot_rare",
+  "category": "Inventory",
+  "png_1x": "PNG/1x/wood/slot_rare.png",
+  "png_2x": "PNG/2x/wood/slot_rare.png",
+  "svg": "SVG/wood/slot_rare.svg",
+  "size_1x": [
+   48,
+   48
+  ],
+  "size_2x": [
+   96,
+   96
+  ],
+  "slice_1x": {
+   "left": 14,
+   "top": 14,
+   "right": 14,
+   "bottom": 14
+  },
+  "slice_2x": {
+   "left": 28,
+   "top": 28,
+   "right": 28,
+   "bottom": 28
+  }
+ },
+ {
+  "group": "wood",
+  "name": "slot_epic",
+  "category": "Inventory",
+  "png_1x": "PNG/1x/wood/slot_epic.png",
+  "png_2x": "PNG/2x/wood/slot_epic.png",
+  "svg": "SVG/wood/slot_epic.svg",
+  "size_1x": [
+   48,
+   48
+  ],
+  "size_2x": [
+   96,
+   96
+  ],
+  "slice_1x": {
+   "left": 14,
+   "top": 14,
+   "right": 14,
+   "bottom": 14
+  },
+  "slice_2x": {
+   "left": 28,
+   "top": 28,
+   "right": 28,
+   "bottom": 28
+  }
+ },
+ {
+  "group": "wood",
+  "name": "hotbar_slot",
+  "category": "Hotbar",
+  "png_1x": "PNG/1x/wood/hotbar_slot.png",
+  "png_2x": "PNG/2x/wood/hotbar_slot.png",
+  "svg": "SVG/wood/hotbar_slot.svg",
+  "size_1x": [
+   56,
+   56
+  ],
+  "size_2x": [
+   112,
+   112
+  ],
+  "slice_1x": {
+   "left": 16,
+   "top": 16,
+   "right": 16,
+   "bottom": 16
+  },
+  "slice_2x": {
+   "left": 32,
+   "top": 32,
+   "right": 32,
+   "bottom": 32
+  }
+ },
+ {
+  "group": "wood",
+  "name": "bar_frame",
+  "category": "Bars",
+  "png_1x": "PNG/1x/wood/bar_frame.png",
+  "png_2x": "PNG/2x/wood/bar_frame.png",
+  "svg": "SVG/wood/bar_frame.svg",
+  "size_1x": [
+   160,
+   20
+  ],
+  "size_2x": [
+   320,
+   40
+  ],
+  "slice_1x": {
+   "left": 10,
+   "top": 0,
+   "right": 10,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 20,
+   "top": 0,
+   "right": 20,
+   "bottom": 0
+  },
+  "note": "fixed height; inner track 12 px high, 4 px in from each edge"
+ },
+ {
+  "group": "wood",
+  "name": "bar_fill_health",
+  "category": "Bars",
+  "png_1x": "PNG/1x/wood/bar_fill_health.png",
+  "png_2x": "PNG/2x/wood/bar_fill_health.png",
+  "svg": "SVG/wood/bar_fill_health.svg",
+  "size_1x": [
+   32,
+   20
+  ],
+  "size_2x": [
+   64,
+   40
+  ],
+  "slice_1x": {
+   "left": 8,
+   "top": 0,
+   "right": 8,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 16,
+   "top": 0,
+   "right": 16,
+   "bottom": 0
+  },
+  "note": "fixed height; 4 px transparent padding so it sits inside bar_frame at the same position"
+ },
+ {
+  "group": "wood",
+  "name": "bar_fill_mana",
+  "category": "Bars",
+  "png_1x": "PNG/1x/wood/bar_fill_mana.png",
+  "png_2x": "PNG/2x/wood/bar_fill_mana.png",
+  "svg": "SVG/wood/bar_fill_mana.svg",
+  "size_1x": [
+   32,
+   20
+  ],
+  "size_2x": [
+   64,
+   40
+  ],
+  "slice_1x": {
+   "left": 8,
+   "top": 0,
+   "right": 8,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 16,
+   "top": 0,
+   "right": 16,
+   "bottom": 0
+  },
+  "note": "fixed height; 4 px transparent padding so it sits inside bar_frame at the same position"
+ },
+ {
+  "group": "wood",
+  "name": "quest_entry",
+  "category": "Quest",
+  "png_1x": "PNG/1x/wood/quest_entry.png",
+  "png_2x": "PNG/2x/wood/quest_entry.png",
+  "svg": "SVG/wood/quest_entry.svg",
+  "size_1x": [
+   220,
+   44
+  ],
+  "size_2x": [
+   440,
+   88
+  ],
+  "slice_1x": {
+   "left": 12,
+   "top": 8,
+   "right": 8,
+   "bottom": 8
+  },
+  "slice_2x": {
+   "left": 24,
+   "top": 16,
+   "right": 16,
+   "bottom": 16
+  },
+  "content_padding_1x": {
+   "left": 16,
+   "top": 6,
+   "right": 10,
+   "bottom": 6
+  },
+  "note": "semi-transparent, for a quest list over the game world"
+ },
+ {
+  "group": "wood",
+  "name": "checkbox_off",
+  "category": "Toggles",
+  "png_1x": "PNG/1x/wood/checkbox_off.png",
+  "png_2x": "PNG/2x/wood/checkbox_off.png",
+  "svg": "SVG/wood/checkbox_off.svg",
+  "size_1x": [
+   28,
+   28
+  ],
+  "size_2x": [
+   56,
+   56
+  ]
+ },
+ {
+  "group": "wood",
+  "name": "checkbox_on",
+  "category": "Toggles",
+  "png_1x": "PNG/1x/wood/checkbox_on.png",
+  "png_2x": "PNG/2x/wood/checkbox_on.png",
+  "svg": "SVG/wood/checkbox_on.svg",
+  "size_1x": [
+   28,
+   28
+  ],
+  "size_2x": [
+   56,
+   56
+  ]
+ },
+ {
+  "group": "wood",
+  "name": "slider_track",
+  "category": "Sliders",
+  "png_1x": "PNG/1x/wood/slider_track.png",
+  "png_2x": "PNG/2x/wood/slider_track.png",
+  "svg": "SVG/wood/slider_track.svg",
+  "size_1x": [
+   96,
+   12
+  ],
+  "size_2x": [
+   192,
+   24
+  ],
+  "slice_1x": {
+   "left": 6,
+   "top": 0,
+   "right": 6,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 12,
+   "top": 0,
+   "right": 12,
+   "bottom": 0
+  },
+  "note": "fixed height"
+ },
+ {
+  "group": "wood",
+  "name": "slider_fill",
+  "category": "Sliders",
+  "png_1x": "PNG/1x/wood/slider_fill.png",
+  "png_2x": "PNG/2x/wood/slider_fill.png",
+  "svg": "SVG/wood/slider_fill.svg",
+  "size_1x": [
+   24,
+   12
+  ],
+  "size_2x": [
+   48,
+   24
+  ],
+  "slice_1x": {
+   "left": 6,
+   "top": 0,
+   "right": 6,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 12,
+   "top": 0,
+   "right": 12,
+   "bottom": 0
+  },
+  "note": "fixed height; 2.6 px padding"
+ },
+ {
+  "group": "wood",
+  "name": "slider_knob_normal",
+  "category": "Sliders",
+  "png_1x": "PNG/1x/wood/slider_knob_normal.png",
+  "png_2x": "PNG/2x/wood/slider_knob_normal.png",
+  "svg": "SVG/wood/slider_knob_normal.svg",
+  "size_1x": [
+   24,
+   28
+  ],
+  "size_2x": [
+   48,
+   56
+  ]
+ },
+ {
+  "group": "wood",
+  "name": "input_normal",
+  "category": "Inputs",
+  "png_1x": "PNG/1x/wood/input_normal.png",
+  "png_2x": "PNG/2x/wood/input_normal.png",
+  "svg": "SVG/wood/input_normal.svg",
+  "size_1x": [
+   160,
+   40
+  ],
+  "size_2x": [
+   320,
+   80
+  ],
+  "slice_1x": {
+   "left": 12,
+   "top": 12,
+   "right": 12,
+   "bottom": 12
+  },
+  "slice_2x": {
+   "left": 24,
+   "top": 24,
+   "right": 24,
+   "bottom": 24
+  },
+  "content_padding_1x": {
+   "left": 12,
+   "top": 8,
+   "right": 12,
+   "bottom": 8
+  }
+ },
+ {
+  "group": "wood",
+  "name": "ribbon",
+  "category": "Banners",
+  "png_1x": "PNG/1x/wood/ribbon.png",
+  "png_2x": "PNG/2x/wood/ribbon.png",
+  "svg": "SVG/wood/ribbon.svg",
+  "size_1x": [
+   240,
+   56
+  ],
+  "size_2x": [
+   480,
+   112
+  ],
+  "slice_1x": {
+   "left": 48,
+   "top": 0,
+   "right": 48,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 96,
+   "top": 0,
+   "right": 96,
+   "bottom": 0
+  },
+  "content_padding_1x": {
+   "left": 38,
+   "top": 6,
+   "right": 38,
+   "bottom": 19
+  },
+  "note": "fixed height"
+ },
+ {
+  "group": "wood",
+  "name": "divider",
+  "category": "Dividers",
+  "png_1x": "PNG/1x/wood/divider.png",
+  "png_2x": "PNG/2x/wood/divider.png",
+  "svg": "SVG/wood/divider.svg",
+  "size_1x": [
+   96,
+   6
+  ],
+  "size_2x": [
+   192,
+   12
+  ],
+  "slice_1x": {
+   "left": 6,
+   "top": 0,
+   "right": 6,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 12,
+   "top": 0,
+   "right": 12,
+   "bottom": 0
+  },
+  "note": "fixed height"
+ },
+ {
+  "group": "wood",
+  "name": "portrait_frame",
+  "category": "HUD",
+  "png_1x": "PNG/1x/wood/portrait_frame.png",
+  "png_2x": "PNG/2x/wood/portrait_frame.png",
+  "svg": "SVG/wood/portrait_frame.svg",
+  "size_1x": [
+   80,
+   80
+  ],
+  "size_2x": [
+   160,
+   160
+  ],
+  "slice_1x": {
+   "left": 26,
+   "top": 26,
+   "right": 26,
+   "bottom": 26
+  },
+  "slice_2x": {
+   "left": 52,
+   "top": 52,
+   "right": 52,
+   "bottom": 52
+  },
+  "note": "hollow centre"
+ },
+ {
+  "group": "wood",
+  "name": "currency_plate",
+  "category": "HUD",
+  "png_1x": "PNG/1x/wood/currency_plate.png",
+  "png_2x": "PNG/2x/wood/currency_plate.png",
+  "svg": "SVG/wood/currency_plate.svg",
+  "size_1x": [
+   112,
+   32
+  ],
+  "size_2x": [
+   224,
+   64
+  ],
+  "slice_1x": {
+   "left": 34,
+   "top": 0,
+   "right": 16,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 68,
+   "top": 0,
+   "right": 32,
+   "bottom": 0
+  },
+  "content_padding_1x": {
+   "left": 36,
+   "top": 4,
+   "right": 12,
+   "bottom": 4
+  },
+  "note": "fixed height; a 20 px icon goes in the socket on the left"
+ },
+ {
+  "group": "wood",
+  "name": "list_row",
+  "category": "HUD",
+  "png_1x": "PNG/1x/wood/list_row.png",
+  "png_2x": "PNG/2x/wood/list_row.png",
+  "svg": "SVG/wood/list_row.svg",
+  "size_1x": [
+   160,
+   34
+  ],
+  "size_2x": [
+   320,
+   68
+  ],
+  "slice_1x": {
+   "left": 10,
+   "top": 10,
+   "right": 10,
+   "bottom": 10
+  },
+  "slice_2x": {
+   "left": 20,
+   "top": 20,
+   "right": 20,
+   "bottom": 20
+  },
+  "content_padding_1x": {
+   "left": 12,
+   "top": 6,
+   "right": 12,
+   "bottom": 6
+  }
+ },
+ {
+  "group": "icons_white",
+  "name": "sword",
+  "category": "Weapons",
+  "png_1x": "PNG/1x/icons_white/sword.png",
+  "png_2x": "PNG/2x/icons_white/sword.png",
+  "svg": "SVG/icons_white/sword.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "helmet",
+  "category": "Armour",
+  "png_1x": "PNG/1x/icons_white/helmet.png",
+  "png_2x": "PNG/2x/icons_white/helmet.png",
+  "svg": "SVG/icons_white/helmet.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "shield",
+  "category": "Armour",
+  "png_1x": "PNG/1x/icons_white/shield.png",
+  "png_2x": "PNG/2x/icons_white/shield.png",
+  "svg": "SVG/icons_white/shield.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "potion",
+  "category": "Consumables",
+  "png_1x": "PNG/1x/icons_white/potion.png",
+  "png_2x": "PNG/2x/icons_white/potion.png",
+  "svg": "SVG/icons_white/potion.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "scroll",
+  "category": "Consumables",
+  "png_1x": "PNG/1x/icons_white/scroll.png",
+  "png_2x": "PNG/2x/icons_white/scroll.png",
+  "svg": "SVG/icons_white/scroll.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "book",
+  "category": "Consumables",
+  "png_1x": "PNG/1x/icons_white/book.png",
+  "png_2x": "PNG/2x/icons_white/book.png",
+  "svg": "SVG/icons_white/book.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "coin",
+  "category": "Loot",
+  "png_1x": "PNG/1x/icons_white/coin.png",
+  "png_2x": "PNG/2x/icons_white/coin.png",
+  "svg": "SVG/icons_white/coin.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "gem",
+  "category": "Loot",
+  "png_1x": "PNG/1x/icons_white/gem.png",
+  "png_2x": "PNG/2x/icons_white/gem.png",
+  "svg": "SVG/icons_white/gem.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "bag",
+  "category": "Loot",
+  "png_1x": "PNG/1x/icons_white/bag.png",
+  "png_2x": "PNG/2x/icons_white/bag.png",
+  "svg": "SVG/icons_white/bag.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "chest",
+  "category": "Loot",
+  "png_1x": "PNG/1x/icons_white/chest.png",
+  "png_2x": "PNG/2x/icons_white/chest.png",
+  "svg": "SVG/icons_white/chest.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "key",
+  "category": "Loot",
+  "png_1x": "PNG/1x/icons_white/key.png",
+  "png_2x": "PNG/2x/icons_white/key.png",
+  "svg": "SVG/icons_white/key.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "map",
+  "category": "Tools",
+  "png_1x": "PNG/1x/icons_white/map.png",
+  "png_2x": "PNG/2x/icons_white/map.png",
+  "svg": "SVG/icons_white/map.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "skull",
+  "category": "Map",
+  "png_1x": "PNG/1x/icons_white/skull.png",
+  "png_2x": "PNG/2x/icons_white/skull.png",
+  "svg": "SVG/icons_white/skull.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "heart",
+  "category": "Interface",
+  "png_1x": "PNG/1x/icons_white/heart.png",
+  "png_2x": "PNG/2x/icons_white/heart.png",
+  "svg": "SVG/icons_white/heart.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_white",
+  "name": "star",
+  "category": "Interface",
+  "png_1x": "PNG/1x/icons_white/star.png",
+  "png_2x": "PNG/2x/icons_white/star.png",
+  "svg": "SVG/icons_white/star.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_colour",
+  "name": "potion_red",
+  "category": "Coloured",
+  "png_1x": "PNG/1x/icons_colour/potion_red.png",
+  "png_2x": "PNG/2x/icons_colour/potion_red.png",
+  "svg": "SVG/icons_colour/potion_red.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_colour",
+  "name": "gem_ruby",
+  "category": "Coloured",
+  "png_1x": "PNG/1x/icons_colour/gem_ruby.png",
+  "png_2x": "PNG/2x/icons_colour/gem_ruby.png",
+  "svg": "SVG/icons_colour/gem_ruby.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons_colour",
+  "name": "coin_gold",
+  "category": "Coloured",
+  "png_1x": "PNG/1x/icons_colour/coin_gold.png",
+  "png_2x": "PNG/2x/icons_colour/coin_gold.png",
+  "svg": "SVG/icons_colour/coin_gold.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ }
+]
