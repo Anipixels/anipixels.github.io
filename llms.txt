@@ -4,7 +4,7 @@
 
 All assets are generated procedurally by code written with an AI assistant (Claude). No AI image or audio generators, no recorded samples, no third-party art.
 Licence (all packs and samplers): use in any number of commercial and non-commercial projects, modify freely, credit not required; no reselling or redistribution of the files themselves.
-Prices are in US dollars as listed on itch.io on 6 October 2026.
+Prices are in US dollars as listed on itch.io on 7 October 2026.
 
 ## Asset packs
 
@@ -16,15 +16,16 @@ Prices are in US dollars as listed on itch.io on 6 October 2026.
 - [Crisp Juice](https://anipixels.github.io/packs/crisp-juice/): 68 sprite-sheet effects for casual and puzzle games: gem bursts, coins, stars, confetti. PNG + Godot 4 scenes. Price $4.99. Buy: https://anipixels.itch.io/crisp-juice . Free sampler (8 effects) and browser demo: https://anipixels.itch.io/crisp-juice-free
 - [Crisp Kit](https://anipixels.github.io/packs/crisp-kit/): 100 UI pieces x 8 themes, 127 icons, 93 input prompts. PNG + SVG, 9-slice, Godot 4 themes. Price $6.99. Buy: https://anipixels.itch.io/crisp-kit . Free sampler (57 pieces) and browser demo: https://anipixels.itch.io/crisp-kit-free
 - [Crisp Quest](https://anipixels.github.io/packs/crisp-quest/): 135 RPG UI pieces x 6 fantasy themes, 184 icons. PNG + SVG, 9-slice, Godot 4 themes. Price $6.99. Buy: https://anipixels.itch.io/crisp-quest . Free sampler (52 pieces) and browser demo: https://anipixels.itch.io/crisp-quest-free
+- [Crisp Pixel](https://anipixels.github.io/packs/crisp-pixel/): 139 pixel-art RPG UI pieces x 6 themes, 157 icons at 16 x 16. PNG 1x-4x, 9-slice, 2 pixel fonts, Godot 4 themes. Price $6.99. Buy: https://anipixels.itch.io/crisp-pixel . Free sampler (53 pieces) and browser demo: https://anipixels.itch.io/crisp-pixel-free
 
 ## Bundle
 
-- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 8 packs above for $14.99 (the single prices add up to $45.92).
+- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 9 packs above for $14.99 (the single prices add up to $52.91).
 
 ## Free browser tools
 
 - [UI sound board](https://anipixels.github.io/tools/ui-sound-board/): plays the 89 free sampler sounds from the five sound packs, with search, pack filter, volume and copy-file-name.
-- [UI kit 9-slice preview](https://anipixels.github.io/tools/ui-kit-preview/): live resize of the Crisp Kit and Crisp Quest sampler pieces using their 9-slice borders, on light or dark.
+- [UI kit 9-slice preview](https://anipixels.github.io/tools/ui-kit-preview/): live resize of the Crisp Kit, Crisp Quest and Crisp Pixel sampler pieces using their 9-slice borders, on light or dark.
 - [VFX sprite sheet player](https://anipixels.github.io/tools/vfx-player/): plays the 8 Crisp Juice sampler sprite sheets on a canvas with speed, loop, blend and background controls.
 
 ## Free browser games (on itch.io)

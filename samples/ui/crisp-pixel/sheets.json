@@ -1,0 +1,1406 @@
+{
+ "about": "Crisp Pixel. Sizes, borders and sheet positions are in 1x pixels: multiply by 2, 3 or 4 for the larger PNG sets.",
+ "scales": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "pieces": [
+  {
+   "group": "wood",
+   "name": "button_medium_normal",
+   "category": "Buttons",
+   "png_1x": "PNG/1x/wood/button_medium_normal.png",
+   "png_2x": "PNG/2x/wood/button_medium_normal.png",
+   "png_3x": "PNG/3x/wood/button_medium_normal.png",
+   "png_4x": "PNG/4x/wood/button_medium_normal.png",
+   "size_1x": [
+    48,
+    18
+   ],
+   "slice_1x": {
+    "left": 5,
+    "top": 5,
+    "right": 5,
+    "bottom": 7
+   },
+   "content_padding_1x": {
+    "left": 4,
+    "top": 2,
+    "right": 4,
+    "bottom": 4
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 201,
+    "y": 255,
+    "w": 48,
+    "h": 18
+   }
+  },
+  {
+   "group": "wood",
+   "name": "button_medium_hover",
+   "category": "Buttons",
+   "png_1x": "PNG/1x/wood/button_medium_hover.png",
+   "png_2x": "PNG/2x/wood/button_medium_hover.png",
+   "png_3x": "PNG/3x/wood/button_medium_hover.png",
+   "png_4x": "PNG/4x/wood/button_medium_hover.png",
+   "size_1x": [
+    48,
+    18
+   ],
+   "slice_1x": {
+    "left": 5,
+    "top": 5,
+    "right": 5,
+    "bottom": 7
+   },
+   "content_padding_1x": {
+    "left": 4,
+    "top": 2,
+    "right": 4,
+    "bottom": 4
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 152,
+    "y": 255,
+    "w": 48,
+    "h": 18
+   }
+  },
+  {
+   "group": "wood",
+   "name": "button_medium_pressed",
+   "category": "Buttons",
+   "png_1x": "PNG/1x/wood/button_medium_pressed.png",
+   "png_2x": "PNG/2x/wood/button_medium_pressed.png",
+   "png_3x": "PNG/3x/wood/button_medium_pressed.png",
+   "png_4x": "PNG/4x/wood/button_medium_pressed.png",
+   "size_1x": [
+    48,
+    18
+   ],
+   "slice_1x": {
+    "left": 5,
+    "top": 5,
+    "right": 5,
+    "bottom": 7
+   },
+   "content_padding_1x": {
+    "left": 4,
+    "top": 3,
+    "right": 4,
+    "bottom": 3
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 1,
+    "y": 276,
+    "w": 48,
+    "h": 18
+   }
+  },
+  {
+   "group": "wood",
+   "name": "button_medium_disabled",
+   "category": "Buttons",
+   "png_1x": "PNG/1x/wood/button_medium_disabled.png",
+   "png_2x": "PNG/2x/wood/button_medium_disabled.png",
+   "png_3x": "PNG/3x/wood/button_medium_disabled.png",
+   "png_4x": "PNG/4x/wood/button_medium_disabled.png",
+   "size_1x": [
+    48,
+    18
+   ],
+   "slice_1x": {
+    "left": 5,
+    "top": 5,
+    "right": 5,
+    "bottom": 7
+   },
+   "content_padding_1x": {
+    "left": 4,
+    "top": 2,
+    "right": 4,
+    "bottom": 4
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 103,
+    "y": 255,
+    "w": 48,
+    "h": 18
+   }
+  },
+  {
+   "group": "wood",
+   "name": "button_square_normal",
+   "category": "Buttons",
+   "png_1x": "PNG/1x/wood/button_square_normal.png",
+   "png_2x": "PNG/2x/wood/button_square_normal.png",
+   "png_3x": "PNG/3x/wood/button_square_normal.png",
+   "png_4x": "PNG/4x/wood/button_square_normal.png",
+   "size_1x": [
+    20,
+    22
+   ],
+   "slice_1x": {
+    "left": 5,
+    "top": 5,
+    "right": 5,
+    "bottom": 7
+   },
+   "content_padding_1x": {
+    "left": 4,
+    "top": 2,
+    "right": 4,
+    "bottom": 4
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 43,
+    "y": 211,
+    "w": 20,
+    "h": 22
+   },
+   "note": "icon button: a 16 px icon fits the face"
+  },
+  {
+   "group": "wood",
+   "name": "button_square_pressed",
+   "category": "Buttons",
+   "png_1x": "PNG/1x/wood/button_square_pressed.png",
+   "png_2x": "PNG/2x/wood/button_square_pressed.png",
+   "png_3x": "PNG/3x/wood/button_square_pressed.png",
+   "png_4x": "PNG/4x/wood/button_square_pressed.png",
+   "size_1x": [
+    20,
+    22
+   ],
+   "slice_1x": {
+    "left": 5,
+    "top": 5,
+    "right": 5,
+    "bottom": 7
+   },
+   "content_padding_1x": {
+    "left": 4,
+    "top": 3,
+    "right": 4,
+    "bottom": 3
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 64,
+    "y": 211,
+    "w": 20,
+    "h": 22
+   }
+  },
+  {
+   "group": "wood",
+   "name": "button_close_normal",
+   "category": "Buttons",
+   "png_1x": "PNG/1x/wood/button_close_normal.png",
+   "png_2x": "PNG/2x/wood/button_close_normal.png",
+   "png_3x": "PNG/3x/wood/button_close_normal.png",
+   "png_4x": "PNG/4x/wood/button_close_normal.png",
+   "size_1x": [
+    13,
+    15
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 136,
+    "y": 312,
+    "w": 13,
+    "h": 15
+   }
+  },
+  {
+   "group": "wood",
+   "name": "panel",
+   "category": "Panels",
+   "png_1x": "PNG/1x/wood/panel.png",
+   "png_2x": "PNG/2x/wood/panel.png",
+   "png_3x": "PNG/3x/wood/panel.png",
+   "png_4x": "PNG/4x/wood/panel.png",
+   "size_1x": [
+    32,
+    32
+   ],
+   "slice_1x": {
+    "left": 12,
+    "top": 12,
+    "right": 12,
+    "bottom": 12
+   },
+   "content_padding_1x": {
+    "left": 7,
+    "top": 7,
+    "right": 7,
+    "bottom": 7
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 1,
+    "y": 103,
+    "w": 32,
+    "h": 32
+   }
+  },
+  {
+   "group": "wood",
+   "name": "panel_inset",
+   "category": "Panels",
+   "png_1x": "PNG/1x/wood/panel_inset.png",
+   "png_2x": "PNG/2x/wood/panel_inset.png",
+   "png_3x": "PNG/3x/wood/panel_inset.png",
+   "png_4x": "PNG/4x/wood/panel_inset.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "slice_1x": {
+    "left": 4,
+    "top": 4,
+    "right": 4,
+    "bottom": 4
+   },
+   "content_padding_1x": {
+    "left": 3,
+    "top": 3,
+    "right": 3,
+    "bottom": 3
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 35,
+    "y": 312,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "wood",
+   "name": "window",
+   "category": "Panels",
+   "png_1x": "PNG/1x/wood/window.png",
+   "png_2x": "PNG/2x/wood/window.png",
+   "png_3x": "PNG/3x/wood/window.png",
+   "png_4x": "PNG/4x/wood/window.png",
+   "size_1x": [
+    80,
+    64
+   ],
+   "slice_1x": {
+    "left": 12,
+    "top": 24,
+    "right": 12,
+    "bottom": 12
+   },
+   "content_padding_1x": {
+    "left": 7,
+    "top": 20,
+    "right": 7,
+    "bottom": 7
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 1,
+    "y": 1,
+    "w": 80,
+    "h": 64
+   },
+   "note": "title bar: the top 17 px; put the title text at about y = 5"
+  },
+  {
+   "group": "wood",
+   "name": "tooltip",
+   "category": "Panels",
+   "png_1x": "PNG/1x/wood/tooltip.png",
+   "png_2x": "PNG/2x/wood/tooltip.png",
+   "png_3x": "PNG/3x/wood/tooltip.png",
+   "png_4x": "PNG/4x/wood/tooltip.png",
+   "size_1x": [
+    24,
+    16
+   ],
+   "slice_1x": {
+    "left": 4,
+    "top": 4,
+    "right": 4,
+    "bottom": 4
+   },
+   "content_padding_1x": {
+    "left": 4,
+    "top": 3,
+    "right": 4,
+    "bottom": 3
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 147,
+    "y": 295,
+    "w": 24,
+    "h": 16
+   }
+  },
+  {
+   "group": "wood",
+   "name": "dialog_box",
+   "category": "Dialogue",
+   "png_1x": "PNG/1x/wood/dialog_box.png",
+   "png_2x": "PNG/2x/wood/dialog_box.png",
+   "png_3x": "PNG/3x/wood/dialog_box.png",
+   "png_4x": "PNG/4x/wood/dialog_box.png",
+   "size_1x": [
+    96,
+    36
+   ],
+   "slice_1x": {
+    "left": 12,
+    "top": 12,
+    "right": 12,
+    "bottom": 12
+   },
+   "content_padding_1x": {
+    "left": 8,
+    "top": 7,
+    "right": 8,
+    "bottom": 7
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 1,
+    "y": 66,
+    "w": 96,
+    "h": 36
+   }
+  },
+  {
+   "group": "wood",
+   "name": "dialog_name_plate",
+   "category": "Dialogue",
+   "png_1x": "PNG/1x/wood/dialog_name_plate.png",
+   "png_2x": "PNG/2x/wood/dialog_name_plate.png",
+   "png_3x": "PNG/3x/wood/dialog_name_plate.png",
+   "png_4x": "PNG/4x/wood/dialog_name_plate.png",
+   "size_1x": [
+    40,
+    13
+   ],
+   "slice_1x": {
+    "left": 4,
+    "top": 0,
+    "right": 4,
+    "bottom": 0
+   },
+   "content_padding_1x": {
+    "left": 5,
+    "top": 3,
+    "right": 5,
+    "bottom": 3
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 131,
+    "y": 359,
+    "w": 40,
+    "h": 13
+   },
+   "note": "fixed height; overlap the top-left of dialog_box"
+  },
+  {
+   "group": "wood",
+   "name": "slot",
+   "category": "Inventory",
+   "png_1x": "PNG/1x/wood/slot.png",
+   "png_2x": "PNG/2x/wood/slot.png",
+   "png_3x": "PNG/3x/wood/slot.png",
+   "png_4x": "PNG/4x/wood/slot.png",
+   "size_1x": [
+    20,
+    20
+   ],
+   "slice_1x": {
+    "left": 4,
+    "top": 4,
+    "right": 4,
+    "bottom": 4
+   },
+   "content_padding_1x": {
+    "left": 2,
+    "top": 2,
+    "right": 2,
+    "bottom": 2
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 166,
+    "y": 211,
+    "w": 20,
+    "h": 20
+   },
+   "note": "16 px icon area"
+  },
+  {
+   "group": "wood",
+   "name": "slot_hover",
+   "category": "Inventory",
+   "png_1x": "PNG/1x/wood/slot_hover.png",
+   "png_2x": "PNG/2x/wood/slot_hover.png",
+   "png_3x": "PNG/3x/wood/slot_hover.png",
+   "png_4x": "PNG/4x/wood/slot_hover.png",
+   "size_1x": [
+    20,
+    20
+   ],
+   "slice_1x": {
+    "left": 4,
+    "top": 4,
+    "right": 4,
+    "bottom": 4
+   },
+   "content_padding_1x": {
+    "left": 2,
+    "top": 2,
+    "right": 2,
+    "bottom": 2
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 148,
+    "y": 234,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "group": "wood",
+   "name": "slot_selected",
+   "category": "Inventory",
+   "png_1x": "PNG/1x/wood/slot_selected.png",
+   "png_2x": "PNG/2x/wood/slot_selected.png",
+   "png_3x": "PNG/3x/wood/slot_selected.png",
+   "png_4x": "PNG/4x/wood/slot_selected.png",
+   "size_1x": [
+    20,
+    20
+   ],
+   "slice_1x": {
+    "left": 5,
+    "top": 5,
+    "right": 5,
+    "bottom": 5
+   },
+   "content_padding_1x": {
+    "left": 2,
+    "top": 2,
+    "right": 2,
+    "bottom": 2
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 232,
+    "y": 234,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "group": "wood",
+   "name": "slot_rare",
+   "category": "Inventory",
+   "png_1x": "PNG/1x/wood/slot_rare.png",
+   "png_2x": "PNG/2x/wood/slot_rare.png",
+   "png_3x": "PNG/3x/wood/slot_rare.png",
+   "png_4x": "PNG/4x/wood/slot_rare.png",
+   "size_1x": [
+    20,
+    20
+   ],
+   "slice_1x": {
+    "left": 5,
+    "top": 5,
+    "right": 5,
+    "bottom": 5
+   },
+   "content_padding_1x": {
+    "left": 2,
+    "top": 2,
+    "right": 2,
+    "bottom": 2
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 211,
+    "y": 234,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "group": "wood",
+   "name": "slot_epic",
+   "category": "Inventory",
+   "png_1x": "PNG/1x/wood/slot_epic.png",
+   "png_2x": "PNG/2x/wood/slot_epic.png",
+   "png_3x": "PNG/3x/wood/slot_epic.png",
+   "png_4x": "PNG/4x/wood/slot_epic.png",
+   "size_1x": [
+    20,
+    20
+   ],
+   "slice_1x": {
+    "left": 5,
+    "top": 5,
+    "right": 5,
+    "bottom": 5
+   },
+   "content_padding_1x": {
+    "left": 2,
+    "top": 2,
+    "right": 2,
+    "bottom": 2
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 208,
+    "y": 211,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "group": "wood",
+   "name": "hotbar_slot",
+   "category": "Hotbar",
+   "png_1x": "PNG/1x/wood/hotbar_slot.png",
+   "png_2x": "PNG/2x/wood/hotbar_slot.png",
+   "png_3x": "PNG/3x/wood/hotbar_slot.png",
+   "png_4x": "PNG/4x/wood/hotbar_slot.png",
+   "size_1x": [
+    22,
+    22
+   ],
+   "slice_1x": {
+    "left": 5,
+    "top": 5,
+    "right": 5,
+    "bottom": 5
+   },
+   "content_padding_1x": {
+    "left": 3,
+    "top": 3,
+    "right": 3,
+    "bottom": 3
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 66,
+    "y": 188,
+    "w": 22,
+    "h": 22
+   },
+   "note": "16 px icon area"
+  },
+  {
+   "group": "wood",
+   "name": "bar_frame",
+   "category": "Bars",
+   "png_1x": "PNG/1x/wood/bar_frame.png",
+   "png_2x": "PNG/2x/wood/bar_frame.png",
+   "png_3x": "PNG/3x/wood/bar_frame.png",
+   "png_4x": "PNG/4x/wood/bar_frame.png",
+   "size_1x": [
+    48,
+    8
+   ],
+   "slice_1x": {
+    "left": 3,
+    "top": 0,
+    "right": 3,
+    "bottom": 0
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 19,
+    "y": 400,
+    "w": 48,
+    "h": 8
+   },
+   "note": "fixed height; the track is 4 px high, 2 px in from each edge"
+  },
+  {
+   "group": "wood",
+   "name": "bar_fill_health",
+   "category": "Bars",
+   "png_1x": "PNG/1x/wood/bar_fill_health.png",
+   "png_2x": "PNG/2x/wood/bar_fill_health.png",
+   "png_3x": "PNG/3x/wood/bar_fill_health.png",
+   "png_4x": "PNG/4x/wood/bar_fill_health.png",
+   "size_1x": [
+    12,
+    8
+   ],
+   "slice_1x": {
+    "left": 3,
+    "top": 0,
+    "right": 3,
+    "bottom": 0
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 68,
+    "y": 400,
+    "w": 12,
+    "h": 8
+   },
+   "note": "fixed height; 2 px transparent padding so it sits in bar_frame at the same position"
+  },
+  {
+   "group": "wood",
+   "name": "bar_fill_mana",
+   "category": "Bars",
+   "png_1x": "PNG/1x/wood/bar_fill_mana.png",
+   "png_2x": "PNG/2x/wood/bar_fill_mana.png",
+   "png_3x": "PNG/3x/wood/bar_fill_mana.png",
+   "png_4x": "PNG/4x/wood/bar_fill_mana.png",
+   "size_1x": [
+    12,
+    8
+   ],
+   "slice_1x": {
+    "left": 3,
+    "top": 0,
+    "right": 3,
+    "bottom": 0
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 81,
+    "y": 400,
+    "w": 12,
+    "h": 8
+   },
+   "note": "fixed height; 2 px transparent padding so it sits in bar_frame at the same position"
+  },
+  {
+   "group": "wood",
+   "name": "quest_entry",
+   "category": "Quest",
+   "png_1x": "PNG/1x/wood/quest_entry.png",
+   "png_2x": "PNG/2x/wood/quest_entry.png",
+   "png_3x": "PNG/3x/wood/quest_entry.png",
+   "png_4x": "PNG/4x/wood/quest_entry.png",
+   "size_1x": [
+    72,
+    16
+   ],
+   "slice_1x": {
+    "left": 6,
+    "top": 3,
+    "right": 3,
+    "bottom": 3
+   },
+   "content_padding_1x": {
+    "left": 8,
+    "top": 3,
+    "right": 4,
+    "bottom": 3
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 1,
+    "y": 295,
+    "w": 72,
+    "h": 16
+   },
+   "note": "a row for a quest list over the game world"
+  },
+  {
+   "group": "wood",
+   "name": "checkbox_off",
+   "category": "Toggles",
+   "png_1x": "PNG/1x/wood/checkbox_off.png",
+   "png_2x": "PNG/2x/wood/checkbox_off.png",
+   "png_3x": "PNG/3x/wood/checkbox_off.png",
+   "png_4x": "PNG/4x/wood/checkbox_off.png",
+   "size_1x": [
+    10,
+    10
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 197,
+    "y": 387,
+    "w": 10,
+    "h": 10
+   }
+  },
+  {
+   "group": "wood",
+   "name": "checkbox_on",
+   "category": "Toggles",
+   "png_1x": "PNG/1x/wood/checkbox_on.png",
+   "png_2x": "PNG/2x/wood/checkbox_on.png",
+   "png_3x": "PNG/3x/wood/checkbox_on.png",
+   "png_4x": "PNG/4x/wood/checkbox_on.png",
+   "size_1x": [
+    10,
+    10
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 208,
+    "y": 387,
+    "w": 10,
+    "h": 10
+   }
+  },
+  {
+   "group": "wood",
+   "name": "slider_track",
+   "category": "Sliders",
+   "png_1x": "PNG/1x/wood/slider_track.png",
+   "png_2x": "PNG/2x/wood/slider_track.png",
+   "png_3x": "PNG/3x/wood/slider_track.png",
+   "png_4x": "PNG/4x/wood/slider_track.png",
+   "size_1x": [
+    32,
+    6
+   ],
+   "slice_1x": {
+    "left": 2,
+    "top": 0,
+    "right": 2,
+    "bottom": 0
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 197,
+    "y": 400,
+    "w": 32,
+    "h": 6
+   },
+   "note": "fixed height"
+  },
+  {
+   "group": "wood",
+   "name": "slider_fill",
+   "category": "Sliders",
+   "png_1x": "PNG/1x/wood/slider_fill.png",
+   "png_2x": "PNG/2x/wood/slider_fill.png",
+   "png_3x": "PNG/3x/wood/slider_fill.png",
+   "png_4x": "PNG/4x/wood/slider_fill.png",
+   "size_1x": [
+    8,
+    6
+   ],
+   "slice_1x": {
+    "left": 2,
+    "top": 0,
+    "right": 2,
+    "bottom": 0
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 240,
+    "y": 400,
+    "w": 8,
+    "h": 6
+   },
+   "note": "fixed height; 1 px padding"
+  },
+  {
+   "group": "wood",
+   "name": "slider_knob_normal",
+   "category": "Sliders",
+   "png_1x": "PNG/1x/wood/slider_knob_normal.png",
+   "png_2x": "PNG/2x/wood/slider_knob_normal.png",
+   "png_3x": "PNG/3x/wood/slider_knob_normal.png",
+   "png_4x": "PNG/4x/wood/slider_knob_normal.png",
+   "size_1x": [
+    8,
+    10
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 1,
+    "y": 400,
+    "w": 8,
+    "h": 10
+   },
+   "note": "centre it on the track; the point faces down"
+  },
+  {
+   "group": "wood",
+   "name": "input_normal",
+   "category": "Inputs",
+   "png_1x": "PNG/1x/wood/input_normal.png",
+   "png_2x": "PNG/2x/wood/input_normal.png",
+   "png_3x": "PNG/3x/wood/input_normal.png",
+   "png_4x": "PNG/4x/wood/input_normal.png",
+   "size_1x": [
+    54,
+    14
+   ],
+   "slice_1x": {
+    "left": 4,
+    "top": 4,
+    "right": 4,
+    "bottom": 4
+   },
+   "content_padding_1x": {
+    "left": 5,
+    "top": 3,
+    "right": 5,
+    "bottom": 3
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 166,
+    "y": 329,
+    "w": 54,
+    "h": 14
+   }
+  },
+  {
+   "group": "wood",
+   "name": "ribbon",
+   "category": "Banners",
+   "png_1x": "PNG/1x/wood/ribbon.png",
+   "png_2x": "PNG/2x/wood/ribbon.png",
+   "png_3x": "PNG/3x/wood/ribbon.png",
+   "png_4x": "PNG/4x/wood/ribbon.png",
+   "size_1x": [
+    80,
+    18
+   ],
+   "slice_1x": {
+    "left": 14,
+    "top": 0,
+    "right": 14,
+    "bottom": 0
+   },
+   "content_padding_1x": {
+    "left": 16,
+    "top": 3,
+    "right": 16,
+    "bottom": 7
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 22,
+    "y": 255,
+    "w": 80,
+    "h": 18
+   },
+   "note": "fixed height"
+  },
+  {
+   "group": "wood",
+   "name": "divider",
+   "category": "Dividers",
+   "png_1x": "PNG/1x/wood/divider.png",
+   "png_2x": "PNG/2x/wood/divider.png",
+   "png_3x": "PNG/3x/wood/divider.png",
+   "png_4x": "PNG/4x/wood/divider.png",
+   "size_1x": [
+    32,
+    3
+   ],
+   "slice_1x": {
+    "left": 2,
+    "top": 0,
+    "right": 2,
+    "bottom": 0
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 49,
+    "y": 411,
+    "w": 32,
+    "h": 3
+   },
+   "note": "fixed height"
+  },
+  {
+   "group": "wood",
+   "name": "portrait_frame",
+   "category": "HUD",
+   "png_1x": "PNG/1x/wood/portrait_frame.png",
+   "png_2x": "PNG/2x/wood/portrait_frame.png",
+   "png_3x": "PNG/3x/wood/portrait_frame.png",
+   "png_4x": "PNG/4x/wood/portrait_frame.png",
+   "size_1x": [
+    30,
+    30
+   ],
+   "slice_1x": {
+    "left": 8,
+    "top": 8,
+    "right": 8,
+    "bottom": 8
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 134,
+    "y": 103,
+    "w": 30,
+    "h": 30
+   },
+   "note": "hollow centre (24 px portrait)"
+  },
+  {
+   "group": "wood",
+   "name": "currency_plate",
+   "category": "HUD",
+   "png_1x": "PNG/1x/wood/currency_plate.png",
+   "png_2x": "PNG/2x/wood/currency_plate.png",
+   "png_3x": "PNG/3x/wood/currency_plate.png",
+   "png_4x": "PNG/4x/wood/currency_plate.png",
+   "size_1x": [
+    40,
+    12
+   ],
+   "slice_1x": {
+    "left": 14,
+    "top": 0,
+    "right": 5,
+    "bottom": 0
+   },
+   "content_padding_1x": {
+    "left": 15,
+    "top": 2,
+    "right": 4,
+    "bottom": 2
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 56,
+    "y": 387,
+    "w": 40,
+    "h": 12
+   },
+   "note": "fixed height; centre a coin icon on the round socket at the left (a 16 px icon overhangs 2 px)"
+  },
+  {
+   "group": "wood",
+   "name": "list_row",
+   "category": "HUD",
+   "png_1x": "PNG/1x/wood/list_row.png",
+   "png_2x": "PNG/2x/wood/list_row.png",
+   "png_3x": "PNG/3x/wood/list_row.png",
+   "png_4x": "PNG/4x/wood/list_row.png",
+   "size_1x": [
+    54,
+    12
+   ],
+   "slice_1x": {
+    "left": 3,
+    "top": 3,
+    "right": 3,
+    "bottom": 3
+   },
+   "content_padding_1x": {
+    "left": 4,
+    "top": 2,
+    "right": 4,
+    "bottom": 2
+   },
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 198,
+    "y": 373,
+    "w": 54,
+    "h": 12
+   }
+  },
+  {
+   "group": "wood",
+   "name": "cursor_pointer",
+   "category": "Cursors",
+   "png_1x": "PNG/1x/wood/cursor_pointer.png",
+   "png_2x": "PNG/2x/wood/cursor_pointer.png",
+   "png_3x": "PNG/3x/wood/cursor_pointer.png",
+   "png_4x": "PNG/4x/wood/cursor_pointer.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/wood.png",
+    "x": 1,
+    "y": 312,
+    "w": 16,
+    "h": 16
+   },
+   "note": "hot spot at 1, 1"
+  },
+  {
+   "group": "icons",
+   "name": "sword",
+   "category": "Weapons",
+   "png_1x": "PNG/1x/icons/sword.png",
+   "png_2x": "PNG/2x/icons/sword.png",
+   "png_3x": "PNG/3x/icons/sword.png",
+   "png_4x": "PNG/4x/icons/sword.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 256,
+    "y": 137,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "helmet",
+   "category": "Armour",
+   "png_1x": "PNG/1x/icons/helmet.png",
+   "png_2x": "PNG/2x/icons/helmet.png",
+   "png_3x": "PNG/3x/icons/helmet.png",
+   "png_4x": "PNG/4x/icons/helmet.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 239,
+    "y": 69,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "shield",
+   "category": "Armour",
+   "png_1x": "PNG/1x/icons/shield.png",
+   "png_2x": "PNG/2x/icons/shield.png",
+   "png_3x": "PNG/3x/icons/shield.png",
+   "png_4x": "PNG/4x/icons/shield.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 205,
+    "y": 120,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "potion_red",
+   "category": "Consumables",
+   "png_1x": "PNG/1x/icons/potion_red.png",
+   "png_2x": "PNG/2x/icons/potion_red.png",
+   "png_3x": "PNG/3x/icons/potion_red.png",
+   "png_4x": "PNG/4x/icons/potion_red.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 256,
+    "y": 103,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "scroll",
+   "category": "Consumables",
+   "png_1x": "PNG/1x/icons/scroll.png",
+   "png_2x": "PNG/2x/icons/scroll.png",
+   "png_3x": "PNG/3x/icons/scroll.png",
+   "png_4x": "PNG/4x/icons/scroll.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 137,
+    "y": 120,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "book",
+   "category": "Consumables",
+   "png_1x": "PNG/1x/icons/book.png",
+   "png_2x": "PNG/2x/icons/book.png",
+   "png_3x": "PNG/3x/icons/book.png",
+   "png_4x": "PNG/4x/icons/book.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 35,
+    "y": 18,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "coin_gold",
+   "category": "Loot",
+   "png_1x": "PNG/1x/icons/coin_gold.png",
+   "png_2x": "PNG/2x/icons/coin_gold.png",
+   "png_3x": "PNG/3x/icons/coin_gold.png",
+   "png_4x": "PNG/4x/icons/coin_gold.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 188,
+    "y": 35,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "gem_ruby",
+   "category": "Loot",
+   "png_1x": "PNG/1x/icons/gem_ruby.png",
+   "png_2x": "PNG/2x/icons/gem_ruby.png",
+   "png_3x": "PNG/3x/icons/gem_ruby.png",
+   "png_4x": "PNG/4x/icons/gem_ruby.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 120,
+    "y": 69,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "bag",
+   "category": "Loot",
+   "png_1x": "PNG/1x/icons/bag.png",
+   "png_2x": "PNG/2x/icons/bag.png",
+   "png_3x": "PNG/3x/icons/bag.png",
+   "png_4x": "PNG/4x/icons/bag.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 205,
+    "y": 1,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "chest",
+   "category": "Loot",
+   "png_1x": "PNG/1x/icons/chest.png",
+   "png_2x": "PNG/2x/icons/chest.png",
+   "png_3x": "PNG/3x/icons/chest.png",
+   "png_4x": "PNG/4x/icons/chest.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 239,
+    "y": 18,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "key",
+   "category": "Loot",
+   "png_1x": "PNG/1x/icons/key.png",
+   "png_2x": "PNG/2x/icons/key.png",
+   "png_3x": "PNG/3x/icons/key.png",
+   "png_4x": "PNG/4x/icons/key.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 103,
+    "y": 86,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "map",
+   "category": "Tools",
+   "png_1x": "PNG/1x/icons/map.png",
+   "png_2x": "PNG/2x/icons/map.png",
+   "png_3x": "PNG/3x/icons/map.png",
+   "png_4x": "PNG/4x/icons/map.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 205,
+    "y": 86,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "fire",
+   "category": "Magic",
+   "png_1x": "PNG/1x/icons/fire.png",
+   "png_2x": "PNG/2x/icons/fire.png",
+   "png_3x": "PNG/3x/icons/fire.png",
+   "png_4x": "PNG/4x/icons/fire.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 222,
+    "y": 52,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "skull",
+   "category": "Map",
+   "png_1x": "PNG/1x/icons/skull.png",
+   "png_2x": "PNG/2x/icons/skull.png",
+   "png_3x": "PNG/3x/icons/skull.png",
+   "png_4x": "PNG/4x/icons/skull.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 69,
+    "y": 137,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "check",
+   "category": "Interface",
+   "png_1x": "PNG/1x/icons/check.png",
+   "png_2x": "PNG/2x/icons/check.png",
+   "png_3x": "PNG/3x/icons/check.png",
+   "png_4x": "PNG/4x/icons/check.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 205,
+    "y": 18,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "close",
+   "category": "Interface",
+   "png_1x": "PNG/1x/icons/close.png",
+   "png_2x": "PNG/2x/icons/close.png",
+   "png_3x": "PNG/3x/icons/close.png",
+   "png_4x": "PNG/4x/icons/close.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 154,
+    "y": 35,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "heart",
+   "category": "Interface",
+   "png_1x": "PNG/1x/icons/heart.png",
+   "png_2x": "PNG/2x/icons/heart.png",
+   "png_3x": "PNG/3x/icons/heart.png",
+   "png_4x": "PNG/4x/icons/heart.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 222,
+    "y": 69,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "group": "icons",
+   "name": "star",
+   "category": "Interface",
+   "png_1x": "PNG/1x/icons/star.png",
+   "png_2x": "PNG/2x/icons/star.png",
+   "png_3x": "PNG/3x/icons/star.png",
+   "png_4x": "PNG/4x/icons/star.png",
+   "size_1x": [
+    16,
+    16
+   ],
+   "sheet_1x": {
+    "image": "Sheets/1x/icons.png",
+    "x": 205,
+    "y": 137,
+    "w": 16,
+    "h": 16
+   }
+  }
+ ]
+}

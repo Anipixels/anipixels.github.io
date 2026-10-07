@@ -1,6 +1,8 @@
-/* Anipixels UI kit preview: live 9-slice preview of the Crisp Kit and Crisp Quest free sampler pieces.
+/* Anipixels UI kit preview: live 9-slice preview of the Crisp Kit, Crisp Quest and Crisp Pixel free sampler pieces.
    Plain JS, no dependencies, works from file://. Piece data comes from data.js, which is generated
-   from each sampler's sheets.json (sizes, slice borders and content padding are copied unchanged). */
+   from each sampler's sheets.json (sizes, slice borders and content padding are copied unchanged).
+   Each kit says which PNG scale it is drawn from (px: 2, or 1 for the pixel-art kit) and whether it is
+   pixel art (pixel: true), in which case it is enlarged with image-rendering: pixelated, never smoothed. */
 (function () {
   "use strict";
   var DATA = window.KIT_DATA;
@@ -19,7 +21,8 @@
     return r ? r.value : null;
   }
   function piece() { return DATA[state.kit].pieces[state.i]; }
-  function url(p, scale) { return DATA[state.kit].base + scale + "/" + p.g + "/" + p.n + ".png"; }
+  function curKit() { return DATA[state.kit]; }
+  function url(p) { return curKit().base + (curKit().px || 2) + "x/" + p.g + "/" + p.n + ".png"; }
   function fixedHeight(p) { return !!p.s && p.s[1] === 0 && p.s[3] === 0; }
 
   function limits(p) {
@@ -34,7 +37,8 @@
   }
 
   function render() {
-    var p = piece(), z = state.zoom, lim = limits(p);
+    var p = piece(), z = state.zoom, lim = limits(p), K = curKit().px || 2, pixel = !!curKit().pixel;
+    box.style.imageRendering = img.style.imageRendering = pixel ? "pixelated" : "";
     // state.w / state.h hold the size that was asked for; w / h are what fits the stage right now.
     // The asked-for size is kept, so a narrow window only shrinks the piece until there is room again.
     var w = Math.max(lim.wmin, Math.min(lim.wmax, state.w));
@@ -55,8 +59,8 @@
       img.hidden = true;
       box.style.boxSizing = "border-box";
       box.style.borderWidth = s[1] * z + "px " + s[2] * z + "px " + s[3] * z + "px " + s[0] * z + "px";
-      box.style.borderImageSource = 'url("' + url(p, "2x") + '")';
-      box.style.borderImageSlice = s[1] * 2 + " " + s[2] * 2 + " " + s[3] * 2 + " " + s[0] * 2 + " fill";
+      box.style.borderImageSource = 'url("' + url(p) + '")';
+      box.style.borderImageSlice = s[1] * K + " " + s[2] * K + " " + s[3] * K + " " + s[0] * K + " fill";
       box.style.borderImageRepeat = "stretch";
       handle.style.right = -(s[2] * z + 12) + "px";             // sit on the outer corner, outside the border
       handle.style.bottom = -(s[3] * z + 12) + "px";
@@ -64,7 +68,7 @@
       box.style.borderWidth = "0";
       box.style.borderImageSource = "none";
       img.hidden = false;
-      img.src = url(p, "2x");
+      img.src = url(p);
       img.width = p.w * z; img.height = p.h * z;
       img.alt = p.n;
     }
@@ -80,7 +84,7 @@
       label.style.display = "flex";
       label.style.alignItems = "center";
       label.style.justifyContent = "center";
-      label.style.fontSize = Math.max(10, Math.min(18, (h - pad[1] - pad[3]) * 0.62)) * z + "px";
+      label.style.fontSize = Math.max(pixel ? 7 : 10, Math.min(18, (h - pad[1] - pad[3]) * 0.62)) * z + "px";
       label.style.maxWidth = "none";
     } else {
       label.hidden = true;
@@ -95,7 +99,9 @@
       info.type.textContent = "Fixed size: no slice borders, use it at its own size";
       info.slice.textContent = "none";
     }
-    info.files.textContent = "PNG/1x/" + p.g + "/" + p.n + ".png, PNG/2x/" + p.g + "/" + p.n + ".png, SVG/" + p.g + "/" + p.n + ".svg";
+    info.files.textContent = pixel
+      ? "PNG/1x/" + p.g + "/" + p.n + ".png, and the same name under PNG/2x, PNG/3x and PNG/4x"
+      : "PNG/1x/" + p.g + "/" + p.n + ".png, PNG/2x/" + p.g + "/" + p.n + ".png, SVG/" + p.g + "/" + p.n + ".svg";
     info.note.textContent = p.note || "-";
     if (p.s) {
       cssOut.textContent =
@@ -107,6 +113,7 @@
         "  border-style: solid;\n" +
         "  border-width: " + p.s[1] + "px " + p.s[2] + "px " + p.s[3] + "px " + p.s[0] + "px;\n" +
         '  border-image: url("' + p.n + '.png") ' + p.s[1] + " " + p.s[2] + " " + p.s[3] + " " + p.s[0] + " fill stretch;\n" +
+        (pixel ? "  image-rendering: pixelated; /* pixel art: scale by whole numbers, no smoothing */\n" : "") +
         "}";
       copyBtn.disabled = false;
     } else {
@@ -121,8 +128,9 @@
     if (resetSize) {
       state.w = p.s ? Math.max(p.w, Math.min(p.w * 1.5, 240) | 0) : p.w;
       state.h = p.s && !fixedHeight(p) ? p.h : p.h;
-      if (p.s && !fixedHeight(p) && p.n.indexOf("button") !== 0 && p.h < 120) state.h = Math.max(p.h, 110);
-      if (p.s && p.n.indexOf("button") !== 0 && p.w < 200) state.w = Math.max(p.w, 200);
+      var roomy = curKit().pixel ? [96, 56] : [200, 110];           // pixel-art pieces are drawn several times smaller
+      if (p.s && !fixedHeight(p) && p.n.indexOf("button") !== 0 && p.h < roomy[1] + 10) state.h = Math.max(p.h, roomy[1]);
+      if (p.s && p.n.indexOf("button") !== 0 && p.w < roomy[0]) state.w = Math.max(p.w, roomy[0]);
       if (p.n.indexOf("slot") !== -1 || p.n.indexOf("portrait") !== -1) { state.w = p.w; state.h = p.h; }
     }
     pieceButtons.forEach(function (b) {
