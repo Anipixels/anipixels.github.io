@@ -1,8 +1,10 @@
-/* Anipixels UI kit preview: live 9-slice preview of the Crisp Kit, Crisp Quest and Crisp Pixel free sampler pieces.
+/* Anipixels UI kit preview: live 9-slice preview of the Crisp Kit, Crisp Quest, Crisp Pixel and Crisp Cute free sampler pieces.
    Plain JS, no dependencies, works from file://. Piece data comes from data.js, which is generated
    from each sampler's sheets.json (sizes, slice borders and content padding are copied unchanged).
    Each kit says which PNG scale it is drawn from (px: 2, or 1 for the pixel-art kit) and whether it is
-   pixel art (pixel: true), in which case it is enlarged with image-rendering: pixelated, never smoothed. */
+   pixel art (pixel: true), in which case it is enlarged with image-rendering: pixelated, never smoothed.
+   A piece with t ("horizontal", or "horizontal and vertical", from sheets.json tile_middle) has a repeating middle:
+   it is tiled with border-image-repeat: round in that direction instead of stretched. */
 (function () {
   "use strict";
   var DATA = window.KIT_DATA;
@@ -24,6 +26,7 @@
   function curKit() { return DATA[state.kit]; }
   function url(p) { return curKit().base + (curKit().px || 2) + "x/" + p.g + "/" + p.n + ".png"; }
   function fixedHeight(p) { return !!p.s && p.s[1] === 0 && p.s[3] === 0; }
+  function repeatOf(p) { return !p.t ? "stretch" : (p.t.indexOf("vertical") !== -1 ? "round" : "round stretch"); }
 
   function limits(p) {
     var z = state.zoom;
@@ -61,7 +64,7 @@
       box.style.borderWidth = s[1] * z + "px " + s[2] * z + "px " + s[3] * z + "px " + s[0] * z + "px";
       box.style.borderImageSource = 'url("' + url(p) + '")';
       box.style.borderImageSlice = s[1] * K + " " + s[2] * K + " " + s[3] * K + " " + s[0] * K + " fill";
-      box.style.borderImageRepeat = "stretch";
+      box.style.borderImageRepeat = repeatOf(p);
       handle.style.right = -(s[2] * z + 12) + "px";             // sit on the outer corner, outside the border
       handle.style.bottom = -(s[3] * z + 12) + "px";
     } else {
@@ -112,7 +115,7 @@
         "  height: " + h + "px;\n" +
         "  border-style: solid;\n" +
         "  border-width: " + p.s[1] + "px " + p.s[2] + "px " + p.s[3] + "px " + p.s[0] + "px;\n" +
-        '  border-image: url("' + p.n + '.png") ' + p.s[1] + " " + p.s[2] + " " + p.s[3] + " " + p.s[0] + " fill stretch;\n" +
+        '  border-image: url("' + p.n + '.png") ' + p.s[1] + " " + p.s[2] + " " + p.s[3] + " " + p.s[0] + " fill " + repeatOf(p) + ";" + (p.t ? " /* tile the middle " + p.t + " */" : "") + "\n" +
         (pixel ? "  image-rendering: pixelated; /* pixel art: scale by whole numbers, no smoothing */\n" : "") +
         "}";
       copyBtn.disabled = false;

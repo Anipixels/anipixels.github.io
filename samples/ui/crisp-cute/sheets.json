@@ -1,0 +1,1228 @@
+[
+ {
+  "group": "strawberry",
+  "name": "button_medium_normal",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/strawberry/button_medium_normal.png",
+  "png_2x": "PNG/2x/strawberry/button_medium_normal.png",
+  "svg": "SVG/strawberry/button_medium_normal.svg",
+  "size_1x": [
+   144,
+   50
+  ],
+  "size_2x": [
+   288,
+   100
+  ],
+  "slice_1x": {
+   "left": 26,
+   "top": 20,
+   "right": 26,
+   "bottom": 23
+  },
+  "slice_2x": {
+   "left": 52,
+   "top": 40,
+   "right": 52,
+   "bottom": 46
+  },
+  "content_padding_1x": {
+   "left": 20,
+   "top": 6,
+   "right": 20,
+   "bottom": 11
+  }
+ },
+ {
+  "group": "strawberry",
+  "name": "button_medium_hover",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/strawberry/button_medium_hover.png",
+  "png_2x": "PNG/2x/strawberry/button_medium_hover.png",
+  "svg": "SVG/strawberry/button_medium_hover.svg",
+  "size_1x": [
+   144,
+   50
+  ],
+  "size_2x": [
+   288,
+   100
+  ],
+  "slice_1x": {
+   "left": 26,
+   "top": 20,
+   "right": 26,
+   "bottom": 23
+  },
+  "slice_2x": {
+   "left": 52,
+   "top": 40,
+   "right": 52,
+   "bottom": 46
+  },
+  "content_padding_1x": {
+   "left": 20,
+   "top": 6,
+   "right": 20,
+   "bottom": 11
+  }
+ },
+ {
+  "group": "strawberry",
+  "name": "button_medium_pressed",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/strawberry/button_medium_pressed.png",
+  "png_2x": "PNG/2x/strawberry/button_medium_pressed.png",
+  "svg": "SVG/strawberry/button_medium_pressed.svg",
+  "size_1x": [
+   144,
+   50
+  ],
+  "size_2x": [
+   288,
+   100
+  ],
+  "slice_1x": {
+   "left": 26,
+   "top": 20,
+   "right": 26,
+   "bottom": 23
+  },
+  "slice_2x": {
+   "left": 52,
+   "top": 40,
+   "right": 52,
+   "bottom": 46
+  },
+  "content_padding_1x": {
+   "left": 20,
+   "top": 9,
+   "right": 20,
+   "bottom": 8
+  }
+ },
+ {
+  "group": "strawberry",
+  "name": "button_medium_disabled",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/strawberry/button_medium_disabled.png",
+  "png_2x": "PNG/2x/strawberry/button_medium_disabled.png",
+  "svg": "SVG/strawberry/button_medium_disabled.svg",
+  "size_1x": [
+   144,
+   50
+  ],
+  "size_2x": [
+   288,
+   100
+  ],
+  "slice_1x": {
+   "left": 26,
+   "top": 20,
+   "right": 26,
+   "bottom": 23
+  },
+  "slice_2x": {
+   "left": 52,
+   "top": 40,
+   "right": 52,
+   "bottom": 46
+  },
+  "content_padding_1x": {
+   "left": 20,
+   "top": 6,
+   "right": 20,
+   "bottom": 11
+  }
+ },
+ {
+  "group": "strawberry",
+  "name": "button_round_normal",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/strawberry/button_round_normal.png",
+  "png_2x": "PNG/2x/strawberry/button_round_normal.png",
+  "svg": "SVG/strawberry/button_round_normal.svg",
+  "size_1x": [
+   56,
+   60
+  ],
+  "size_2x": [
+   112,
+   120
+  ],
+  "content_padding_1x": {
+   "left": 12,
+   "top": 12,
+   "right": 12,
+   "bottom": 16
+  }
+ },
+ {
+  "group": "strawberry",
+  "name": "button_round_pressed",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/strawberry/button_round_pressed.png",
+  "png_2x": "PNG/2x/strawberry/button_round_pressed.png",
+  "svg": "SVG/strawberry/button_round_pressed.svg",
+  "size_1x": [
+   56,
+   60
+  ],
+  "size_2x": [
+   112,
+   120
+  ],
+  "content_padding_1x": {
+   "left": 12,
+   "top": 15,
+   "right": 12,
+   "bottom": 13
+  }
+ },
+ {
+  "group": "strawberry",
+  "name": "button_close_normal",
+  "category": "Buttons",
+  "png_1x": "PNG/1x/strawberry/button_close_normal.png",
+  "png_2x": "PNG/2x/strawberry/button_close_normal.png",
+  "svg": "SVG/strawberry/button_close_normal.svg",
+  "size_1x": [
+   36,
+   39
+  ],
+  "size_2x": [
+   72,
+   78
+  ]
+ },
+ {
+  "group": "strawberry",
+  "name": "panel",
+  "category": "Panels",
+  "png_1x": "PNG/1x/strawberry/panel.png",
+  "png_2x": "PNG/2x/strawberry/panel.png",
+  "svg": "SVG/strawberry/panel.svg",
+  "size_1x": [
+   96,
+   96
+  ],
+  "size_2x": [
+   192,
+   192
+  ],
+  "slice_1x": {
+   "left": 24,
+   "top": 24,
+   "right": 24,
+   "bottom": 28
+  },
+  "slice_2x": {
+   "left": 48,
+   "top": 48,
+   "right": 48,
+   "bottom": 56
+  },
+  "content_padding_1x": {
+   "left": 16,
+   "top": 14,
+   "right": 16,
+   "bottom": 18
+  }
+ },
+ {
+  "group": "strawberry",
+  "name": "panel_inset",
+  "category": "Panels",
+  "png_1x": "PNG/1x/strawberry/panel_inset.png",
+  "png_2x": "PNG/2x/strawberry/panel_inset.png",
+  "svg": "SVG/strawberry/panel_inset.svg",
+  "size_1x": [
+   96,
+   96
+  ],
+  "size_2x": [
+   192,
+   192
+  ],
+  "slice_1x": {
+   "left": 20,
+   "top": 20,
+   "right": 20,
+   "bottom": 20
+  },
+  "slice_2x": {
+   "left": 40,
+   "top": 40,
+   "right": 40,
+   "bottom": 40
+  },
+  "content_padding_1x": {
+   "left": 12,
+   "top": 12,
+   "right": 12,
+   "bottom": 10
+  }
+ },
+ {
+  "group": "strawberry",
+  "name": "panel_cloud",
+  "category": "Panels",
+  "png_1x": "PNG/1x/strawberry/panel_cloud.png",
+  "png_2x": "PNG/2x/strawberry/panel_cloud.png",
+  "svg": "SVG/strawberry/panel_cloud.svg",
+  "size_1x": [
+   128,
+   112
+  ],
+  "size_2x": [
+   256,
+   224
+  ],
+  "slice_1x": {
+   "left": 34,
+   "top": 32,
+   "right": 34,
+   "bottom": 26
+  },
+  "slice_2x": {
+   "left": 68,
+   "top": 64,
+   "right": 68,
+   "bottom": 52
+  },
+  "content_padding_1x": {
+   "left": 18,
+   "top": 30,
+   "right": 18,
+   "bottom": 18
+  },
+  "tile_middle": "horizontal",
+  "note": "tile the middle sideways to keep the cloud bumps even"
+ },
+ {
+  "group": "strawberry",
+  "name": "window_ears",
+  "category": "Panels",
+  "png_1x": "PNG/1x/strawberry/window_ears.png",
+  "png_2x": "PNG/2x/strawberry/window_ears.png",
+  "svg": "SVG/strawberry/window_ears.svg",
+  "size_1x": [
+   240,
+   200
+  ],
+  "size_2x": [
+   480,
+   400
+  ],
+  "slice_1x": {
+   "left": 68,
+   "top": 78,
+   "right": 68,
+   "bottom": 30
+  },
+  "slice_2x": {
+   "left": 136,
+   "top": 156,
+   "right": 136,
+   "bottom": 60
+  },
+  "content_padding_1x": {
+   "left": 20,
+   "top": 80,
+   "right": 20,
+   "bottom": 22
+  },
+  "note": "title bar 46 px tall under two round ears (22 px)"
+ },
+ {
+  "group": "strawberry",
+  "name": "dialog_box",
+  "category": "Dialogue",
+  "png_1x": "PNG/1x/strawberry/dialog_box.png",
+  "png_2x": "PNG/2x/strawberry/dialog_box.png",
+  "svg": "SVG/strawberry/dialog_box.svg",
+  "size_1x": [
+   320,
+   96
+  ],
+  "size_2x": [
+   640,
+   192
+  ],
+  "slice_1x": {
+   "left": 32,
+   "top": 32,
+   "right": 32,
+   "bottom": 34
+  },
+  "slice_2x": {
+   "left": 64,
+   "top": 64,
+   "right": 64,
+   "bottom": 68
+  },
+  "content_padding_1x": {
+   "left": 24,
+   "top": 18,
+   "right": 24,
+   "bottom": 22
+  },
+  "tile_middle": "horizontal and vertical",
+  "note": "tile the middles to keep the stitches even"
+ },
+ {
+  "group": "strawberry",
+  "name": "name_tag",
+  "category": "Dialogue",
+  "png_1x": "PNG/1x/strawberry/name_tag.png",
+  "png_2x": "PNG/2x/strawberry/name_tag.png",
+  "svg": "SVG/strawberry/name_tag.svg",
+  "size_1x": [
+   128,
+   36
+  ],
+  "size_2x": [
+   256,
+   72
+  ],
+  "slice_1x": {
+   "left": 32,
+   "top": 0,
+   "right": 20,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 64,
+   "top": 0,
+   "right": 40,
+   "bottom": 0
+  },
+  "content_padding_1x": {
+   "left": 32,
+   "top": 4,
+   "right": 16,
+   "bottom": 8
+  },
+  "note": "fixed height; the heart sits in the left cap"
+ },
+ {
+  "group": "strawberry",
+  "name": "dialog_continue",
+  "category": "Dialogue",
+  "png_1x": "PNG/1x/strawberry/dialog_continue.png",
+  "png_2x": "PNG/2x/strawberry/dialog_continue.png",
+  "svg": "SVG/strawberry/dialog_continue.svg",
+  "size_1x": [
+   22,
+   18
+  ],
+  "size_2x": [
+   44,
+   36
+  ],
+  "note": "bounce it under the last line"
+ },
+ {
+  "group": "strawberry",
+  "name": "tooltip",
+  "category": "Dialogue",
+  "png_1x": "PNG/1x/strawberry/tooltip.png",
+  "png_2x": "PNG/2x/strawberry/tooltip.png",
+  "svg": "SVG/strawberry/tooltip.svg",
+  "size_1x": [
+   120,
+   40
+  ],
+  "size_2x": [
+   240,
+   80
+  ],
+  "slice_1x": {
+   "left": 16,
+   "top": 16,
+   "right": 16,
+   "bottom": 16
+  },
+  "slice_2x": {
+   "left": 32,
+   "top": 32,
+   "right": 32,
+   "bottom": 32
+  },
+  "content_padding_1x": {
+   "left": 14,
+   "top": 8,
+   "right": 14,
+   "bottom": 9
+  }
+ },
+ {
+  "group": "strawberry",
+  "name": "checkbox_off",
+  "category": "Toggles",
+  "png_1x": "PNG/1x/strawberry/checkbox_off.png",
+  "png_2x": "PNG/2x/strawberry/checkbox_off.png",
+  "svg": "SVG/strawberry/checkbox_off.svg",
+  "size_1x": [
+   36,
+   36
+  ],
+  "size_2x": [
+   72,
+   72
+  ]
+ },
+ {
+  "group": "strawberry",
+  "name": "checkbox_on",
+  "category": "Toggles",
+  "png_1x": "PNG/1x/strawberry/checkbox_on.png",
+  "png_2x": "PNG/2x/strawberry/checkbox_on.png",
+  "svg": "SVG/strawberry/checkbox_on.svg",
+  "size_1x": [
+   36,
+   36
+  ],
+  "size_2x": [
+   72,
+   72
+  ]
+ },
+ {
+  "group": "strawberry",
+  "name": "toggle_off",
+  "category": "Toggles",
+  "png_1x": "PNG/1x/strawberry/toggle_off.png",
+  "png_2x": "PNG/2x/strawberry/toggle_off.png",
+  "svg": "SVG/strawberry/toggle_off.svg",
+  "size_1x": [
+   72,
+   36
+  ],
+  "size_2x": [
+   144,
+   72
+  ]
+ },
+ {
+  "group": "strawberry",
+  "name": "toggle_on",
+  "category": "Toggles",
+  "png_1x": "PNG/1x/strawberry/toggle_on.png",
+  "png_2x": "PNG/2x/strawberry/toggle_on.png",
+  "svg": "SVG/strawberry/toggle_on.svg",
+  "size_1x": [
+   72,
+   36
+  ],
+  "size_2x": [
+   144,
+   72
+  ]
+ },
+ {
+  "group": "strawberry",
+  "name": "slider_track",
+  "category": "Sliders",
+  "png_1x": "PNG/1x/strawberry/slider_track.png",
+  "png_2x": "PNG/2x/strawberry/slider_track.png",
+  "svg": "SVG/strawberry/slider_track.svg",
+  "size_1x": [
+   96,
+   16
+  ],
+  "size_2x": [
+   192,
+   32
+  ],
+  "slice_1x": {
+   "left": 8,
+   "top": 0,
+   "right": 8,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 16,
+   "top": 0,
+   "right": 16,
+   "bottom": 0
+  },
+  "note": "fixed height"
+ },
+ {
+  "group": "strawberry",
+  "name": "slider_fill",
+  "category": "Sliders",
+  "png_1x": "PNG/1x/strawberry/slider_fill.png",
+  "png_2x": "PNG/2x/strawberry/slider_fill.png",
+  "svg": "SVG/strawberry/slider_fill.svg",
+  "size_1x": [
+   24,
+   16
+  ],
+  "size_2x": [
+   48,
+   32
+  ],
+  "slice_1x": {
+   "left": 8,
+   "top": 0,
+   "right": 8,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 16,
+   "top": 0,
+   "right": 16,
+   "bottom": 0
+  },
+  "note": "fixed height; lay it over the track from the left"
+ },
+ {
+  "group": "strawberry",
+  "name": "slider_knob_normal",
+  "category": "Sliders",
+  "png_1x": "PNG/1x/strawberry/slider_knob_normal.png",
+  "png_2x": "PNG/2x/strawberry/slider_knob_normal.png",
+  "svg": "SVG/strawberry/slider_knob_normal.svg",
+  "size_1x": [
+   32,
+   34
+  ],
+  "size_2x": [
+   64,
+   68
+  ]
+ },
+ {
+  "group": "strawberry",
+  "name": "bar_track",
+  "category": "Bars",
+  "png_1x": "PNG/1x/strawberry/bar_track.png",
+  "png_2x": "PNG/2x/strawberry/bar_track.png",
+  "svg": "SVG/strawberry/bar_track.svg",
+  "size_1x": [
+   160,
+   26
+  ],
+  "size_2x": [
+   320,
+   52
+  ],
+  "slice_1x": {
+   "left": 14,
+   "top": 0,
+   "right": 14,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 28,
+   "top": 0,
+   "right": 28,
+   "bottom": 0
+  },
+  "note": "fixed height"
+ },
+ {
+  "group": "strawberry",
+  "name": "bar_fill_health",
+  "category": "Bars",
+  "png_1x": "PNG/1x/strawberry/bar_fill_health.png",
+  "png_2x": "PNG/2x/strawberry/bar_fill_health.png",
+  "svg": "SVG/strawberry/bar_fill_health.svg",
+  "size_1x": [
+   40,
+   26
+  ],
+  "size_2x": [
+   80,
+   52
+  ],
+  "slice_1x": {
+   "left": 14,
+   "top": 0,
+   "right": 14,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 28,
+   "top": 0,
+   "right": 28,
+   "bottom": 0
+  },
+  "note": "fixed height; 4 px transparent padding so it sits inside bar_track"
+ },
+ {
+  "group": "strawberry",
+  "name": "bar_cap_heart",
+  "category": "Bars",
+  "png_1x": "PNG/1x/strawberry/bar_cap_heart.png",
+  "png_2x": "PNG/2x/strawberry/bar_cap_heart.png",
+  "svg": "SVG/strawberry/bar_cap_heart.svg",
+  "size_1x": [
+   38,
+   38
+  ],
+  "size_2x": [
+   76,
+   76
+  ],
+  "note": "round end cap: overlap the left end of a bar"
+ },
+ {
+  "group": "strawberry",
+  "name": "slot",
+  "category": "Inventory",
+  "png_1x": "PNG/1x/strawberry/slot.png",
+  "png_2x": "PNG/2x/strawberry/slot.png",
+  "svg": "SVG/strawberry/slot.svg",
+  "size_1x": [
+   52,
+   52
+  ],
+  "size_2x": [
+   104,
+   104
+  ],
+  "slice_1x": {
+   "left": 18,
+   "top": 18,
+   "right": 18,
+   "bottom": 18
+  },
+  "slice_2x": {
+   "left": 36,
+   "top": 36,
+   "right": 36,
+   "bottom": 36
+  },
+  "content_padding_1x": {
+   "left": 8,
+   "top": 9,
+   "right": 8,
+   "bottom": 7
+  }
+ },
+ {
+  "group": "strawberry",
+  "name": "slot_selected",
+  "category": "Inventory",
+  "png_1x": "PNG/1x/strawberry/slot_selected.png",
+  "png_2x": "PNG/2x/strawberry/slot_selected.png",
+  "svg": "SVG/strawberry/slot_selected.svg",
+  "size_1x": [
+   52,
+   52
+  ],
+  "size_2x": [
+   104,
+   104
+  ],
+  "slice_1x": {
+   "left": 18,
+   "top": 18,
+   "right": 18,
+   "bottom": 18
+  },
+  "slice_2x": {
+   "left": 36,
+   "top": 36,
+   "right": 36,
+   "bottom": 36
+  },
+  "content_padding_1x": {
+   "left": 8,
+   "top": 9,
+   "right": 8,
+   "bottom": 7
+  }
+ },
+ {
+  "group": "strawberry",
+  "name": "hotbar_slot",
+  "category": "Inventory",
+  "png_1x": "PNG/1x/strawberry/hotbar_slot.png",
+  "png_2x": "PNG/2x/strawberry/hotbar_slot.png",
+  "svg": "SVG/strawberry/hotbar_slot.svg",
+  "size_1x": [
+   56,
+   56
+  ],
+  "size_2x": [
+   112,
+   112
+  ],
+  "slice_1x": {
+   "left": 20,
+   "top": 20,
+   "right": 20,
+   "bottom": 20
+  },
+  "slice_2x": {
+   "left": 40,
+   "top": 40,
+   "right": 40,
+   "bottom": 40
+  },
+  "content_padding_1x": {
+   "left": 8,
+   "top": 8,
+   "right": 8,
+   "bottom": 10
+  }
+ },
+ {
+  "group": "strawberry",
+  "name": "coin_plate",
+  "category": "Currency",
+  "png_1x": "PNG/1x/strawberry/coin_plate.png",
+  "png_2x": "PNG/2x/strawberry/coin_plate.png",
+  "svg": "SVG/strawberry/coin_plate.svg",
+  "size_1x": [
+   120,
+   38
+  ],
+  "size_2x": [
+   240,
+   76
+  ],
+  "slice_1x": {
+   "left": 42,
+   "top": 0,
+   "right": 20,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 84,
+   "top": 0,
+   "right": 40,
+   "bottom": 0
+  },
+  "content_padding_1x": {
+   "left": 42,
+   "top": 4,
+   "right": 16,
+   "bottom": 6
+  },
+  "note": "fixed height; put a coin icon in the gold seat"
+ },
+ {
+  "group": "strawberry",
+  "name": "ribbon",
+  "category": "Badges",
+  "png_1x": "PNG/1x/strawberry/ribbon.png",
+  "png_2x": "PNG/2x/strawberry/ribbon.png",
+  "svg": "SVG/strawberry/ribbon.svg",
+  "size_1x": [
+   240,
+   60
+  ],
+  "size_2x": [
+   480,
+   120
+  ],
+  "slice_1x": {
+   "left": 48,
+   "top": 0,
+   "right": 48,
+   "bottom": 0
+  },
+  "slice_2x": {
+   "left": 96,
+   "top": 0,
+   "right": 96,
+   "bottom": 0
+  },
+  "content_padding_1x": {
+   "left": 38,
+   "top": 5,
+   "right": 38,
+   "bottom": 21
+  },
+  "note": "fixed height"
+ },
+ {
+  "group": "strawberry",
+  "name": "star_full",
+  "category": "Rating",
+  "png_1x": "PNG/1x/strawberry/star_full.png",
+  "png_2x": "PNG/2x/strawberry/star_full.png",
+  "svg": "SVG/strawberry/star_full.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "strawberry",
+  "name": "star_empty",
+  "category": "Rating",
+  "png_1x": "PNG/1x/strawberry/star_empty.png",
+  "png_2x": "PNG/2x/strawberry/star_empty.png",
+  "svg": "SVG/strawberry/star_empty.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "strawberry",
+  "name": "heart_full",
+  "category": "Rating",
+  "png_1x": "PNG/1x/strawberry/heart_full.png",
+  "png_2x": "PNG/2x/strawberry/heart_full.png",
+  "svg": "SVG/strawberry/heart_full.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "strawberry",
+  "name": "heart_empty",
+  "category": "Rating",
+  "png_1x": "PNG/1x/strawberry/heart_empty.png",
+  "png_2x": "PNG/2x/strawberry/heart_empty.png",
+  "svg": "SVG/strawberry/heart_empty.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "settings",
+  "category": "Interface",
+  "png_1x": "PNG/1x/icons/settings.png",
+  "png_2x": "PNG/2x/icons/settings.png",
+  "svg": "SVG/icons/settings.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "play",
+  "category": "Interface",
+  "png_1x": "PNG/1x/icons/play.png",
+  "png_2x": "PNG/2x/icons/play.png",
+  "svg": "SVG/icons/play.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "pause",
+  "category": "Interface",
+  "png_1x": "PNG/1x/icons/pause.png",
+  "png_2x": "PNG/2x/icons/pause.png",
+  "svg": "SVG/icons/pause.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "close",
+  "category": "Interface",
+  "png_1x": "PNG/1x/icons/close.png",
+  "png_2x": "PNG/2x/icons/close.png",
+  "svg": "SVG/icons/close.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "check",
+  "category": "Interface",
+  "png_1x": "PNG/1x/icons/check.png",
+  "png_2x": "PNG/2x/icons/check.png",
+  "svg": "SVG/icons/check.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "home",
+  "category": "Interface",
+  "png_1x": "PNG/1x/icons/home.png",
+  "png_2x": "PNG/2x/icons/home.png",
+  "svg": "SVG/icons/home.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "heart",
+  "category": "Rewards",
+  "png_1x": "PNG/1x/icons/heart.png",
+  "png_2x": "PNG/2x/icons/heart.png",
+  "svg": "SVG/icons/heart.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "star",
+  "category": "Rewards",
+  "png_1x": "PNG/1x/icons/star.png",
+  "png_2x": "PNG/2x/icons/star.png",
+  "svg": "SVG/icons/star.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "coin",
+  "category": "Rewards",
+  "png_1x": "PNG/1x/icons/coin.png",
+  "png_2x": "PNG/2x/icons/coin.png",
+  "svg": "SVG/icons/coin.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "sprout",
+  "category": "Farming",
+  "png_1x": "PNG/1x/icons/sprout.png",
+  "png_2x": "PNG/2x/icons/sprout.png",
+  "svg": "SVG/icons/sprout.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "watering_can",
+  "category": "Farming",
+  "png_1x": "PNG/1x/icons/watering_can.png",
+  "png_2x": "PNG/2x/icons/watering_can.png",
+  "svg": "SVG/icons/watering_can.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "carrot",
+  "category": "Farming",
+  "png_1x": "PNG/1x/icons/carrot.png",
+  "png_2x": "PNG/2x/icons/carrot.png",
+  "svg": "SVG/icons/carrot.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "strawberry",
+  "category": "Farming",
+  "png_1x": "PNG/1x/icons/strawberry.png",
+  "png_2x": "PNG/2x/icons/strawberry.png",
+  "svg": "SVG/icons/strawberry.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "flower",
+  "category": "Nature",
+  "png_1x": "PNG/1x/icons/flower.png",
+  "png_2x": "PNG/2x/icons/flower.png",
+  "svg": "SVG/icons/flower.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "cat",
+  "category": "Animals",
+  "png_1x": "PNG/1x/icons/cat.png",
+  "png_2x": "PNG/2x/icons/cat.png",
+  "svg": "SVG/icons/cat.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "chick",
+  "category": "Animals",
+  "png_1x": "PNG/1x/icons/chick.png",
+  "png_2x": "PNG/2x/icons/chick.png",
+  "svg": "SVG/icons/chick.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "egg",
+  "category": "Food",
+  "png_1x": "PNG/1x/icons/egg.png",
+  "png_2x": "PNG/2x/icons/egg.png",
+  "svg": "SVG/icons/egg.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "cake",
+  "category": "Food",
+  "png_1x": "PNG/1x/icons/cake.png",
+  "png_2x": "PNG/2x/icons/cake.png",
+  "svg": "SVG/icons/cake.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "tea",
+  "category": "Food",
+  "png_1x": "PNG/1x/icons/tea.png",
+  "png_2x": "PNG/2x/icons/tea.png",
+  "svg": "SVG/icons/tea.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ },
+ {
+  "group": "icons",
+  "name": "sun",
+  "category": "Weather",
+  "png_1x": "PNG/1x/icons/sun.png",
+  "png_2x": "PNG/2x/icons/sun.png",
+  "svg": "SVG/icons/sun.svg",
+  "size_1x": [
+   32,
+   32
+  ],
+  "size_2x": [
+   64,
+   64
+  ]
+ }
+]

@@ -1,0 +1,22 @@
+CRISP CUTE - UI ART LICENCE
+
+You MAY:
+  - use these graphics in any number of commercial or non-commercial projects
+    (games, apps, websites, videos, streams, game jams)
+  - edit, recolour, resize or otherwise modify them
+  - use them without credit (credit is appreciated, never required)
+
+You may NOT:
+  - resell, redistribute or give away the graphics themselves, on their own or
+    as part of another asset pack, UI kit or template, modified or not
+  - claim the graphics as your own original work in an asset pack
+
+In short: put them in the things you make, just don't sell or share the pack.
+
+Every shape was drawn by code (written with the help of Claude, an AI assistant).
+No AI image generators, no traced or third-party art.
+
+THE FONT IS DIFFERENT: fonts/Fredoka.ttf is not part of this licence. It is the
+free Fredoka font by The Fredoka Project Authors, included unchanged under the
+SIL Open Font License 1.1 (full text in fonts/OFL.txt). You may use, embed and
+share it under that licence.
