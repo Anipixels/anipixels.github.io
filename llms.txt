@@ -1,8 +1,8 @@
 # Anipixels
 
-> Anipixels makes royalty-free game asset packs (UI and gameplay sound effects, music jingles, UI kits, icons and VFX sprite sheets). The packs are sold on itch.io; each has a free sampler and a playable browser demo. This site describes each pack and offers three free browser tools built from the free samplers.
+> Anipixels makes royalty-free game asset packs (UI and gameplay sound effects, music jingles, UI kits, icons, VFX sprite sheets and low-poly 3D props). The packs are sold on itch.io; each has a free sampler, and the 2D packs have a playable browser demo. This site describes each pack and offers three free browser tools built from the free samplers.
 
-All assets are generated procedurally by code written with an AI assistant (Claude). No AI image or audio generators, no recorded samples, no third-party art.
+All assets are generated procedurally by code written with an AI assistant (Claude). No AI image, audio or 3D generators, no recorded samples, no scans, no third-party art.
 Licence (all packs and samplers): use in any number of commercial and non-commercial projects, modify freely, credit not required; no reselling or redistribution of the files themselves.
 Prices are in US dollars as listed on itch.io on 25 October 2026.
 
@@ -20,10 +20,11 @@ Prices are in US dollars as listed on itch.io on 25 October 2026.
 - [Crisp Pixel](https://anipixels.github.io/packs/crisp-pixel/): 139 pixel-art RPG UI pieces x 6 themes, 157 icons at 16 x 16. PNG 1x-4x, 9-slice, 2 pixel fonts, Godot 4 themes. Price $6.99. Buy: https://anipixels.itch.io/crisp-pixel . Free sampler (53 pieces) and browser demo: https://anipixels.itch.io/crisp-pixel-free
 - [Crisp Cute](https://anipixels.github.io/packs/crisp-cute/): 130 pastel UI pieces x 6 cozy themes, 138 cozy icons. PNG + SVG, 9-slice, Fredoka font, Godot 4 themes. Price $6.99. Buy: https://anipixels.itch.io/crisp-cute . Free sampler (54 images) and browser demo: https://anipixels.itch.io/crisp-cute-free
 - [Crisp Icons](https://anipixels.github.io/packs/crisp-icons/): 590 game icons: UI, items, actions, economy. White, dark + badge. PNG 32-256 px, SVG, atlases, Godot 4. Price $4.99. Buy: https://anipixels.itch.io/crisp-icons . Free sampler (42 icons) and browser demo: https://anipixels.itch.io/crisp-icons-free
+- [Crisp PSX Cozy Cabin](https://anipixels.github.io/packs/crisp-psx-cozy-cabin/): 63 cozy PS1-style low-poly 3D props: log cabin, kitchen, clutter, autumn yard. GLB, FBX, OBJ + .blend, Godot 4 demo. Price $4.99. Buy: https://anipixels.itch.io/crisp-psx-cozy-cabin . Free sampler (8 props): https://anipixels.itch.io/crisp-psx-cozy-cabin-free
 
 ## Bundle
 
-- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 12 packs above for $17.99 (the single prices add up to $69.88).
+- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 13 packs above for $19.99 (the single prices add up to $74.87).
 
 ## Free browser tools
 

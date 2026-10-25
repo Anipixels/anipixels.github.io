@@ -1,0 +1,17 @@
+CRISP PSX COZY CABIN - 3D ASSET LICENCE
+
+You MAY:
+  - use these models and textures in any number of commercial or non-commercial projects
+    (games, apps, videos, renders, streams, game jams)
+  - edit, recolour, re-texture, combine or otherwise modify them
+  - use them without credit (credit is appreciated, never required)
+
+You may NOT:
+  - resell, redistribute or give away the models or textures themselves, on their own or
+    as part of another asset pack, kit or template, modified or not
+  - claim them as your own original work in an asset pack
+
+In short: put them in the things you make, just don't sell or share the pack.
+
+Modelled and textured procedurally by code written with the help of Claude (an AI assistant); no AI image or 3D generators, no scans, no third-party models or textures.
+The Godot demo shaders and scripts may be used and changed freely in your projects.
