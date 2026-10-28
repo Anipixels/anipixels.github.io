@@ -47,6 +47,17 @@ window.VFX_DATA = {
    "additive": false
   },
   {
+   "category": "Rewards",
+   "name": "sunburst_rays_gold_loop",
+   "frames": 36,
+   "cell": 256,
+   "cols": 8,
+   "rows": 5,
+   "fps": 30,
+   "loop": true,
+   "additive": false
+  },
+  {
    "category": "Celebration",
    "name": "confetti_burst_01",
    "frames": 36,
@@ -89,6 +100,39 @@ window.VFX_DATA = {
    "fps": 30,
    "loop": true,
    "additive": true
+  },
+  {
+   "category": "Text",
+   "name": "text_great",
+   "frames": 30,
+   "cell": 256,
+   "cols": 8,
+   "rows": 4,
+   "fps": 30,
+   "loop": false,
+   "additive": false
+  },
+  {
+   "category": "Elements",
+   "name": "fire_burst_orange",
+   "frames": 24,
+   "cell": 192,
+   "cols": 8,
+   "rows": 3,
+   "fps": 30,
+   "loop": false,
+   "additive": false
+  },
+  {
+   "category": "Emotes",
+   "name": "emote_heart",
+   "frames": 30,
+   "cell": 128,
+   "cols": 8,
+   "rows": 4,
+   "fps": 30,
+   "loop": false,
+   "additive": false
   }
  ]
 };

@@ -13,5 +13,5 @@ You may NOT:
 
 In short: put them in the things you make, just don't sell or share the pack.
 
-Every frame was drawn by code (written with the help of Claude, an AI assistant).
+Claude (an AI assistant) designed everything in this pack. Every frame is drawn by code it wrote.
 No image generators, no traced or third-party art.

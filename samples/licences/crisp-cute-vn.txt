@@ -1,0 +1,18 @@
+CRISP CUTE VN - GUI KIT LICENCE
+
+You MAY:
+  - use these graphics and this project in any number of commercial or
+    non-commercial games and visual novels (including game jams)
+  - edit, recolour, resize or otherwise modify everything
+  - ship the images inside your finished game (packed or unpacked)
+  - use them without credit (credit is appreciated, never required)
+
+You may NOT:
+  - resell, redistribute or give away the kit itself, on its own or as part of
+    another asset pack, GUI kit or template, modified or not
+  - claim the graphics as your own original work in an asset pack
+
+In short: put it in the games you make, just don't sell or share the kit.
+
+Every image was drawn by code (written by Claude, an AI
+assistant). No AI image generators, no traced or third-party art.

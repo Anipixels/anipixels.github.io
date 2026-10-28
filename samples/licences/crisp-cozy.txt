@@ -15,3 +15,4 @@ In short: put them in the things you make, just don't sell or share the pack.
 
 All sounds were synthesized from scratch in code - no recorded samples,
 no third-party libraries - so there are no hidden licensing strings attached.
+Claude (an AI assistant) designed everything in this pack.
