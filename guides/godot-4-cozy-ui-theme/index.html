@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Make a Cozy Game UI Theme in Godot 4 (9-Slice Theme) | Anipixels</title>
+<meta name="description" content="Build a Godot 4 Theme from 9-slice PNGs: StyleBoxTexture margins, button states, a rounded font, theme type variations and a project-wide theme.">
+<link rel="canonical" href="https://anipixels.github.io/guides/godot-4-cozy-ui-theme/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Anipixels">
+<meta property="og:title" content="How to Make a Cozy Game UI Theme in Godot 4 (9-Slice Theme) | Anipixels">
+<meta property="og:description" content="Build a Godot 4 Theme from 9-slice PNGs: StyleBoxTexture margins, button states, a rounded font, theme type variations and a project-wide theme.">
+<meta property="og:url" content="https://anipixels.github.io/guides/godot-4-cozy-ui-theme/">
+<meta property="og:image" content="https://anipixels.github.io/assets/packs/crisp-cute/cover.png">
+<meta property="og:image:width" content="630">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="Crisp Cute cover image">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#12141a">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "TechArticle",
+   "@id": "https://anipixels.github.io/guides/godot-4-cozy-ui-theme/#article",
+   "headline": "How to make a cozy game UI theme in Godot 4",
+   "description": "Build a Godot 4 Theme from 9-slice PNGs: StyleBoxTexture margins, button states, a rounded font, theme type variations and a project-wide theme.",
+   "url": "https://anipixels.github.io/guides/godot-4-cozy-ui-theme/",
+   "mainEntityOfPage": "https://anipixels.github.io/guides/godot-4-cozy-ui-theme/",
+   "image": [
+    "https://anipixels.github.io/assets/packs/crisp-cute/cover.png"
+   ],
+   "datePublished": "2026-10-29",
+   "dateModified": "2026-10-29",
+   "author": {
+    "@type": "Organization",
+    "name": "Anipixels",
+    "url": "https://anipixels.github.io/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Anipixels",
+    "url": "https://anipixels.github.io/"
+   },
+   "inLanguage": "en",
+   "proficiencyLevel": "Beginner"
+  },
+  {
+   "@type": "HowTo",
+   "@id": "https://anipixels.github.io/guides/godot-4-cozy-ui-theme/#howto",
+   "name": "How to make a cozy game UI theme in Godot 4",
+   "description": "Create one Theme resource and fill it with StyleBoxTexture styles: each points at a PNG and has texture margins (the 9-slice borders that never stretch) and content margins (the padding around the text). Set the normal, hover, pressed and disabled styles for Button, the panel style for PanelContainer, a soft rounded font and warm colours, then add theme type variations (such as a PanelCloud based on PanelContainer) for extra looks. Assign the theme to your root Control, or to the whole project in Project Settings.",
+   "url": "https://anipixels.github.io/guides/godot-4-cozy-ui-theme/",
+   "image": "https://anipixels.github.io/assets/packs/crisp-cute/cover.png",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "name": "Decide on the cozy look",
+     "text": "Soft rounded shapes, coloured outlines, pastel colours, a rounded font.",
+     "url": "https://anipixels.github.io/guides/godot-4-cozy-ui-theme/#look"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "name": "Get each piece's 9-slice numbers",
+     "text": "Texture margins say what must not stretch; content margins say where text goes.",
+     "url": "https://anipixels.github.io/guides/godot-4-cozy-ui-theme/#numbers"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "name": "Build the Theme",
+     "text": "Fill a Theme with StyleBoxTexture styles, colours, a font and type variations.",
+     "url": "https://anipixels.github.io/guides/godot-4-cozy-ui-theme/#build"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "name": "Apply the theme",
+     "text": "Set it on the root Control, or project-wide under GUI > Theme > Custom.",
+     "url": "https://anipixels.github.io/guides/godot-4-cozy-ui-theme/#apply"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 5,
+     "name": "Use theme type variations",
+     "text": "Pick an extra look per control with theme_type_variation.",
+     "url": "https://anipixels.github.io/guides/godot-4-cozy-ui-theme/#variations"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 6,
+     "name": "Keep it sharp at every size",
+     "text": "Respect minimum sizes, use 2x art for 1080p, and the canvas_items stretch mode.",
+     "url": "https://anipixels.github.io/guides/godot-4-cozy-ui-theme/#size"
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Anipixels",
+     "item": "https://anipixels.github.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://anipixels.github.io/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "How to make a cozy game UI theme in Godot 4",
+     "item": "https://anipixels.github.io/guides/godot-4-cozy-ui-theme/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body style="--accent:#f9b4c8">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../../index.html"><img src="../../assets/favicon.svg" alt="" width="30" height="30">ANIPIXELS</a>
+<nav aria-label="Main">
+<ul class="nav">
+<li><a href="../../index.html#packs">Packs</a></li>
+<li><a href="../../index.html#tools">Free tools</a></li>
+<li><a href="../../guides/index.html" aria-current="page">Guides</a></li>
+<li><a href="../../index.html#games">Games</a></li>
+<li><a href="../../index.html#about">About</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../index.html">Anipixels</a></li><li><a href="../index.html">Guides</a></li><li aria-current="page">How to make a cozy game UI theme in Godot 4</li></ol></nav>
+<article class="guide">
+<span class="pill">Guide</span>
+<h1>How to make a cozy game UI theme in Godot 4</h1>
+<p class="guide-meta">Updated 29 Oct 2026. Tested in Godot 4.7.2. By Anipixels.</p>
+<div class="card callout answer">
+<p><strong>Short answer:</strong> Create one <code>Theme</code> resource and fill it with <code>StyleBoxTexture</code> styles: each points at a PNG and has texture margins (the 9-slice borders that never stretch) and content margins (the padding around the text). Set the normal, hover, pressed and disabled styles for <code>Button</code>, the panel style for <code>PanelContainer</code>, a soft rounded font and warm colours, then add theme type variations (such as a <code>PanelCloud</code> based on <code>PanelContainer</code>) for extra looks. Assign the theme to your root <code>Control</code>, or to the whole project in Project Settings.</p>
+</div>
+
+<nav class="toc" aria-label="Steps">
+<h2>Steps</h2>
+<ol>
+<li><a href="#look">Decide on the cozy look</a></li>
+<li><a href="#numbers">Get each piece&#x27;s 9-slice numbers</a></li>
+<li><a href="#build">Build the Theme</a></li>
+<li><a href="#apply">Apply the theme</a></li>
+<li><a href="#variations">Use theme type variations</a></li>
+<li><a href="#size">Keep it sharp at every size</a></li>
+</ol>
+</nav>
+
+<section id="look">
+<h2>1. Decide on the cozy look</h2>
+<ul>
+<li>Rounded, chunky shapes with a thick outline in a darker tint of the fill colour (black outlines look harsh).</li>
+<li>A pastel palette, with warm dark text (a deep brown or berry instead of black) and at least 4.5:1 contrast for body text.</li>
+<li>A rounded font such as Fredoka, and generous padding.</li>
+<li>Small details (stitches, cloud bumps, hearts) kept inside the 9-slice borders, so they never stretch.</li>
+</ul>
+</section>
+
+<section id="numbers">
+<h2>2. Get each piece&#x27;s 9-slice numbers</h2>
+<p>Every stretchable piece needs two sets of four numbers. <strong>Texture margins</strong> mark the borders that are drawn at their own size. <strong>Content margins</strong> are the padding between the edge and the label. The Crisp Cute free sampler lists both in <code>sheets.json</code>:</p>
+<p class="code-label">sheets.json (one entry)</p>
+<pre><code>"name": "button_medium_normal", "size_1x": [144, 50],
+"slice_1x": {"left": 26, "top": 20, "right": 26, "bottom": 23},
+"content_padding_1x": {"left": 20, "top": 6, "right": 20, "bottom": 11}</code></pre>
+<p>You can drag any sampler piece to a new size and read its borders in the <a href="../../tools/ui-kit-preview/index.html">UI kit 9-slice preview</a>.</p>
+</section>
+
+<section id="build">
+<h2>3. Build the Theme</h2>
+<p class="code-label">cozy_theme.gd</p>
+<pre><code>class_name CozyTheme
+## Builds a cozy Theme from 9-slice PNGs. Values are the Crisp Cute sampler's sheets.json (1x).
+
+const DIR := "res://ui/crisp_cute/"
+const INK := Color("6d2f47")        # body text
+const OUTLINE := Color("783650")    # button label outline
+
+
+static func box(file: String, slice: Array, pad: Array) -&gt; StyleBoxTexture:
+	var sb := StyleBoxTexture.new()
+	sb.texture = load(DIR + file)
+	sb.texture_margin_left = slice[0]
+	sb.texture_margin_top = slice[1]
+	sb.texture_margin_right = slice[2]
+	sb.texture_margin_bottom = slice[3]
+	sb.content_margin_left = pad[0]
+	sb.content_margin_top = pad[1]
+	sb.content_margin_right = pad[2]
+	sb.content_margin_bottom = pad[3]
+	return sb
+
+
+static func build() -&gt; Theme:
+	var t := Theme.new()
+	t.default_font = load("res://fonts/Fredoka.ttf")
+	t.default_font_size = 18
+
+	# Buttons: same slice in every state; pressed moves the label down 3 px.
+	var slice := [26, 20, 26, 23]
+	t.set_stylebox("normal", "Button", box("button_medium_normal.png", slice, [20, 6, 20, 11]))
+	t.set_stylebox("hover", "Button", box("button_medium_hover.png", slice, [20, 6, 20, 11]))
+	t.set_stylebox("pressed", "Button", box("button_medium_pressed.png", slice, [20, 9, 20, 8]))
+	t.set_stylebox("disabled", "Button", box("button_medium_disabled.png", slice, [20, 6, 20, 11]))
+	t.set_stylebox("focus", "Button", StyleBoxEmpty.new())
+	for c in ["font_color", "font_hover_color", "font_pressed_color", "font_focus_color"]:
+		t.set_color(c, "Button", Color.WHITE)
+	t.set_color("font_outline_color", "Button", OUTLINE)
+	t.set_constant("outline_size", "Button", 6)
+
+	# Panels: PanelContainer gets the plain panel, Label gets the ink colour.
+	t.set_stylebox("panel", "PanelContainer", box("panel.png", [24, 24, 24, 28], [16, 14, 16, 18]))
+	t.set_color("font_color", "Label", INK)
+
+	# Type variations: extra looks that inherit everything else from their base type.
+	t.set_type_variation(&amp;"PanelInset", &amp;"PanelContainer")
+	t.set_stylebox("panel", "PanelInset", box("panel_inset.png", [20, 20, 20, 20], [12, 12, 12, 10]))
+	t.set_type_variation(&amp;"PanelCloud", &amp;"PanelContainer")
+	var cloud := box("panel_cloud.png", [34, 32, 34, 26], [18, 30, 18, 18])
+	cloud.axis_stretch_horizontal = StyleBoxTexture.AXIS_STRETCH_MODE_TILE_FIT   # the bumps repeat
+	t.set_stylebox("panel", "PanelCloud", cloud)
+	t.set_type_variation(&amp;"LabelTitle", &amp;"Label")
+	t.set_font_size("font_size", "LabelTitle", 28)
+	return t</code></pre>
+<p>The pressed style moves the label down 3 px (content margins 9 and 8 instead of 6 and 11) to match the art pressing in. An empty focus style hides Godot's default focus rectangle, which clashes with soft art; if players use a keyboard or gamepad, give focus a visible style instead, such as a soft ring piece.</p>
+<p>To save the theme as a .tres you can edit in the inspector, run this once from the script editor (<strong>File &gt; Run</strong>):</p>
+<p class="code-label">make_theme.gd</p>
+<pre><code>@tool
+extends EditorScript
+
+func _run() -&gt; void:
+	ResourceSaver.save(CozyTheme.build(), "res://ui/cozy_theme.tres")</code></pre>
+<p>You can also build the same theme by hand: create a new Theme resource and use the Theme editor panel at the bottom of the screen.</p>
+</section>
+
+<section id="apply">
+<h2>4. Apply the theme</h2>
+<p>Set the <code>theme</code> property of the top <code>Control</code> of your UI scene: every control under it inherits the theme. To use it everywhere, set <strong>Project Settings &gt; GUI &gt; Theme &gt; Custom</strong> to the .tres file.</p>
+</section>
+
+<section id="variations">
+<h2>5. Use theme type variations</h2>
+<p>A type variation is a named style set that inherits from a base type. Set a control's <strong>Theme Type Variation</strong> (<code>theme_type_variation</code>) to use it:</p>
+<pre><code>$ShopWindow.theme_type_variation = &amp;"PanelCloud"   # a PanelContainer with the cloud-top panel
+$ShopTitle.theme_type_variation = &amp;"LabelTitle"   # a Label at 28 px, same colour</code></pre>
+<p>Anything the variation does not set comes from the base type, so <code>LabelTitle</code> keeps the ink colour of <code>Label</code>. The cloud panel's top bumps are drawn to repeat, so its horizontal axis tiles (<code>AXIS_STRETCH_MODE_TILE_FIT</code>) instead of stretching.</p>
+</section>
+
+<section id="size">
+<h2>6. Keep it sharp at every size</h2>
+<ul>
+<li>Do not make a 9-slice piece smaller than its texture margins added up, or the corners squash. The button above needs at least 43 px of height (20 + 23), but Godot sizes it from the font and content margins (40 px in our test), so give buttons a <code>custom_minimum_size</code> of at least 50 px tall, the height of the art.</li>
+<li>Use 2x art (and double every margin) for 1080p and phones, or set <strong>Display &gt; Window &gt; Stretch &gt; Mode</strong> to <code>canvas_items</code> to scale a 1x layout cleanly.</li>
+<li>For pixel-art kits, set <strong>Rendering &gt; Textures &gt; Canvas Textures &gt; Default Texture Filter</strong> to Nearest.</li>
+</ul>
+</section>
+
+<section id="tested">
+<h2>How this was tested</h2>
+<p>Run headless in Godot 4.7.2 with the Crisp Cute free sampler pieces and font: the theme was built and saved as a .tres, and a Button, a PanelContainer, a <code>PanelCloud</code> variation and a <code>LabelTitle</code> variation each picked up the right style, margins, size and colour.</p>
+</section>
+
+<section id="free-assets" aria-label="Free assets to try">
+<div class="card callout">
+<h2>Free assets to try</h2>
+<p><strong>Crisp Cute Free</strong>: 54 images (34 Strawberry Milk theme pieces such as buttons, panels, a dialogue box, slots and bars, plus 20 colour icons) as PNG 1x and 2x and SVG, a <code>sheets.json</code> with every 9-slice border and padding, and the Fredoka font. The numbers in this guide come from it. <a class="ext" href="https://anipixels.itch.io/crisp-cute-free" rel="noopener">Download Crisp Cute Free</a>.</p>
+<p><strong>Crisp Kit Free</strong>: 57 flat, rounded pieces for casual games, also available as a ready-made Godot 4 Theme: <a class="ext" href="https://github.com/Anipixels/crisp-kit-free-theme" rel="noopener">crisp-kit-free-theme on GitHub</a> or <a class="ext" href="https://anipixels.itch.io/crisp-kit-free" rel="noopener">Crisp Kit Free on itch.io</a>.</p>
+<p>The full <a href="../../packs/crisp-cute/index.html">Crisp Cute</a> ($6.99) has 130 pieces in each of 6 pastel themes and 138 cozy icons, with a ready-made Godot 4 Theme per colour theme (1x and 2x), Fredoka set up, type variations for the extra shapes and a demo scene. Claude (an AI assistant) designed everything in this pack: every shape is drawn by code. <a href="../../packs/crisp-kit/index.html">Crisp Kit</a> ($6.99) is the casual-game counterpart with 8 colour themes. All 14 Crisp packs are also in the <a class="ext" href="https://itch.io/s/203391/crisp-everything-bundle" rel="noopener">Crisp Everything Bundle</a> for $19.99.</p>
+</div>
+</section>
+
+<section>
+<h2>More guides</h2>
+<ul>
+<li><a href="../godot-4-ui-sound-effects/index.html">How to add UI sound effects to a Godot 4 game</a></li>
+<li><a href="../renpy-gui-customization/index.html">How to restyle Ren&#x27;Py 8&#x27;s GUI: textbox, choice buttons, frames and themes</a></li>
+</ul>
+<p><a href="../index.html">All guides</a></p>
+</section>
+</article>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<div class="cols">
+<div>
+<h2>How these are made</h2>
+<p>Every asset is generated procedurally by code that was written with an AI assistant (Claude): the sounds are synthesised from scratch, the graphics are drawn by code and the 3D props are modelled and textured by code. No AI image, audio or 3D generators, no recorded samples, no scans and no third-party art.</p>
+</div>
+<div>
+<h2>Licence for the sampler files on this site</h2>
+<p>The free sampler files used on this site may be used in any number of commercial and non-commercial projects, modified freely, and credit is not required. They may not be resold, redistributed or given away as files, on their own or inside another asset pack, sound library, UI kit or template. <a href="../../index.html#licence">Full licence texts</a>.</p>
+</div>
+</div>
+<p>Anipixels sells its packs on itch.io. Prices are in US dollars as listed on itch.io on 28 October 2026; the itch.io page always shows the current price.
+This site makes no external requests and uses no cookies, analytics or trackers.</p>
+</div>
+</footer>
+</body>
+</html>

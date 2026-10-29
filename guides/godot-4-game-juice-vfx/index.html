@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Add Game Juice and Hit Effects in Godot 4 (Sprite-Sheet VFX) | Anipixels</title>
+<meta name="description" content="Play sprite-sheet effects in Godot 4 with AnimatedSprite2D and SpriteFrames, free or pool one-shots, and add screen shake and hit stop. Tested code.">
+<link rel="canonical" href="https://anipixels.github.io/guides/godot-4-game-juice-vfx/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Anipixels">
+<meta property="og:title" content="How to Add Game Juice and Hit Effects in Godot 4 (Sprite-Sheet VFX) | Anipixels">
+<meta property="og:description" content="Play sprite-sheet effects in Godot 4 with AnimatedSprite2D and SpriteFrames, free or pool one-shots, and add screen shake and hit stop. Tested code.">
+<meta property="og:url" content="https://anipixels.github.io/guides/godot-4-game-juice-vfx/">
+<meta property="og:image" content="https://anipixels.github.io/assets/packs/crisp-juice/cover.png">
+<meta property="og:image:width" content="630">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="Crisp Juice cover image">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#12141a">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "TechArticle",
+   "@id": "https://anipixels.github.io/guides/godot-4-game-juice-vfx/#article",
+   "headline": "How to add game juice and hit effects with sprite-sheet VFX in Godot 4",
+   "description": "Play sprite-sheet effects in Godot 4 with AnimatedSprite2D and SpriteFrames, free or pool one-shots, and add screen shake and hit stop. Tested code.",
+   "url": "https://anipixels.github.io/guides/godot-4-game-juice-vfx/",
+   "mainEntityOfPage": "https://anipixels.github.io/guides/godot-4-game-juice-vfx/",
+   "image": [
+    "https://anipixels.github.io/assets/packs/crisp-juice/cover.png"
+   ],
+   "datePublished": "2026-10-29",
+   "dateModified": "2026-10-29",
+   "author": {
+    "@type": "Organization",
+    "name": "Anipixels",
+    "url": "https://anipixels.github.io/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Anipixels",
+    "url": "https://anipixels.github.io/"
+   },
+   "inLanguage": "en",
+   "proficiencyLevel": "Beginner"
+  },
+  {
+   "@type": "HowTo",
+   "@id": "https://anipixels.github.io/guides/godot-4-game-juice-vfx/#howto",
+   "name": "How to add game juice and hit effects with sprite-sheet VFX in Godot 4",
+   "description": "Slice the effect's sprite sheet into a SpriteFrames resource (one AtlasTexture per cell), play it on an AnimatedSprite2D at the sheet's frame rate with looping off, and free or recycle the node when animation_finished fires. For effects that fire often, keep a small pool of sprites instead of creating new ones. Add screen shake by moving Camera2D.offset by a decaying amount, and a hit stop by lowering Engine.time_scale for a few hundredths of a second.",
+   "url": "https://anipixels.github.io/guides/godot-4-game-juice-vfx/",
+   "image": "https://anipixels.github.io/assets/packs/crisp-juice/cover.png",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "name": "Read the sprite sheet",
+     "text": "Note the cell size, frame count, frame rate and whether the effect loops.",
+     "url": "https://anipixels.github.io/guides/godot-4-game-juice-vfx/#sheets"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "name": "Turn the sheet into SpriteFrames",
+     "text": "Make one AtlasTexture per cell and add it to the default animation.",
+     "url": "https://anipixels.github.io/guides/godot-4-game-juice-vfx/#frames"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "name": "Play a one-shot effect",
+     "text": "Add an AnimatedSprite2D, play it, and free it on animation_finished.",
+     "url": "https://anipixels.github.io/guides/godot-4-game-juice-vfx/#oneshot"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "name": "Pool effects that fire often",
+     "text": "Create a few sprites once and reuse them, restarting the oldest when all are busy.",
+     "url": "https://anipixels.github.io/guides/godot-4-game-juice-vfx/#pool"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 5,
+     "name": "Add screen shake and hit stop",
+     "text": "Offset the Camera2D by a decaying trauma value and pause time briefly.",
+     "url": "https://anipixels.github.io/guides/godot-4-game-juice-vfx/#shake"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 6,
+     "name": "Put it together",
+     "text": "On a hit: burst at the point of impact, shake, and freeze on big hits.",
+     "url": "https://anipixels.github.io/guides/godot-4-game-juice-vfx/#together"
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Anipixels",
+     "item": "https://anipixels.github.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://anipixels.github.io/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "How to add game juice and hit effects with sprite-sheet VFX in Godot 4",
+     "item": "https://anipixels.github.io/guides/godot-4-game-juice-vfx/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body style="--accent:#7dd3fc">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../../index.html"><img src="../../assets/favicon.svg" alt="" width="30" height="30">ANIPIXELS</a>
+<nav aria-label="Main">
+<ul class="nav">
+<li><a href="../../index.html#packs">Packs</a></li>
+<li><a href="../../index.html#tools">Free tools</a></li>
+<li><a href="../../guides/index.html" aria-current="page">Guides</a></li>
+<li><a href="../../index.html#games">Games</a></li>
+<li><a href="../../index.html#about">About</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../index.html">Anipixels</a></li><li><a href="../index.html">Guides</a></li><li aria-current="page">How to add game juice and hit effects with sprite-sheet VFX in Godot 4</li></ol></nav>
+<article class="guide">
+<span class="pill">Guide</span>
+<h1>How to add game juice and hit effects with sprite-sheet VFX in Godot 4</h1>
+<p class="guide-meta">Updated 29 Oct 2026. Tested in Godot 4.7.2. By Anipixels.</p>
+<div class="card callout answer">
+<p><strong>Short answer:</strong> Slice the effect's sprite sheet into a <code>SpriteFrames</code> resource (one <code>AtlasTexture</code> per cell), play it on an <code>AnimatedSprite2D</code> at the sheet's frame rate with looping off, and free or recycle the node when <code>animation_finished</code> fires. For effects that fire often, keep a small pool of sprites instead of creating new ones. Add screen shake by moving <code>Camera2D.offset</code> by a decaying amount, and a hit stop by lowering <code>Engine.time_scale</code> for a few hundredths of a second.</p>
+</div>
+
+<nav class="toc" aria-label="Steps">
+<h2>Steps</h2>
+<ol>
+<li><a href="#sheets">Read the sprite sheet</a></li>
+<li><a href="#frames">Turn the sheet into SpriteFrames</a></li>
+<li><a href="#oneshot">Play a one-shot effect</a></li>
+<li><a href="#pool">Pool effects that fire often</a></li>
+<li><a href="#shake">Add screen shake and hit stop</a></li>
+<li><a href="#together">Put it together</a></li>
+</ol>
+</nav>
+
+<section id="sheets">
+<h2>1. Read the sprite sheet</h2>
+<p>"Juice" is the extra feedback that makes an action feel good: a burst where the hit lands, a small shake, a tiny freeze and a sound, all within a fraction of a second. Sprite-sheet effects are the cheapest way to get the burst: frames drawn in a grid, read left to right and top to bottom.</p>
+<p>To play one you need four numbers: the cell size, the number of frames, the frame rate and whether it loops. The Crisp Juice free sampler lists them for every sheet in <code>sheets.json</code>. For example <code>gem_burst_blue.png</code> has 192 px cells in an 8 x 3 grid, 20 frames, drawn for 30 fps, and plays once.</p>
+</section>
+
+<section id="frames">
+<h2>2. Turn the sheet into SpriteFrames</h2>
+<p class="code-label">sheet_frames.gd</p>
+<pre><code>class_name SheetFrames
+## Builds a SpriteFrames resource from a grid sprite sheet.
+
+@warning_ignore("integer_division")
+static func from_sheet(sheet: Texture2D, cell: int, count: int, fps := 30.0, loop := false) -&gt; SpriteFrames:
+	var frames := SpriteFrames.new()          # comes with an empty "default" animation
+	frames.set_animation_speed(&amp;"default", fps)
+	frames.set_animation_loop(&amp;"default", loop)
+	var cols := sheet.get_width() / cell
+	for i in count:
+		var tex := AtlasTexture.new()
+		tex.atlas = sheet
+		tex.region = Rect2((i % cols) * cell, (i / cols) * cell, cell, cell)
+		frames.add_frame(&amp;"default", tex)
+	return frames</code></pre>
+<p>You can do the same in the editor: select an <code>AnimatedSprite2D</code>, create a new <code>SpriteFrames</code>, and in the SpriteFrames panel use <strong>Add frames from sprite sheet</strong> with the grid size. Code is quicker when you have many sheets.</p>
+</section>
+
+<section id="oneshot">
+<h2>3. Play a one-shot effect</h2>
+<p class="code-label">spawn_once.gd</p>
+<pre><code>extends Node2D
+## The simplest one-shot: a new AnimatedSprite2D that frees itself when the last frame has shown.
+
+var burst_frames := SheetFrames.from_sheet(preload("res://vfx/gem_burst_blue.png"), 192, 20)
+
+
+func spawn_burst(where: Vector2) -&gt; AnimatedSprite2D:
+	var fx := AnimatedSprite2D.new()
+	fx.sprite_frames = burst_frames
+	add_child(fx)
+	fx.global_position = where
+	fx.animation_finished.connect(fx.queue_free)
+	fx.play()
+	return fx</code></pre>
+<p><code>animation_finished</code> only fires when looping is off, which <code>from_sheet()</code> does by default. Looping effects (sparkles, auras, rays) keep playing until you remove them.</p>
+</section>
+
+<section id="pool">
+<h2>4. Pool effects that fire often</h2>
+<p class="code-label">vfx_pool.gd</p>
+<pre><code>class_name VfxPool
+extends Node2D
+## A pool of one-shot effects from one sprite sheet: made once, reused forever.
+
+@export var sheet: Texture2D
+@export var cell := 192
+@export var frame_count := 20
+@export var size := 12
+@export var additive := false
+
+var _idle: Array[AnimatedSprite2D] = []
+var _busy: Array[AnimatedSprite2D] = []
+
+
+func _ready() -&gt; void:
+	var frames := SheetFrames.from_sheet(sheet, cell, frame_count)
+	var mat: CanvasItemMaterial = null
+	if additive:
+		mat = CanvasItemMaterial.new()
+		mat.blend_mode = CanvasItemMaterial.BLEND_MODE_ADD
+	for i in size:
+		var fx := AnimatedSprite2D.new()
+		fx.sprite_frames = frames
+		fx.material = mat
+		fx.visible = false
+		fx.animation_finished.connect(_release.bind(fx))
+		add_child(fx)
+		_idle.append(fx)
+
+
+## Plays one effect at a global position. When all are busy, the oldest restarts.
+func play_at(where: Vector2, scale_by := 1.0) -&gt; void:
+	var fx: AnimatedSprite2D = _idle.pop_back() if not _idle.is_empty() else _busy.pop_front()
+	_busy.append(fx)
+	fx.global_position = where
+	fx.scale = Vector2.ONE * scale_by
+	fx.rotation = randf() * TAU     # round bursts repeat less when turned
+	fx.visible = true
+	fx.stop()                       # back to frame 0
+	fx.play(&amp;"default")
+
+
+func _release(fx: AnimatedSprite2D) -&gt; void:
+	fx.visible = false
+	_busy.erase(fx)
+	_idle.append(fx)</code></pre>
+<ul>
+<li><code>stop()</code> resets the animation to frame 0 before <code>play()</code>, so a reused sprite always starts from the beginning.</li>
+<li>A random rotation makes round bursts repeat less obviously.</li>
+<li><code>additive</code> uses a <code>CanvasItemMaterial</code> with <code>BLEND_MODE_ADD</code>: glows and sparkles look brighter on dark backgrounds.</li>
+<li>Twelve sprites is plenty for most games; if the oldest restarting is visible, raise <code>size</code>.</li>
+</ul>
+</section>
+
+<section id="shake">
+<h2>5. Add screen shake and hit stop</h2>
+<p class="code-label">shake_camera.gd</p>
+<pre><code>class_name ShakeCamera
+extends Camera2D
+## Screen shake that fades out by itself. Call add_trauma(0.3) on a hit.
+
+@export var max_offset := Vector2(14, 10)
+@export var decay := 2.0   # trauma lost per second
+
+var trauma := 0.0
+
+
+func add_trauma(amount: float) -&gt; void:
+	trauma = minf(trauma + amount, 1.0)
+
+
+func _process(delta: float) -&gt; void:
+	trauma = maxf(trauma - decay * delta, 0.0)
+	var strength := trauma * trauma   # squared: small hits stay subtle
+	offset = Vector2(randf_range(-1.0, 1.0), randf_range(-1.0, 1.0)) * max_offset * strength
+
+
+## Freezes the game for a moment so a big hit lands.
+func hit_stop(seconds := 0.06) -&gt; void:
+	Engine.time_scale = 0.05
+	await get_tree().create_timer(seconds, true, false, true).timeout
+	Engine.time_scale = 1.0</code></pre>
+<p>Squaring the trauma keeps small hits subtle and big ones strong. For the hit stop, <code>create_timer()</code>'s fourth argument (<code>ignore_time_scale</code>) makes the timer count real time while the game runs at 5% speed.</p>
+</section>
+
+<section id="together">
+<h2>6. Put it together</h2>
+<p class="code-label">hit_demo.gd (children: GemBursts with vfx_pool.gd, Camera with shake_camera.gd)</p>
+<pre><code>extends Node2D
+
+@onready var bursts: VfxPool = $GemBursts
+@onready var camera: ShakeCamera = $Camera
+
+
+func on_hit(where: Vector2, critical: bool) -&gt; void:
+	bursts.play_at(where, 1.5 if critical else 1.0)
+	camera.add_trauma(0.45 if critical else 0.2)
+	if critical:
+		camera.hit_stop(0.06)</code></pre>
+<p>Play a sound in the same function (see <a href="../godot-4-ui-sound-effects/index.html">adding sound effects in Godot 4</a>) and keep the effect on a <code>z_index</code> above your sprites. Use each sheet's own frame rate: effects drawn for 30 fps look rushed at 60.</p>
+</section>
+
+<section id="tested">
+<h2>How this was tested</h2>
+<p>Run headless in Godot 4.7.2 with <code>gem_burst_blue.png</code> from the Crisp Juice free sampler: the 20 frames and their regions were checked, a one-shot freed itself when it finished, a pool of 3 recycled its oldest effect and got every sprite back, the shake decayed to zero, and the hit stop lasted its 0.1 s in real time.</p>
+</section>
+
+<section id="free-assets" aria-label="Free assets to try">
+<div class="card callout">
+<h2>Free assets to try</h2>
+<p><strong>Crisp Juice Free</strong>: 12 effects (gem burst, match pop, star and coin bursts, looping sunburst rays, confetti, shockwave ring, tap ripple, looping sparkle, a GREAT! text pop, fire burst and a heart emote) as transparent PNG sheets with <code>sheets.json</code> and a Godot 4 project where each effect is a ready-made scene: <code>CrispVfx.spawn(preload("res://addons/crisp_vfx/scenes/Gems/gem_burst_blue.tscn"), self, position)</code> plays one and removes it when it ends. <a class="ext" href="https://anipixels.itch.io/crisp-juice-free" rel="noopener">Download Crisp Juice Free</a>. A Godot add-on with 8 of the sampler effects is on GitHub: <a class="ext" href="https://github.com/Anipixels/crisp-juice-free" rel="noopener">crisp-juice-free</a>. Preview the sheets in the <a href="../../tools/vfx-player/index.html">VFX sprite sheet player</a>.</p>
+<p>The full <a href="../../packs/crisp-juice/index.html">Crisp Juice</a> ($4.99) has 149 effects: gems, rewards, celebration, impacts, magic, highlights, text pops, elements, auras, emotes, trails and cozy effects, each with a Godot 4 scene. Claude (an AI assistant) designed everything in this pack: every frame is drawn by code. All 14 Crisp packs are also in the <a class="ext" href="https://itch.io/s/203391/crisp-everything-bundle" rel="noopener">Crisp Everything Bundle</a> for $19.99.</p>
+</div>
+</section>
+
+<section>
+<h2>More guides</h2>
+<ul>
+<li><a href="../godot-4-ui-sound-effects/index.html">How to add UI sound effects to a Godot 4 game</a></li>
+<li><a href="../godot-4-psx-ps1-graphics/index.html">How to make a PS1 (PSX) look in Godot 4</a></li>
+</ul>
+<p><a href="../index.html">All guides</a></p>
+</section>
+</article>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<div class="cols">
+<div>
+<h2>How these are made</h2>
+<p>Every asset is generated procedurally by code that was written with an AI assistant (Claude): the sounds are synthesised from scratch, the graphics are drawn by code and the 3D props are modelled and textured by code. No AI image, audio or 3D generators, no recorded samples, no scans and no third-party art.</p>
+</div>
+<div>
+<h2>Licence for the sampler files on this site</h2>
+<p>The free sampler files used on this site may be used in any number of commercial and non-commercial projects, modified freely, and credit is not required. They may not be resold, redistributed or given away as files, on their own or inside another asset pack, sound library, UI kit or template. <a href="../../index.html#licence">Full licence texts</a>.</p>
+</div>
+</div>
+<p>Anipixels sells its packs on itch.io. Prices are in US dollars as listed on itch.io on 28 October 2026; the itch.io page always shows the current price.
+This site makes no external requests and uses no cookies, analytics or trackers.</p>
+</div>
+</footer>
+</body>
+</html>

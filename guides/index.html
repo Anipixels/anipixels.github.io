@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Godot 4 and Ren&#x27;Py How-To Guides for Game Devs | Anipixels</title>
+<meta name="description" content="How-to guides for Godot 4 and Ren&#x27;Py 8: UI sound effects, game juice VFX, PS1 graphics, cozy UI themes and Ren&#x27;Py GUI styling. Tested code.">
+<link rel="canonical" href="https://anipixels.github.io/guides/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Anipixels">
+<meta property="og:title" content="Godot 4 and Ren&#x27;Py How-To Guides for Game Devs | Anipixels">
+<meta property="og:description" content="How-to guides for Godot 4 and Ren&#x27;Py 8: UI sound effects, game juice VFX, PS1 graphics, cozy UI themes and Ren&#x27;Py GUI styling. Tested code.">
+<meta property="og:url" content="https://anipixels.github.io/guides/">
+<meta property="og:image" content="https://anipixels.github.io/assets/og-home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The covers of the fourteen Anipixels asset packs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#12141a">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "CollectionPage",
+   "@id": "https://anipixels.github.io/guides/#page",
+   "name": "Anipixels how-to guides",
+   "url": "https://anipixels.github.io/guides/",
+   "inLanguage": "en",
+   "publisher": {
+    "@type": "Organization",
+    "name": "Anipixels",
+    "url": "https://anipixels.github.io/"
+   }
+  },
+  {
+   "@type": "ItemList",
+   "name": "Anipixels how-to guides",
+   "numberOfItems": 5,
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "How to add UI sound effects to a Godot 4 game",
+     "url": "https://anipixels.github.io/guides/godot-4-ui-sound-effects/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "How to restyle Ren'Py 8's GUI: textbox, choice buttons, frames and themes",
+     "url": "https://anipixels.github.io/guides/renpy-gui-customization/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "How to make a PS1 (PSX) look in Godot 4",
+     "url": "https://anipixels.github.io/guides/godot-4-psx-ps1-graphics/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "How to add game juice and hit effects with sprite-sheet VFX in Godot 4",
+     "url": "https://anipixels.github.io/guides/godot-4-game-juice-vfx/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "How to make a cozy game UI theme in Godot 4",
+     "url": "https://anipixels.github.io/guides/godot-4-cozy-ui-theme/"
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Anipixels",
+     "item": "https://anipixels.github.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://anipixels.github.io/guides/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../index.html"><img src="../assets/favicon.svg" alt="" width="30" height="30">ANIPIXELS</a>
+<nav aria-label="Main">
+<ul class="nav">
+<li><a href="../index.html#packs">Packs</a></li>
+<li><a href="../index.html#tools">Free tools</a></li>
+<li><a href="../guides/index.html" aria-current="page">Guides</a></li>
+<li><a href="../index.html#games">Games</a></li>
+<li><a href="../index.html#about">About</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Anipixels</a></li><li aria-current="page">Guides</li></ol></nav>
+<div class="tool-head">
+<span class="pill">Guides</span>
+<h1>How-to guides for Godot 4 and Ren'Py 8</h1>
+<p class="lead">Step-by-step answers to common game-dev questions: UI sounds, hit effects, PS1-style 3D and UI themes in Godot 4, and restyling the Ren'Py GUI. Every guide starts with a short answer, and its code was run in the engine before it was published.</p>
+</div>
+
+<section aria-label="All guides">
+<ul class="grid grid-3" style="list-style:none;padding:0;margin:0">
+<li class="card tool-card">
+<h3><a href="godot-4-ui-sound-effects/index.html">How to add UI sound effects to a Godot 4 game</a></h3>
+<p>One autoload gives every button hover, click and toggle sounds, with random variation and its own volume bus.</p>
+<p class="small">Tested in Godot 4.7.2. Updated 29 Oct 2026.</p>
+</li>
+<li class="card tool-card">
+<h3><a href="renpy-gui-customization/index.html">How to restyle Ren&#x27;Py 8&#x27;s GUI: textbox, choice buttons, frames and themes</a></h3>
+<p>gui.rpy colours and fonts, a new textbox and name box, 9-slice Frame() borders, choice buttons and player-switchable themes.</p>
+<p class="small">Checked in Ren&#x27;Py 8.5.3. Updated 29 Oct 2026.</p>
+</li>
+<li class="card tool-card">
+<h3><a href="godot-4-psx-ps1-graphics/index.html">How to make a PS1 (PSX) look in Godot 4</a></h3>
+<p>Vertex snapping, affine texture warping, a low-res SubViewport, nearest filtering and 15-bit colour with dither.</p>
+<p class="small">Tested in Godot 4.7.2. Updated 29 Oct 2026.</p>
+</li>
+<li class="card tool-card">
+<h3><a href="godot-4-game-juice-vfx/index.html">How to add game juice and hit effects with sprite-sheet VFX in Godot 4</a></h3>
+<p>SpriteFrames from a sprite sheet, one-shot AnimatedSprite2D effects, pooling, screen shake and hit stop.</p>
+<p class="small">Tested in Godot 4.7.2. Updated 29 Oct 2026.</p>
+</li>
+<li class="card tool-card">
+<h3><a href="godot-4-cozy-ui-theme/index.html">How to make a cozy game UI theme in Godot 4</a></h3>
+<p>A Theme built from 9-slice PNGs: StyleBoxTexture margins, button states, a rounded font and theme type variations.</p>
+<p class="small">Tested in Godot 4.7.2. Updated 29 Oct 2026.</p>
+</li>
+</ul>
+</section>
+
+<section>
+<h2>About these guides</h2>
+<p>The guides are written by Anipixels, which makes game asset packs. Each guide links to free sampler files you can try the steps with; the code works with your own assets too. The Godot code was run headless in Godot 4.7.2 and the Ren'Py code was checked with Ren'Py 8.5.3 lint and a test run.</p>
+</section>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<div class="cols">
+<div>
+<h2>How these are made</h2>
+<p>Every asset is generated procedurally by code that was written with an AI assistant (Claude): the sounds are synthesised from scratch, the graphics are drawn by code and the 3D props are modelled and textured by code. No AI image, audio or 3D generators, no recorded samples, no scans and no third-party art.</p>
+</div>
+<div>
+<h2>Licence for the sampler files on this site</h2>
+<p>The free sampler files used on this site may be used in any number of commercial and non-commercial projects, modified freely, and credit is not required. They may not be resold, redistributed or given away as files, on their own or inside another asset pack, sound library, UI kit or template. <a href="../index.html#licence">Full licence texts</a>.</p>
+</div>
+</div>
+<p>Anipixels sells its packs on itch.io. Prices are in US dollars as listed on itch.io on 28 October 2026; the itch.io page always shows the current price.
+This site makes no external requests and uses no cookies, analytics or trackers.</p>
+</div>
+</footer>
+</body>
+</html>

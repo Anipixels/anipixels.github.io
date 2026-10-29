@@ -1,6 +1,6 @@
 # Anipixels
 
-> Anipixels makes royalty-free game asset packs (UI and gameplay sound effects, music jingles, UI kits, icons, VFX sprite sheets and low-poly 3D props). The packs are sold on itch.io; each has a free sampler, and most have a playable browser demo. This site describes each pack and offers three free browser tools built from the free samplers.
+> Anipixels makes royalty-free game asset packs (UI and gameplay sound effects, music jingles, UI kits, icons, VFX sprite sheets and low-poly 3D props). The packs are sold on itch.io; each has a free sampler, and most have a playable browser demo. This site describes each pack and offers three free browser tools built from the free samplers, plus how-to guides for Godot 4 and Ren'Py 8.
 
 All assets are generated procedurally by code written with an AI assistant (Claude). No AI image, audio or 3D generators, no recorded samples, no scans, no third-party art.
 Licence (all packs and samplers): use in any number of commercial and non-commercial projects, modify freely, credit not required; no reselling or redistribution of the files themselves.
@@ -32,6 +32,16 @@ Prices are in US dollars as listed on itch.io on 28 October 2026.
 - [UI sound board](https://anipixels.github.io/tools/ui-sound-board/): plays the 109 free sampler sounds from the six sound packs, with search, pack filter, volume and copy-file-name.
 - [UI kit 9-slice preview](https://anipixels.github.io/tools/ui-kit-preview/): live resize of the Crisp Kit, Crisp Quest, Crisp Pixel and Crisp Cute sampler pieces using their 9-slice borders, on light or dark.
 - [VFX sprite sheet player](https://anipixels.github.io/tools/vfx-player/): plays the 12 Crisp Juice sampler sprite sheets on a canvas with speed, loop, blend and background controls.
+
+## How-to guides
+
+Step-by-step guides with code that was run before publishing (Godot 4.7.2 headless; Ren'Py 8.5.3 lint and a test run). Index: https://anipixels.github.io/guides/
+
+- [How to add UI sound effects to a Godot 4 game](https://anipixels.github.io/guides/godot-4-ui-sound-effects/): Make one autoload script that owns an AudioStreamPlayer per sound, routed to a UI audio bus, and give each player an AudioStreamRandomizer so repeated clicks vary a little in pitch and volume. Then connect to the SceneTree's node_added signal and hook up every BaseButton's mouse_entered, focus_entered and pressed signals, so every button in the game gets sounds without touching any scene.
+- [How to restyle Ren'Py 8's GUI: textbox, choice buttons, frames and themes](https://anipixels.github.io/guides/renpy-gui-customization/): Most of the Ren'Py look lives in game/gui.rpy: change the define gui.* colours, fonts and sizes there, and replace the images in game/gui/ (textbox.png, namebox.png, button/choice_idle_background.png and the rest) with your own under the same names. Borders(left, top, right, bottom) tells Ren'Py how to 9-slice an image so it stretches without bending its corners. For deeper changes edit the styles in screens.rpy, and for themes the player can switch, use gui.preference() with gui.SetPreference().
+- [How to make a PS1 (PSX) look in Godot 4](https://anipixels.github.io/guides/godot-4-psx-ps1-graphics/): Render the 3D scene into a small SubViewport (a quarter of the window, for example) shown through a SubViewportContainer with nearest filtering, and give the models a spatial shader that snaps each vertex to a coarse screen grid (the PS1 wobble) and interpolates UVs without perspective correction (the affine texture warp). Sample textures with nearest filtering and no mipmaps, and finish with a canvas shader that cuts the colour to 15-bit with an ordered dither.
+- [How to add game juice and hit effects with sprite-sheet VFX in Godot 4](https://anipixels.github.io/guides/godot-4-game-juice-vfx/): Slice the effect's sprite sheet into a SpriteFrames resource (one AtlasTexture per cell), play it on an AnimatedSprite2D at the sheet's frame rate with looping off, and free or recycle the node when animation_finished fires. For effects that fire often, keep a small pool of sprites instead of creating new ones. Add screen shake by moving Camera2D.offset by a decaying amount, and a hit stop by lowering Engine.time_scale for a few hundredths of a second.
+- [How to make a cozy game UI theme in Godot 4](https://anipixels.github.io/guides/godot-4-cozy-ui-theme/): Create one Theme resource and fill it with StyleBoxTexture styles: each points at a PNG and has texture margins (the 9-slice borders that never stretch) and content margins (the padding around the text). Set the normal, hover, pressed and disabled styles for Button, the panel style for PanelContainer, a soft rounded font and warm colours, then add theme type variations (such as a PanelCloud based on PanelContainer) for extra looks. Assign the theme to your root Control, or to the whole project in Project Settings.
 
 ## Free browser games (on itch.io)
 

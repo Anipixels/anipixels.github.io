@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Add UI Sound Effects to a Godot 4 Game | Anipixels</title>
+<meta name="description" content="Add hover, click and toggle sounds to every button in a Godot 4 game with one autoload, AudioStreamRandomizer variation and a UI bus. Tested code.">
+<link rel="canonical" href="https://anipixels.github.io/guides/godot-4-ui-sound-effects/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Anipixels">
+<meta property="og:title" content="How to Add UI Sound Effects to a Godot 4 Game | Anipixels">
+<meta property="og:description" content="Add hover, click and toggle sounds to every button in a Godot 4 game with one autoload, AudioStreamRandomizer variation and a UI bus. Tested code.">
+<meta property="og:url" content="https://anipixels.github.io/guides/godot-4-ui-sound-effects/">
+<meta property="og:image" content="https://anipixels.github.io/assets/packs/crisp-ui/cover.png">
+<meta property="og:image:width" content="630">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="Crisp UI cover image">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#12141a">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "TechArticle",
+   "@id": "https://anipixels.github.io/guides/godot-4-ui-sound-effects/#article",
+   "headline": "How to add UI sound effects to a Godot 4 game",
+   "description": "Add hover, click and toggle sounds to every button in a Godot 4 game with one autoload, AudioStreamRandomizer variation and a UI bus. Tested code.",
+   "url": "https://anipixels.github.io/guides/godot-4-ui-sound-effects/",
+   "mainEntityOfPage": "https://anipixels.github.io/guides/godot-4-ui-sound-effects/",
+   "image": [
+    "https://anipixels.github.io/assets/packs/crisp-ui/cover.png"
+   ],
+   "datePublished": "2026-10-29",
+   "dateModified": "2026-10-29",
+   "author": {
+    "@type": "Organization",
+    "name": "Anipixels",
+    "url": "https://anipixels.github.io/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Anipixels",
+    "url": "https://anipixels.github.io/"
+   },
+   "inLanguage": "en",
+   "proficiencyLevel": "Beginner"
+  },
+  {
+   "@type": "HowTo",
+   "@id": "https://anipixels.github.io/guides/godot-4-ui-sound-effects/#howto",
+   "name": "How to add UI sound effects to a Godot 4 game",
+   "description": "Make one autoload script that owns an AudioStreamPlayer per sound, routed to a UI audio bus, and give each player an AudioStreamRandomizer so repeated clicks vary a little in pitch and volume. Then connect to the SceneTree's node_added signal and hook up every BaseButton's mouse_entered, focus_entered and pressed signals, so every button in the game gets sounds without touching any scene.",
+   "url": "https://anipixels.github.io/guides/godot-4-ui-sound-effects/",
+   "image": "https://anipixels.github.io/assets/packs/crisp-ui/cover.png",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "name": "Get short UI sounds",
+     "text": "Put short OGG or WAV interface sounds in a folder such as res://sounds/ui/.",
+     "url": "https://anipixels.github.io/guides/godot-4-ui-sound-effects/#sounds"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "name": "Add a UI audio bus",
+     "text": "Create an audio bus called UI so interface sounds get their own volume.",
+     "url": "https://anipixels.github.io/guides/godot-4-ui-sound-effects/#bus"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "name": "Write the UiSounds autoload",
+     "text": "One script makes a player per sound, with AudioStreamRandomizer variation.",
+     "url": "https://anipixels.github.io/guides/godot-4-ui-sound-effects/#autoload"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "name": "Connect every button automatically",
+     "text": "Listen to node_added and connect each button's hover, focus and pressed signals.",
+     "url": "https://anipixels.github.io/guides/godot-4-ui-sound-effects/#buttons"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 5,
+     "name": "Play sounds from code",
+     "text": "Call UiSounds.play() for menus, errors and confirmations.",
+     "url": "https://anipixels.github.io/guides/godot-4-ui-sound-effects/#code"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 6,
+     "name": "Add a UI volume slider",
+     "text": "Set the UI bus volume from an HSlider with linear_to_db.",
+     "url": "https://anipixels.github.io/guides/godot-4-ui-sound-effects/#volume"
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Anipixels",
+     "item": "https://anipixels.github.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://anipixels.github.io/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "How to add UI sound effects to a Godot 4 game",
+     "item": "https://anipixels.github.io/guides/godot-4-ui-sound-effects/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body style="--accent:#6ee7b7">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap">
+<a class="brand" href="../../index.html"><img src="../../assets/favicon.svg" alt="" width="30" height="30">ANIPIXELS</a>
+<nav aria-label="Main">
+<ul class="nav">
+<li><a href="../../index.html#packs">Packs</a></li>
+<li><a href="../../index.html#tools">Free tools</a></li>
+<li><a href="../../guides/index.html" aria-current="page">Guides</a></li>
+<li><a href="../../index.html#games">Games</a></li>
+<li><a href="../../index.html#about">About</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../index.html">Anipixels</a></li><li><a href="../index.html">Guides</a></li><li aria-current="page">How to add UI sound effects to a Godot 4 game</li></ol></nav>
+<article class="guide">
+<span class="pill">Guide</span>
+<h1>How to add UI sound effects to a Godot 4 game</h1>
+<p class="guide-meta">Updated 29 Oct 2026. Tested in Godot 4.7.2. By Anipixels.</p>
+<div class="card callout answer">
+<p><strong>Short answer:</strong> Make one autoload script that owns an <code>AudioStreamPlayer</code> per sound, routed to a <code>UI</code> audio bus, and give each player an <code>AudioStreamRandomizer</code> so repeated clicks vary a little in pitch and volume. Then connect to the SceneTree's <code>node_added</code> signal and hook up every <code>BaseButton</code>'s <code>mouse_entered</code>, <code>focus_entered</code> and <code>pressed</code> signals, so every button in the game gets sounds without touching any scene.</p>
+</div>
+
+<nav class="toc" aria-label="Steps">
+<h2>Steps</h2>
+<ol>
+<li><a href="#sounds">Get short UI sounds</a></li>
+<li><a href="#bus">Add a UI audio bus</a></li>
+<li><a href="#autoload">Write the UiSounds autoload</a></li>
+<li><a href="#buttons">Connect every button automatically</a></li>
+<li><a href="#code">Play sounds from code</a></li>
+<li><a href="#volume">Add a UI volume slider</a></li>
+</ol>
+</nav>
+
+<section id="sounds">
+<h2>1. Get short UI sounds</h2>
+<p>UI sounds should be short (most clicks are under a third of a second), start on the first sample with no silence, and sit at the same loudness, with hovers quieter than clicks because they play constantly. OGG Vorbis files are small and import in Godot as <code>AudioStreamOggVorbis</code>; WAV works too.</p>
+<p>Copy them to <code>res://sounds/ui/</code>. The file names in the code below are the ones in the free Crisp UI sampler (<code>hover_soft_01.ogg</code>, <code>click_soft_01.ogg</code>, <code>toggle_on.ogg</code> and so on), so you can drop that sampler in and run it as it is.</p>
+</section>
+
+<section id="bus">
+<h2>2. Add a UI audio bus</h2>
+<p>Open the <strong>Audio</strong> panel at the bottom of the editor, click <strong>Add Bus</strong> and rename the new bus <code>UI</code>. Godot saves it in <code>default_bus_layout.tres</code>. With all interface sounds on one bus, a single settings slider controls them, and you can add effects (a low-pass while paused, for example) to the UI alone.</p>
+</section>
+
+<section id="autoload">
+<h2>3. Write the UiSounds autoload</h2>
+<p class="code-label">ui_sounds.gd</p>
+<pre><code>extends Node
+## UiSounds: short UI sounds by name. Add it as an autoload called UiSounds.
+
+const SOUNDS := {
+	&amp;"hover": [preload("res://sounds/ui/hover_soft_01.ogg")],
+	&amp;"click": [preload("res://sounds/ui/click_soft_01.ogg"), preload("res://sounds/ui/click_wood_01.ogg")],
+	&amp;"toggle_on": [preload("res://sounds/ui/toggle_on.ogg")],
+	&amp;"toggle_off": [preload("res://sounds/ui/toggle_off.ogg")],
+	&amp;"confirm": [preload("res://sounds/ui/confirm_01.ogg")],
+	&amp;"error": [preload("res://sounds/ui/error_01.ogg")],
+	&amp;"menu_open": [preload("res://sounds/ui/menu_open.ogg")],
+	&amp;"menu_close": [preload("res://sounds/ui/menu_close.ogg")],
+}
+
+@export var bus: StringName = &amp;"UI"
+
+var _players := {}
+
+
+func _ready() -&gt; void:
+	process_mode = Node.PROCESS_MODE_ALWAYS  # menus still click while the game is paused
+	for key in SOUNDS:
+		var r := AudioStreamRandomizer.new()
+		r.playback_mode = AudioStreamRandomizer.PLAYBACK_RANDOM_NO_REPEATS
+		r.random_pitch = 1.05             # each play up to 5% higher or lower
+		r.random_volume_offset_db = 1.0   # and up to 1 dB louder or quieter
+		for stream in SOUNDS[key]:
+			r.add_stream(-1, stream)
+		var p := AudioStreamPlayer.new()
+		p.stream = r
+		p.bus = bus
+		p.max_polyphony = 4               # fast clicks overlap instead of cutting off
+		add_child(p)
+		_players[key] = p
+	get_tree().node_added.connect(_on_node_added)
+
+
+func play(key: StringName) -&gt; void:
+	var p: AudioStreamPlayer = _players.get(key)
+	if p == null:
+		push_warning("UiSounds: no sound called '%s'" % key)
+		return
+	p.play()
+
+
+func _on_node_added(node: Node) -&gt; void:
+	if node is BaseButton and not node.has_meta(&amp;"ui_sounds"):
+		node.set_meta(&amp;"ui_sounds", true)
+		node.mouse_entered.connect(_on_hover.bind(node))
+		node.focus_entered.connect(_on_focus.bind(node))
+		node.pressed.connect(_on_pressed.bind(node))
+
+
+func _on_hover(button: BaseButton) -&gt; void:
+	if not button.disabled:
+		play(&amp;"hover")
+
+
+func _on_focus(button: BaseButton) -&gt; void:
+	# Keyboard and gamepad focus moves. A mouse click also gives focus, so stay quiet then.
+	if not button.disabled and not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+		play(&amp;"hover")
+
+
+func _on_pressed(button: BaseButton) -&gt; void:
+	if button.toggle_mode:
+		play(&amp;"toggle_on" if button.button_pressed else &amp;"toggle_off")
+	else:
+		play(&amp;"click")</code></pre>
+<p>Add it under <strong>Project &gt; Project Settings &gt; Globals &gt; Autoload</strong> with the name <code>UiSounds</code>.</p>
+<p>What the settings do:</p>
+<ul>
+<li><code>PLAYBACK_RANDOM_NO_REPEATS</code> never plays the same variation twice in a row when a sound has two or more files.</li>
+<li><code>random_pitch = 1.05</code> varies the pitch by up to 5% each time (1.0 means no change), and <code>random_volume_offset_db</code> varies the volume. Small amounts stop fast clicks sounding robotic.</li>
+<li><code>max_polyphony = 4</code> lets a quick double-click overlap instead of cutting itself off.</li>
+<li><code>PROCESS_MODE_ALWAYS</code> keeps the menu sounds working while the game is paused.</li>
+</ul>
+</section>
+
+<section id="buttons">
+<h2>4. Connect every button automatically</h2>
+<p>Autoloads enter the tree before the main scene, so <code>node_added</code> sees every button of every scene, including ones you create from code later. The script plays:</p>
+<ul>
+<li><strong>hover</strong> when the mouse enters a button, unless the button is disabled;</li>
+<li><strong>hover</strong> again when keyboard or gamepad focus moves to a button. A mouse click also gives a button focus, so the script stays quiet while the left mouse button is held;</li>
+<li><strong>toggle_on</strong> or <strong>toggle_off</strong> for <code>CheckBox</code>, <code>CheckButton</code> and any button in toggle mode, and <strong>click</strong> for everything else.</li>
+</ul>
+<p>The <code>ui_sounds</code> meta flag stops a button being connected twice when it leaves the tree and comes back. It also works as an opt-out: to keep a button silent, or give it its own sound, add a metadata entry named <code>ui_sounds</code> to it in the Inspector (<strong>Add Metadata</strong>, at the bottom), or set it in code before the button enters the tree:</p>
+<pre><code>button.set_meta(&amp;"ui_sounds", true)   # before add_child(button)</code></pre>
+</section>
+
+<section id="code">
+<h2>5. Play sounds from code</h2>
+<pre><code>UiSounds.play(&amp;"menu_open")      # when a panel slides in
+UiSounds.play(&amp;"error")          # not enough coins
+UiSounds.play(&amp;"confirm")        # purchase done</code></pre>
+<p>Keep the sound names in one place (the <code>SOUNDS</code> table) so swapping a sound later is a one-line change.</p>
+</section>
+
+<section id="volume">
+<h2>6. Add a UI volume slider</h2>
+<pre><code>func _on_ui_volume_value_changed(value: float) -&gt; void:   # HSlider, min 0, max 1, step 0.01
+	var bus := AudioServer.get_bus_index("UI")
+	AudioServer.set_bus_volume_db(bus, linear_to_db(value))
+	AudioServer.set_bus_mute(bus, value &lt; 0.01)</code></pre>
+<p>Sliders feel natural on a linear 0 to 1 scale, while buses work in decibels: <code>linear_to_db(0.5)</code> is about -6 dB. Muting at the bottom avoids <code>linear_to_db(0)</code>, which is minus infinity.</p>
+</section>
+
+<section id="tested">
+<h2>How this was tested</h2>
+<p>The script above was run headless in Godot 4.7.2 with the Crisp UI free sampler sounds: buttons were connected automatically, a mouse click played <code>click</code>, a check box played <code>toggle_on</code> and <code>toggle_off</code>, a disabled button stayed silent and keyboard focus played <code>hover</code>.</p>
+</section>
+
+<section id="free-assets" aria-label="Free assets to try">
+<div class="card callout">
+<h2>Free assets to try</h2>
+<p><strong>Crisp UI Free</strong>: 20 UI sounds (clicks, hovers, toggles, confirm, error, menu open and close, coins, level up) as WAV and OGG, free for commercial games. The code on this page uses its file names. <a class="ext" href="https://anipixels.itch.io/crisp-ui-free" rel="noopener">Download Crisp UI Free</a> - or get the same 20 sounds as a Godot 4 add-on with a play-by-name autoload: <a class="ext" href="https://github.com/Anipixels/crisp-ui-sounds-free" rel="noopener">crisp-ui-sounds-free on GitHub</a>.</p>
+<p><strong>Crisp Cozy Free</strong>: 20 softer, warmer sounds (wooden taps, bubble pops, a page turn, planting and watering) for cozy games. <a class="ext" href="https://anipixels.itch.io/crisp-cozy-free" rel="noopener">Download Crisp Cozy Free</a>.</p>
+<p>Listen to all the free sampler sounds first in the <a href="../../tools/ui-sound-board/index.html">UI sound board</a>.</p>
+<p>The full <a href="../../packs/crisp-ui/index.html">Crisp UI</a> pack has 242 UI sounds, many of them in numbered variations ready for the randomizer ($4.99). <a href="../../packs/crisp-cozy/index.html">Crisp Cozy</a> has 1,363 cozy sounds and ships a Godot 4 sound bank with one <code>AudioStreamRandomizer</code> per sound and a one-line <code>play()</code> autoload ($4.99). About Crisp UI: Claude (an AI assistant) designed everything in this pack; every sound is synthesised by code, with no recordings. All 14 Crisp packs are also in the <a class="ext" href="https://itch.io/s/203391/crisp-everything-bundle" rel="noopener">Crisp Everything Bundle</a> for $19.99.</p>
+</div>
+</section>
+
+<section>
+<h2>More guides</h2>
+<ul>
+<li><a href="../godot-4-game-juice-vfx/index.html">How to add game juice and hit effects with sprite-sheet VFX in Godot 4</a></li>
+<li><a href="../godot-4-cozy-ui-theme/index.html">How to make a cozy game UI theme in Godot 4</a></li>
+</ul>
+<p><a href="../index.html">All guides</a></p>
+</section>
+</article>
+</div>
+</main>
+<footer class="site-foot">
+<div class="wrap">
+<div class="cols">
+<div>
+<h2>How these are made</h2>
+<p>Every asset is generated procedurally by code that was written with an AI assistant (Claude): the sounds are synthesised from scratch, the graphics are drawn by code and the 3D props are modelled and textured by code. No AI image, audio or 3D generators, no recorded samples, no scans and no third-party art.</p>
+</div>
+<div>
+<h2>Licence for the sampler files on this site</h2>
+<p>The free sampler files used on this site may be used in any number of commercial and non-commercial projects, modified freely, and credit is not required. They may not be resold, redistributed or given away as files, on their own or inside another asset pack, sound library, UI kit or template. <a href="../../index.html#licence">Full licence texts</a>.</p>
+</div>
+</div>
+<p>Anipixels sells its packs on itch.io. Prices are in US dollars as listed on itch.io on 28 October 2026; the itch.io page always shows the current price.
+This site makes no external requests and uses no cookies, analytics or trackers.</p>
+</div>
+</footer>
+</body>
+</html>
