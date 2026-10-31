@@ -4,7 +4,7 @@
 
 All assets are generated procedurally by code written with an AI assistant (Claude). No AI image, audio or 3D generators, no recorded samples, no scans, no third-party art.
 Licence (all packs and samplers): use in any number of commercial and non-commercial projects, modify freely, credit not required; no reselling or redistribution of the files themselves.
-Prices are in US dollars as listed on itch.io on 28 October 2026.
+Prices are in US dollars as listed on itch.io on 31 October 2026.
 
 ## Asset packs
 
@@ -22,10 +22,11 @@ Prices are in US dollars as listed on itch.io on 28 October 2026.
 - [Crisp Icons](https://anipixels.github.io/packs/crisp-icons/): 590 game icons: UI, items, actions, economy. White, dark + badge. PNG 32-256 px, SVG, atlases, Godot 4. Price $4.99. Buy: https://anipixels.itch.io/crisp-icons . Free sampler (42 icons) and browser demo: https://anipixels.itch.io/crisp-icons-free
 - [Crisp PSX Cozy Cabin](https://anipixels.github.io/packs/crisp-psx-cozy-cabin/): 63 cozy PS1-style low-poly 3D props: log cabin, kitchen, clutter, autumn yard. GLB, FBX, OBJ + .blend, Godot 4 demo. Price $4.99. Buy: https://anipixels.itch.io/crisp-psx-cozy-cabin . Free sampler (8 props): https://anipixels.itch.io/crisp-psx-cozy-cabin-free
 - [Crisp Cute VN](https://anipixels.github.io/packs/crisp-cute-vn/): Cute pastel GUI kit for Ren'Py 8: every screen restyled, 6 switchable themes, drop-in 1920x1080 project. Price $6.99. Buy: https://anipixels.itch.io/crisp-cute-vn . Free sampler (17 images): https://anipixels.itch.io/crisp-cute-vn-free
+- [Crisp Pixel Icons](https://anipixels.github.io/packs/crisp-pixel-icons/): 485 pixel-art fantasy RPG icons, 16 x 16: 361 designs + 124 variants. PNG 1x-4x, atlases, Godot 4. Price $4.99. Buy: https://anipixels.itch.io/crisp-pixel-icons . Free sampler (42 icons) and browser demo: https://anipixels.itch.io/crisp-pixel-icons-free
 
 ## Bundle
 
-- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 14 packs above for $19.99 (the single prices add up to $81.86).
+- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 15 packs above for $19.99 (the single prices add up to $86.85).
 
 ## Free browser tools
 

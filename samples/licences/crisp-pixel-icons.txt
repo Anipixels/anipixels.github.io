@@ -1,0 +1,17 @@
+CRISP PIXEL ICONS - ART LICENCE
+
+You MAY:
+  - use these icons in any number of commercial or non-commercial projects
+    (games, apps, websites, videos, streams, game jams)
+  - edit, recolour, resize or otherwise modify them
+  - use them without credit (credit is appreciated, never required)
+
+You may NOT:
+  - resell, redistribute or give away the icons themselves, on their own or as
+    part of another asset pack, icon pack, UI kit or template, modified or not
+  - claim the icons as your own original work in an asset pack
+
+In short: put them in the things you make, just don't sell or share the pack.
+
+Every pixel was placed by code (written by Claude, an AI assistant).
+No image generators, no traced or third-party art.
