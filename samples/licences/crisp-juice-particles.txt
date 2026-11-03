@@ -1,0 +1,17 @@
+CRISP JUICE PARTICLES - LICENCE
+
+You MAY:
+  - use these effects (scenes, shaders, scripts, textures) in any number of commercial or
+    non-commercial projects: games, apps, prototypes, videos, streams, game jams
+  - edit, recolour, resize, combine or otherwise modify them
+  - use them without credit (credit is appreciated, never required)
+
+You may NOT:
+  - resell, redistribute or give away the pack or its files on their own or as part of
+    another asset pack, template or tool, modified or not
+  - claim the effects as your own original work in an asset pack
+
+In short: put them in the things you make, just don't sell or share the pack.
+
+Made procedurally by code written by Claude (an AI assistant).
+No AI image generators, no traced or third-party art or code.
