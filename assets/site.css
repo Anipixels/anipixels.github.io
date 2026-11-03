@@ -76,25 +76,49 @@ section { margin-bottom: 52px; }
 .btn-primary:hover { filter: brightness(1.08); }
 .btn-ghost { background: var(--card2); color: var(--text); border-color: var(--line); }
 .btn-ghost:hover { border-color: var(--accent); }
+/* Second buy route (Payhip, card checkout): clearly a button, quieter than the itch.io one. */
+.btn-alt { background: transparent; color: var(--text); border-color: var(--accent); }
+.btn-alt:hover { background: rgba(110, 231, 183, 0.12); }
+.btn-col { display: flex; flex-direction: column; gap: 10px; }
+.buy-routes { color: var(--muted); font-size: 0.95rem; margin: 0; }
+.buy-routes strong { color: var(--text); font-weight: 700; }
 .btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 1em; }
 .ext::after { content: "\00a0\2197"; font-weight: 400; }
 
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); }
 .pad { padding: 20px; }
 .grid { display: grid; gap: 20px; }
-.grid-packs { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+.grid-packs { grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); }
 .grid-3 { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
 .grid-games { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
 
 .hero { padding: 20px 0 8px; }
 .hero h1 { margin-bottom: 0.25em; }
+/* Home hero: the pitch on the left, all pack covers as a collage on the right (above the text on phones). */
+.hero-home { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 36px; align-items: center; padding-top: 12px; margin-bottom: 40px; }
+.hero-home h1 { font-size: clamp(1.9rem, 4.2vw, 3rem); }
+.hero-home .lead { margin-bottom: 1.1em; }
+.hero-home .btn-row { margin-bottom: 14px; }
+.hero-covers { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.hero-covers li { margin: 0; }
+.hero-covers a { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); background: var(--bg2); transition: transform 0.15s ease, border-color 0.15s ease; }
+.hero-covers a:hover, .hero-covers a:focus-visible { transform: translateY(-3px); border-color: var(--accent); }
+.hero-covers img { width: 100%; aspect-ratio: 630 / 500; }
+@media (max-width: 880px) {
+  .hero-home { grid-template-columns: minmax(0, 1fr); gap: 20px; padding-top: 0; }
+  .hero-covers { order: -1; gap: 5px; }
+  .hero-covers a { border-radius: 6px; }
+}
 
-.bundle { display: grid; grid-template-columns: 1fr auto; gap: 16px 28px; align-items: center; padding: 22px 24px; background: linear-gradient(135deg, #1f2a2c, #1d222b 60%); border-color: #3d5a52; }
+.bundle { display: grid; grid-template-columns: 200px minmax(0, 1fr) auto; gap: 16px 28px; align-items: center; padding: 22px 24px; background: linear-gradient(135deg, #1f2a2c, #1d222b 60%); border-color: #3d5a52; scroll-margin-top: 16px; }
+.bundle-cover { width: 100%; border-radius: var(--radius-s); border: 1px solid var(--line); }
+.bundle-buy .btn { width: 100%; }
 .bundle h2 { margin-bottom: 0.2em; }
 .bundle p { margin: 0; }
 .price-big { font-size: 2rem; font-weight: 900; line-height: 1; }
 .price-was { color: var(--muted); text-decoration: line-through; margin-left: 8px; font-weight: 600; font-size: 1.05rem; }
-@media (max-width: 640px) { .bundle { grid-template-columns: 1fr; } }
+@media (max-width: 880px) { .bundle { grid-template-columns: 160px minmax(0, 1fr); } .bundle-buy { grid-column: 1 / -1; } }
+@media (max-width: 560px) { .bundle { grid-template-columns: minmax(0, 1fr); padding: 18px; } .bundle-cover { max-width: 320px; } }
 
 .pack-card { display: flex; flex-direction: column; overflow: hidden; }
 .pack-card .cover { aspect-ratio: 630 / 500; background: var(--bg2); }
@@ -104,10 +128,13 @@ section { margin-bottom: 52px; }
 .pack-card h3 a { color: var(--text); text-decoration: none; }
 .pack-card h3 a:hover { text-decoration: underline; }
 .pack-card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
-.pack-card .kind { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+.pack-card .kind { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
 .pack-card .price { font-weight: 800; font-size: 1.1rem; margin-top: auto; padding-top: 6px; }
 .pack-card .btn-row { margin: 0; }
 .pack-card .btn { flex: 1 1 auto; padding: 8px 12px; font-size: 0.92rem; }
+.card-btns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.card-btns .btn-alt { grid-column: 1 / -1; }
+.pack-hero .buy-routes { margin-top: -4px; }
 
 .tool-card { padding: 20px; display: flex; flex-direction: column; gap: 8px; }
 .tool-card h3 { margin: 0; font-size: 1.2rem; }
@@ -144,7 +171,7 @@ section { margin-bottom: 52px; }
 .shots img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
 .icon-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 8px; list-style: none; padding: 0; margin: 0 0 18px; }
 .icon-grid li { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 12px 4px 8px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-s); }
-.icon-grid span { font-size: 0.72rem; color: var(--muted); text-align: center; overflow-wrap: anywhere; }
+.icon-grid span { font-size: 0.78rem; color: var(--muted); text-align: center; overflow-wrap: anywhere; }
 .icon-grid img.px { image-rendering: pixelated; }
 .callout { padding: 18px 20px; }
 .callout p:last-child { margin-bottom: 0; }
@@ -206,7 +233,7 @@ input[type="color"] { width: 44px; height: 44px; padding: 2px; border-radius: 10
 .sb-ico::after { content: ""; position: absolute; left: 11px; top: 8px; border-left: 11px solid #12141a; border-top: 7px solid transparent; border-bottom: 7px solid transparent; }
 .sb-name { font: 600 0.9rem var(--mono); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .sb-meta { font-size: 0.78rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.sb-copy { flex: 0 0 44px; background: none; border: 0; border-left: 1px solid var(--line); color: var(--muted); cursor: pointer; font-size: 0.72rem; font-weight: 700; padding: 0; }
+.sb-copy { flex: 0 0 44px; background: none; border: 0; border-left: 1px solid var(--line); color: var(--muted); cursor: pointer; font-size: 0.78rem; font-weight: 700; padding: 0; }
 .sb-copy:hover { background: var(--card2); color: var(--text); }
 .sb-item[hidden], .sb-pack[hidden] { display: none; }
 
@@ -241,8 +268,8 @@ input[type="color"] { width: 44px; height: 44px; padding: 2px; border-radius: 10
 .vx-pick:hover { border-color: var(--accent); }
 .vx-pick[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent) inset; }
 .vx-thumb { width: 84px; height: 84px; border-radius: 8px; background-color: #12141a; background-repeat: no-repeat; }
-.vx-pname { font: 600 0.74rem var(--mono); word-break: break-all; text-align: center; }
-.vx-psize { font-size: 0.74rem; color: var(--muted); }
+.vx-pname { font: 600 0.78rem var(--mono); word-break: break-all; text-align: center; }
+.vx-psize { font-size: 0.78rem; color: var(--muted); }
 .vx-sheet { position: relative; border-radius: var(--radius-s); overflow: hidden; border: 1px solid var(--line); line-height: 0; }
 .vx-sheet img { width: 100%; }
 .vx-cursor { position: absolute; border: 2px solid var(--accent); border-radius: 4px; pointer-events: none; }
