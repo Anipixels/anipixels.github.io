@@ -24,14 +24,15 @@ Prices are in US dollars as listed on 5 November 2026. Every pack is sold on itc
 - [Crisp Cute VN](https://anipixels.github.io/packs/crisp-cute-vn/): Cute pastel GUI kit for Ren'Py 8: every screen restyled, 6 switchable themes, drop-in 1920x1080 project. Price $6.99. Buy: https://anipixels.itch.io/crisp-cute-vn . Buy direct by card: https://payhip.com/b/Xtlbs . Free sampler (17 images): https://anipixels.itch.io/crisp-cute-vn-free
 - [Crisp Pixel Icons](https://anipixels.github.io/packs/crisp-pixel-icons/): 485 pixel-art fantasy RPG icons, 16 x 16: 361 designs + 124 variants. PNG 1x-4x, atlases, Godot 4. Price $4.99. Buy: https://anipixels.itch.io/crisp-pixel-icons . Buy direct by card: https://payhip.com/b/odIOE . Free sampler (42 icons) and browser demo: https://anipixels.itch.io/crisp-pixel-icons-free
 - [Crisp Juice Particles](https://anipixels.github.io/packs/crisp-juice-particles/): 41 real-time Godot 4 effects, each in 2D and 3D: hits, coins, magic, fire, weather. GPUParticles + shaders, one-click recolor. Price $7.99. Buy: https://anipixels.itch.io/crisp-juice-particles . Buy direct by card: https://payhip.com/b/o6YJu . Free sampler (5 effects): https://anipixels.itch.io/crisp-juice-particles-free
+- [Crisp Cozy Winter](https://anipixels.github.io/packs/crisp-cozy-winter/): 472 cozy winter and holiday sounds: snow and ice footsteps, snowballs, fireside, gifts, sleigh bells, winter UI + 12 ambience loops. WAV + OGG. Price $4.99. Buy: https://anipixels.itch.io/crisp-cozy-winter . Buy direct by card: https://payhip.com/b/WGn7h . Free sampler (24 sounds) and browser demo: https://anipixels.itch.io/crisp-cozy-winter-free
 
 ## Bundle
 
-- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 16 packs above for $19.99 (the single prices add up to $95.84). Buy direct by card: https://payhip.com/b/Q371Z .
+- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 17 packs above for $19.99 (the single prices add up to $100.83). Buy direct by card: https://payhip.com/b/Q371Z .
 
 ## Free browser tools
 
-- [UI sound board](https://anipixels.github.io/tools/ui-sound-board/): plays the 109 free sampler sounds from the six sound packs, with search, pack filter, volume and copy-file-name.
+- [UI sound board](https://anipixels.github.io/tools/ui-sound-board/): plays the 133 free sampler sounds from the seven sound packs, with search, pack filter, volume and copy-file-name.
 - [UI kit 9-slice preview](https://anipixels.github.io/tools/ui-kit-preview/): live resize of the Crisp Kit, Crisp Quest, Crisp Pixel and Crisp Cute sampler pieces using their 9-slice borders, on light or dark.
 - [VFX sprite sheet player](https://anipixels.github.io/tools/vfx-player/): plays the 12 Crisp Juice sampler sprite sheets on a canvas with speed, loop, blend and background controls.
 
