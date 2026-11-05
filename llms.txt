@@ -14,7 +14,7 @@ Prices are in US dollars as listed on 5 November 2026. Every pack is sold on itc
 - [Crisp Cards](https://anipixels.github.io/packs/crisp-cards/): 105 sound effects for card games, deckbuilders and casino tables. WAV + OGG. Price $4.99. Buy: https://anipixels.itch.io/crisp-cards . Buy direct by card: https://payhip.com/b/2qAZg . Free sampler (20 sounds) and browser demo: https://anipixels.itch.io/crisp-cards-free
 - [Crisp Cozy](https://anipixels.github.io/packs/crisp-cozy/): 1,363 soft, cute sounds for cozy games: UI, farming, cafe, home, voices, footsteps, magic + 25 ambience loops. WAV + OGG. Price $5.99. Buy: https://anipixels.itch.io/crisp-cozy . Buy direct by card: https://payhip.com/b/UWqOc . Free sampler (20 sounds) and browser demo: https://anipixels.itch.io/crisp-cozy-free
 - [Crisp Cozy Life](https://anipixels.github.io/packs/crisp-cozy-life/): 306 cozy gameplay sounds: farming, cooking, crafting, fishing, animals, footsteps. WAV + OGG. Price $4.99. Buy: https://anipixels.itch.io/crisp-cozy-life . Buy direct by card: https://payhip.com/b/PsUND . Free sampler (20 sounds) and browser demo: https://anipixels.itch.io/crisp-cozy-life-free
-- [Crisp Juice](https://anipixels.github.io/packs/crisp-juice/): 149 sprite-sheet effects for casual and puzzle games: gem bursts, coins, confetti, text pops, emotes. PNG + Godot 4 scenes. Price $4.99. Buy: https://anipixels.itch.io/crisp-juice . Buy direct by card: https://payhip.com/b/wIAH3 . Free sampler (12 effects) and browser demo: https://anipixels.itch.io/crisp-juice-free
+- [Crisp Juice](https://anipixels.github.io/packs/crisp-juice/): 149 sprite-sheet effects for casual and puzzle games: gem bursts, coins, confetti, text pops, emotes. PNG + Godot 4 scenes. Price $6.99. Buy: https://anipixels.itch.io/crisp-juice . Buy direct by card: https://payhip.com/b/wIAH3 . Free sampler (12 effects) and browser demo: https://anipixels.itch.io/crisp-juice-free
 - [Crisp Kit](https://anipixels.github.io/packs/crisp-kit/): 100 UI pieces x 8 themes, 127 icons, 93 input prompts. PNG + SVG, 9-slice, Godot 4 themes. Price $6.99. Buy: https://anipixels.itch.io/crisp-kit . Buy direct by card: https://payhip.com/b/XH3Av . Free sampler (57 pieces) and browser demo: https://anipixels.itch.io/crisp-kit-free
 - [Crisp Quest](https://anipixels.github.io/packs/crisp-quest/): 135 RPG UI pieces x 6 fantasy themes, 184 icons. PNG + SVG, 9-slice, Godot 4 themes. Price $6.99. Buy: https://anipixels.itch.io/crisp-quest . Buy direct by card: https://payhip.com/b/y2LMq . Free sampler (52 pieces) and browser demo: https://anipixels.itch.io/crisp-quest-free
 - [Crisp Pixel](https://anipixels.github.io/packs/crisp-pixel/): 139 pixel-art RPG UI pieces x 6 themes, 157 icons at 16 x 16. PNG 1x-4x, 9-slice, 2 pixel fonts, Godot 4 themes. Price $6.99. Buy: https://anipixels.itch.io/crisp-pixel . Buy direct by card: https://payhip.com/b/RPQfc . Free sampler (53 pieces) and browser demo: https://anipixels.itch.io/crisp-pixel-free
@@ -27,7 +27,7 @@ Prices are in US dollars as listed on 5 November 2026. Every pack is sold on itc
 
 ## Bundle
 
-- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 16 packs above for $19.99 (the single prices add up to $95.84). Buy direct by card: https://payhip.com/b/Q371Z .
+- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 16 packs above for $19.99 (the single prices add up to $97.84). Buy direct by card: https://payhip.com/b/Q371Z .
 
 ## Free browser tools
 
