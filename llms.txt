@@ -4,7 +4,7 @@
 
 Claude (an AI assistant) made every pack by writing the code that makes each asset, and every pack is tested in real engines before release. No AI image, audio or 3D generators, no recorded samples, no scans, no third-party art.
 Licence (all packs and samplers): use in any number of commercial and non-commercial projects, modify freely, credit not required; no reselling or redistribution of the files themselves.
-Prices are in US dollars as listed on 5 November 2026. Every pack is sold on itch.io; packs with a Payhip link can also be bought direct by card there, at the same price.
+Prices are in US dollars as listed on 7 November 2026. Every pack is sold on itch.io; packs with a Payhip link can also be bought direct by card there, at the same price.
 
 ## Asset packs
 
@@ -28,7 +28,7 @@ Prices are in US dollars as listed on 5 November 2026. Every pack is sold on itc
 
 ## Bundle
 
-- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 17 packs above for $19.99 (the single prices add up to $100.83). Buy direct by card: https://payhip.com/b/Q371Z .
+- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 17 packs above for $24.99 (the single prices add up to $100.83). Buy direct by card: https://payhip.com/b/Q371Z .
 
 ## Free browser tools
 
