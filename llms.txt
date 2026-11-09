@@ -25,10 +25,11 @@ Prices are in US dollars as listed on 9 November 2026. Every pack is sold on itc
 - [Crisp Pixel Icons](https://anipixels.github.io/packs/crisp-pixel-icons/): 485 pixel-art fantasy RPG icons, 16 x 16: 361 designs + 124 variants. PNG 1x-4x, atlases, Godot 4. Price $4.99. Buy: https://anipixels.itch.io/crisp-pixel-icons . Buy direct by card: https://payhip.com/b/odIOE . Free sampler (42 icons) and browser demo: https://anipixels.itch.io/crisp-pixel-icons-free
 - [Crisp Juice Particles](https://anipixels.github.io/packs/crisp-juice-particles/): 41 real-time Godot 4 effects, each in 2D and 3D: hits, coins, magic, fire, weather. GPUParticles + shaders, one-click recolor. Price $7.99. Buy: https://anipixels.itch.io/crisp-juice-particles . Buy direct by card: https://payhip.com/b/o6YJu . Free sampler (5 effects): https://anipixels.itch.io/crisp-juice-particles-free
 - [Crisp Cozy Winter](https://anipixels.github.io/packs/crisp-cozy-winter/): 472 cozy winter and holiday sounds: snow and ice footsteps, snowballs, fireside, gifts, sleigh bells, winter UI + 12 ambience loops. WAV + OGG. Price $4.99. Buy: https://anipixels.itch.io/crisp-cozy-winter . Buy direct by card: https://payhip.com/b/WGn7h . Free sampler (24 sounds) and browser demo: https://anipixels.itch.io/crisp-cozy-winter-free
+- [Crisp Cozy Music](https://anipixels.github.io/packs/crisp-cozy-music/): 36 seamless cozy music loops (farm, cafe, rain, night, village, festival, winter), a lite mix of each, 20 stingers. WAV + OGG. Price $6.99. Buy: https://anipixels.itch.io/crisp-cozy-music . Buy direct by card: https://payhip.com/b/m2J3R . Free sampler (11 music files) and browser demo: https://anipixels.itch.io/crisp-cozy-music-free
 
 ## Bundle
 
-- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 17 packs above for $17.99 (the single prices add up to $100.83). Buy direct by card: https://payhip.com/b/Q371Z .
+- [Crisp Everything Bundle](https://itch.io/s/203391/crisp-everything-bundle): all 18 packs above for $17.99 (the single prices add up to $107.82). Buy direct by card: https://payhip.com/b/Q371Z .
 
 ## Free browser tools
 
