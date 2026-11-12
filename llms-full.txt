@@ -13,23 +13,30 @@ The Crisp Everything Bundle contains all 18 packs below for $17.99 (the single p
 
 - Page: https://anipixels.github.io/packs/crisp-ui/
 - Kind: Sound effects pack
-- Summary: Crisp UI is a pack of 242 sound effects for game menus, HUDs, rewards and pickups: clicks, hovers, toggles, confirm and error feedback, notifications, menu transitions, reward jingles, coins and text blips. Every sound comes as WAV and OGG.
-- Contents: 242 sounds in 9 folders
+- Summary: Crisp UI is a pack of 583 sound effects for game menus, HUDs, inventories, dialogue, rewards and mobile UI: clicks, hovers, toggles, sliders and drag and drop, confirm and error feedback, notifications, menu transitions, dialogue voices, reward jingles, coins and 3 seamless loops, plus 4 complete style sets (Retro 8-bit, Sci-Fi, Fantasy RPG, Soft minimal) that share one list of file names. Every sound comes as WAV and OGG. Version 2.0 (12 Nov 2026) grew it from 242 sounds, free for everyone who already owns it.
+- Contents: 583 sounds in 16 folders
 - Formats: WAV (44.1 kHz, 16-bit, stereo) and OGG Vorbis
 - Price: $4.99 on itch.io: https://anipixels.itch.io/crisp-ui ; direct by card on Payhip: https://payhip.com/b/zLt4y
 - Free sampler: 20 sounds, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-ui-free
 - In the Crisp Everything Bundle: yes
 
 What is included:
-- Buttons (56): back x2, button press, button release, click bubble x3, click glass x5, click hard x5, click metal x3, click plastic x3, click soft x5, click wood x5, hover soft x4, hover tick x4, pop down x5, pop up x5, select x2, tap pad x3
-- Toggles (28): checkbox off, checkbox on, dropdown close, dropdown open, knob turn x3, radio select, scroll tick x5, slider tick x5, stepper down, stepper up, switch off, switch on, tab switch x4, toggle off, toggle on
-- Feedback (33): cancel x5, confirm x6, delete, denied x2, error x5, loading done, loading tick x2, locked, receive, redo, refresh, save game, send, undo, warning x4
-- Notifications (24): alert urgent x2, countdown x3, countdown go, countdown tick, message in x2, message out x2, notification x8, reminder soft x2, timer end, timer tick x2
-- Menus (20): drawer close, drawer open, menu close, menu open, page turn x2, panel slide in, panel slide out, popup close, popup open, swipe x5, whoosh short x3, zoom in, zoom out
-- Rewards (22): achievement, badge, chest open, combo up x4, daily reward, fail jingle, level up, quest complete, rank up, star x3, streak, success jingle, trophy, unlock, xp gain x3
-- Pickups (25): coin classic, coin classic high, coin classic low, coin ping x3, coins drop x3, energy pickup, gem x4, heal, heart pickup, item drop x2, item pickup, key pickup, powerup, shield up, star pickup, token x2
-- Shop (10): cart add, cart remove, craft, equip, not enough, purchase, purchase small, sell, unequip, upgrade
-- Text (24): dialog advance, dialog end, text blip high x3, text blip low x3, text blip mid x3, typing x10, typing backspace, typing enter, typing space
+- Buttons (75): soft, hard, wood, glass, plastic, metal and bubble clicks, hovers, pops, press / release, select, back; gamepad focus moves, a near-silent hover, a disabled button, a long press
+- Toggles (45): toggles, switches, tabs, checkboxes, radio buttons, dropdowns, knobs, steppers, slider and scroll ticks; a heavy lever switch, a segmented control
+- Feedback (48): confirm, cancel, error, warning, locked, denied, save, undo / redo, delete, send / receive, loading; save / load game, connected / disconnected
+- Notifications (40): chimes, messages, urgent alerts, reminders, timer ticks, countdown 3-2-1-go; toasts, a counter badge, time up, new mail
+- Menus (39): menu open / close, swipes, panels, popups, page turns, zoom, drawers; modals, tooltips, accordions, pause / unpause
+- Rewards (39): achievement, level up, unlock, quest complete, jingles, stars, XP, combos, chests, badges, trophies; quest accept / update / fail, new ability
+- Pickups (25): coins, gems, heal, power-up, key, items, hearts, stars, energy, shield, tokens
+- Shop (10): purchase, not enough money, sell, equip / unequip, upgrade, craft, cart add / remove
+- Text (73): typing, enter / space / backspace, dialogue blips in three pitches; three dialogue voices at three pitches, text reveal ticks, a typewriter and a mechanical keyboard
+- Sliders & Drag (25): slider grab / release, a tuned 8-step slider ladder, drag and drop (lift, drop, snap into a slot, spring back), the rubber band at the end of a list
+- Inventory (17): items picked out of a slot, set in and swapped, auto-sort, inventory full, a ring equipped, an item used
+- Loops (3): 3 seamless loops: charge, loading, scroll
+- Style - Retro (36): a complete Retro 8-bit UI kit in C major with the same 36 file names as every other style folder
+- Style - Sci-Fi (36): a complete Sci-Fi UI kit in D Dorian with the same 36 file names
+- Style - Fantasy (36): a complete Fantasy RPG UI kit in G major with the same 36 file names
+- Style - Soft (36): a complete Soft minimal UI kit in F major with the same 36 file names
 
 Files and formats:
 - WAV: 44.1 kHz, 16-bit, stereo (for editing and highest quality).
@@ -39,13 +46,14 @@ Files and formats:
 Works with: Any engine or tool that plays WAV or OGG files. The pack's README names Godot, Unity, GameMaker and web.
 
 Details:
-- 242 sounds in 9 folders.
-- Sounds whose names end in _01, _02, _03 are variations: pick one at random so repeated clicks and pickups do not sound robotic.
-- hover_*, scroll_tick, knob_turn and loading_tick are mixed quiet on purpose, because they play constantly.
-- star_01 to star_03, combo_up_01 to combo_up_04 and countdown_3, _2, _1, countdown_go are tuned to climb in order.
-- Pairs are tuned to match: toggle_on/off, checkbox_on/off, menu_open/close, popup_open/close, panel_slide_in/out, drawer_open/close, zoom_in/out, undo/redo, cart_add/remove, equip/unequip.
+- 583 sounds in 16 folders (263 named sounds; 102 of them come in 3 or more takes), so repeated clicks and pickups do not sound robotic.
+- 4 style sets x 36 files with identical names (click, hover, select, confirm, cancel, error, open, close, toggles, slider tick, notify, text blip, unlock): point your code at another folder and the whole UI changes style.
+- 3 tuned ladders: slider_step (8 steps), combo_up (4 steps), star (3 steps); 3 seamless stereo loops: charge, loading, scroll.
+- Loudness-matched (quiet hovers, louder confirms), peaks at or below -1 dBFS; WAV 44.1 kHz / 16-bit and OGG Vorbis, plus a 48 kHz / 24-bit master of the 341 new sounds.
+- Godot 4 sound bank included (tested headless in Godot 4.7.2); a Unity package and notes (not tested inside Unity); sounds.csv data sheet.
+- Every 1.x file is unchanged in v2.0: same names, same folders, same audio.
 
-Free sampler: The free sampler has 20 of the 242 sounds as WAV and OGG: 5 button sounds, 2 toggles, 3 feedback sounds, 1 notification, 2 menu sounds, 2 rewards, 2 pickups, 1 shop sound and 2 text sounds.
+Free sampler: The free sampler has 20 of the 583 sounds as WAV and OGG: click soft, hover soft, toggle on, toggle off, confirm, cancel, error 02, notification 03, menu open, achievement, coin classic, level up, retro confirm, scifi open, fantasy unlock, soft toggle on, scifi notify, item swap, voice mumble mid and level up small.
 
 Licence: Use the sounds in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, layer, pitch or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the sounds themselves, on their own or as part of another sound library or asset pack, modified or not, and you may not claim them as your own original work in a sound library.
 
