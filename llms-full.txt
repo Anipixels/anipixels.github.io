@@ -1,0 +1,888 @@
+# Anipixels: full pack facts
+
+> Anipixels makes royalty-free game asset packs named "Crisp ...": UI and gameplay sound effects, music loops and jingles, UI kits, icons, sprite-sheet and real-time Godot VFX, low-poly PS1-style 3D props and a Ren'Py GUI kit, plus a Godot 4 game template. The packs are sold on itch.io and direct by card on Payhip; each has a free sampler, and most have a playable browser demo. This site describes each pack, compares them by job, and offers three free browser tools built from the free samplers, plus how-to guides for Godot 4 and Ren'Py 8.
+
+How it is made: Claude (an AI assistant) made every pack, by writing the code that makes each asset: the sounds are synthesised from scratch, the graphics are drawn shape by shape and the 3D props are modelled and textured by code. No AI image, audio or 3D generators, no recorded samples, no scans and no third-party art. Every pack is opened and tested in real engines before it goes on sale.
+Licence (the LICENSE.txt in every pack and sampler): use the files in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams) and edit or modify them; credit is appreciated but never required; you may not resell, redistribute or give away the files themselves, on their own or inside another asset pack. Most of the licence files sum it up as: "put them in the things you make, just don't sell or share the pack." The music licence also forbids registering the music with Content ID or any other fingerprinting service.
+Prices are in US dollars as listed on 9 November 2026; the store page always shows the current price. Every pack is sold on itch.io; packs with a Payhip link can also be bought direct by card there, at the same price.
+
+Short version with links: https://anipixels.github.io/llms.txt . Comparison by job, with a FAQ: https://anipixels.github.io/packs/compare/ .
+The Crisp Everything Bundle contains all 18 packs below for $17.99 (the single prices add up to $107.82): https://itch.io/s/203391/crisp-everything-bundle , or direct by card: https://payhip.com/b/Q371Z . Crisp Cozy Starter (at the end) is sold on its own and is not in the bundle.
+
+## Crisp UI
+
+- Page: https://anipixels.github.io/packs/crisp-ui/
+- Kind: Sound effects pack
+- Summary: Crisp UI is a pack of 242 sound effects for game menus, HUDs, rewards and pickups: clicks, hovers, toggles, confirm and error feedback, notifications, menu transitions, reward jingles, coins and text blips. Every sound comes as WAV and OGG.
+- Contents: 242 sounds in 9 folders
+- Formats: WAV (44.1 kHz, 16-bit, stereo) and OGG Vorbis
+- Price: $4.99 on itch.io: https://anipixels.itch.io/crisp-ui ; direct by card on Payhip: https://payhip.com/b/zLt4y
+- Free sampler: 20 sounds, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-ui-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- Buttons (56): back x2, button press, button release, click bubble x3, click glass x5, click hard x5, click metal x3, click plastic x3, click soft x5, click wood x5, hover soft x4, hover tick x4, pop down x5, pop up x5, select x2, tap pad x3
+- Toggles (28): checkbox off, checkbox on, dropdown close, dropdown open, knob turn x3, radio select, scroll tick x5, slider tick x5, stepper down, stepper up, switch off, switch on, tab switch x4, toggle off, toggle on
+- Feedback (33): cancel x5, confirm x6, delete, denied x2, error x5, loading done, loading tick x2, locked, receive, redo, refresh, save game, send, undo, warning x4
+- Notifications (24): alert urgent x2, countdown x3, countdown go, countdown tick, message in x2, message out x2, notification x8, reminder soft x2, timer end, timer tick x2
+- Menus (20): drawer close, drawer open, menu close, menu open, page turn x2, panel slide in, panel slide out, popup close, popup open, swipe x5, whoosh short x3, zoom in, zoom out
+- Rewards (22): achievement, badge, chest open, combo up x4, daily reward, fail jingle, level up, quest complete, rank up, star x3, streak, success jingle, trophy, unlock, xp gain x3
+- Pickups (25): coin classic, coin classic high, coin classic low, coin ping x3, coins drop x3, energy pickup, gem x4, heal, heart pickup, item drop x2, item pickup, key pickup, powerup, shield up, star pickup, token x2
+- Shop (10): cart add, cart remove, craft, equip, not enough, purchase, purchase small, sell, unequip, upgrade
+- Text (24): dialog advance, dialog end, text blip high x3, text blip low x3, text blip mid x3, typing x10, typing backspace, typing enter, typing space
+
+Files and formats:
+- WAV: 44.1 kHz, 16-bit, stereo (for editing and highest quality).
+- OGG Vorbis: small files, ready for Godot, Unity, GameMaker and web.
+- Every sound is loudness-matched, starts on its first sample (no dead air) and peaks at or below -1 dBFS.
+
+Works with: Any engine or tool that plays WAV or OGG files. The pack's README names Godot, Unity, GameMaker and web.
+
+Details:
+- 242 sounds in 9 folders.
+- Sounds whose names end in _01, _02, _03 are variations: pick one at random so repeated clicks and pickups do not sound robotic.
+- hover_*, scroll_tick, knob_turn and loading_tick are mixed quiet on purpose, because they play constantly.
+- star_01 to star_03, combo_up_01 to combo_up_04 and countdown_3, _2, _1, countdown_go are tuned to climb in order.
+- Pairs are tuned to match: toggle_on/off, checkbox_on/off, menu_open/close, popup_open/close, panel_slide_in/out, drawer_open/close, zoom_in/out, undo/redo, cart_add/remove, equip/unequip.
+
+Free sampler: The free sampler has 20 of the 242 sounds as WAV and OGG: 5 button sounds, 2 toggles, 3 feedback sounds, 1 notification, 2 menu sounds, 2 rewards, 2 pickups, 1 shop sound and 2 text sounds.
+
+Licence: Use the sounds in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, layer, pitch or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the sounds themselves, on their own or as part of another sound library or asset pack, modified or not, and you may not claim them as your own original work in a sound library.
+
+How it was made: Every sound is synthesised from scratch by code that was written with Claude, an AI assistant. No recorded samples and no AI audio-generation models were used.
+
+## Crisp Puzzle
+
+- Page: https://anipixels.github.io/packs/crisp-puzzle/
+- Kind: Sound effects pack
+- Summary: Crisp Puzzle is a pack of 100 sound effects for match-3, falling-block, push-block and casual puzzle games: swaps, matches, tile landings, line blasts, bombs, line clears and two 12-step combo ladders tuned to C major pentatonic.
+- Contents: 100 sounds in 8 folders
+- Formats: WAV (44.1 kHz, 16-bit, stereo) and OGG Vorbis
+- Price: $5.99 on itch.io: https://anipixels.itch.io/crisp-puzzle ; direct by card on Payhip: https://payhip.com/b/D6iSt
+- Free sampler: 20 sounds, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-puzzle-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- Tiles (14): swap x3, swap invalid x2, tile deselect x2, tile land x4, tile select x3
+- Matches (7): match 3 x3, match 4 x2, match 5 x2
+- Combo Ladders (24): combo bell x12, combo pluck x12
+- Specials (10): bomb explode x2, booster activate, booster hammer, color bomb, line blast x2, special bomb create, special color create, special line create
+- Board (11): hint, moves low, no moves, score tick x3, shuffle x2, star x3
+- Falling Blocks (13): hard drop, line clear x4, piece lock x2, piece move x3, piece rotate x3
+- Push & Break (12): block goal, block push x2, crate break x2, door open, glass break x2, ice crack x2, jelly x2
+- Map & Jingles (9): board clear, level complete, level fail, level select, level start, level unlock, map step x3
+
+Files and formats:
+- WAV: 44.1 kHz, 16-bit, stereo (for editing and highest quality).
+- OGG Vorbis: small files, ready for Godot, Unity, GameMaker and web.
+- Every sound is loudness-matched, starts on its first sample (no dead air) and peaks at or below -1 dBFS.
+
+Works with: Any engine or tool that plays WAV or OGG files. The pack's README names Godot, Unity, GameMaker and web.
+
+Details:
+- 100 sounds in 8 folders.
+- combo_bell_01 to 12 and combo_pluck_01 to 12 are tuned ladders (C major pentatonic): play the next one for each chained match and a cascade turns into a little melody.
+- Sounds ending in _01, _02, _03 are variations: pick one at random each time.
+- tile_land is short on purpose, so you can fire one per column when gems fall.
+- score_tick is quiet on purpose, so you can repeat it while the score counts up.
+
+Free sampler: The free sampler has 20 of the 100 sounds as WAV and OGG: 4 tile sounds, 2 matches, the first 5 steps of the bell combo ladder, 2 specials, 4 board sounds, 2 falling-block sounds and the level-complete jingle.
+
+Licence: Use the sounds in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, layer, pitch or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the sounds themselves, on their own or as part of another sound library or asset pack, modified or not, and you may not claim them as your own original work in a sound library.
+
+How it was made: Every sound is synthesised from scratch by code that was written with Claude, an AI assistant. No recorded samples and no AI audio-generation models were used.
+
+## Crisp Jingles
+
+- Page: https://anipixels.github.io/packs/crisp-jingles/
+- Kind: Music jingles pack
+- Summary: Crisp Jingles is a pack of 45 short musical stingers for games: 15 moments such as level complete, game over and item get, each written once and produced in three styles (chiptune, cozy and synth-pop) with the same melody.
+- Contents: 45 jingles: 15 moments x 3 styles (chiptune, cozy, synth-pop)
+- Formats: WAV (44.1 kHz, 16-bit, stereo) and OGG Vorbis
+- Price: $5.99 on itch.io: https://anipixels.itch.io/crisp-jingles ; direct by card on Payhip: https://payhip.com/b/4u3Fb
+- Free sampler: 9 jingles, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-jingles-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- Chiptune (15): 15 moments, one file each
+- Cozy (15): 15 moments, one file each
+- Synth Pop (15): 15 moments, one file each
+
+Files and formats:
+- WAV: 44.1 kHz, 16-bit, stereo (for editing and highest quality).
+- OGG Vorbis: small files, ready for Godot, Unity, GameMaker and web.
+- Every sound is loudness-matched, starts on its first sample (no dead air) and peaks at or below -1 dBFS.
+
+Works with: Any engine or tool that plays WAV or OGG files. The pack's README names Godot, Unity, GameMaker and web.
+
+Details:
+- 45 jingles in 3 folders: 15 moments x 3 styles.
+- Each jingle exists in all three styles with the same melody: pick the style that fits your game, or mix them (for example chiptune in levels, cozy in menus).
+- Every file ends in its own natural reverb tail, so jingles never cut off abruptly.
+- Jingles are mixed a little louder than typical sound effects, so duck your music under them.
+
+Free sampler: The free sampler has 9 of the 45 jingles as WAV and OGG: level complete, game over and item get, each in all three styles.
+
+Licence: Use the sounds in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, layer, pitch or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the sounds themselves, on their own or as part of another sound library or asset pack, modified or not, and you may not claim them as your own original work in a sound library.
+
+How it was made: Every sound is synthesised from scratch by code that was written with Claude, an AI assistant. No recorded samples and no AI audio-generation models were used.
+
+## Crisp Cards
+
+- Page: https://anipixels.github.io/packs/crisp-cards/
+- Kind: Sound effects pack
+- Summary: Crisp Cards is a pack of 419 sound effects for card games, deckbuilder roguelikes, casino and slots games and board games: flips, deals, shuffles, hits, blocks, chips, dice, coins, roulette, slot reels, board pieces, the menu sounds in between and 9 seamless loops. Version 2.0 (11 Nov 2026) grew it from 105 sounds, free for everyone who already owns it.
+- Contents: 419 sounds in 15 folders
+- Formats: WAV (44.1 kHz, 16-bit, stereo) and OGG Vorbis
+- Price: $4.99 on itch.io: https://anipixels.itch.io/crisp-cards ; direct by card on Payhip: https://payhip.com/b/2qAZg
+- Free sampler: 20 sounds, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-cards-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- Cards (59): flip, deal, slide, draw, place/play, pick up, hover lift, discard; deals and plays on a wooden table, slaps, tears, a card-drag loop
+- Deck (30): riffle shuffle with bridge, overhand shuffle, fan out, empty deck; short riffles, table wash, cuts, deck taps, spreads
+- Card Magic (21): burn, upgrade, enchant, a four-step rarity reveal (common to legendary), exhaust, transform, duplicate, curse
+- Deckbuilder (37): attack / skill / power / defend plays, energy, relics, potions, a tuned combo ladder, discard reshuffle, run map
+- Combat (30): light and heavy hits, critical hit, block, shield break, enemy intents and death; slash, blunt, magic, multi-hits, dodge
+- Status (29): heal, buff, debuff, poison, energy; burn, bleed, freeze, stun, thorns, cleanse, vulnerable, regen
+- Turns & Stingers (16): turn start / end, victory, defeat, level up, round win / lose, game start, turn timer, achievement - all in key
+- Chips (31): chip clack, stack, pile push, bet; tosses, slides, the chip riffle, dealer's rake, all-in, payout cascades
+- Dice & Coins (38): dice shake, roll, land, dice cups and trays, wooden dice; coins flipped, dropped, stacked, spun, poured
+- Roulette & Wins (18): roulette spin with ball drop, a seamless wheel loop, ball rattle, jackpot, small / medium / big wins, lose
+- Slots (30): lever pulls, spin buttons, reel-spin loops, tuned reel stops, wins, near miss, coin tray, payout and count-up loops
+- Table (16): the dealer's jobs: card shoe, dealer button, knock and tap, discard tray, cash drop box, counting banknotes
+- Board & Tokens (23): wooden and plastic tokens, captures, felted chess pieces, unfolding a board, tiles, cloth bags, a spinner
+- UI (39): buttons, hovers, confirm, cancel, not enough energy, rewards, gold, shop buy, map select; tabs, page turns, toggles, deck editor
+- Ambience (2): two seamless stereo table loops (no voices): card room, roulette table
+
+Files and formats:
+- WAV: 44.1 kHz, 16-bit, stereo (for editing and highest quality).
+- OGG Vorbis: small files, ready for Godot, Unity, GameMaker and web.
+- Every sound is loudness-matched, starts on its first sample (no dead air) and peaks at or below -1 dBFS.
+
+Works with: Any engine or tool that plays WAV or OGG files. The pack's README names Godot, Unity, GameMaker and web.
+
+Details:
+- 419 sounds in 15 folders (226 named sounds; 149 of them come in 2-5 takes), so a dealt hand does not sound robotic.
+- 9 seamless loops, including 2 stereo table ambiences of 16 s.
+- Loudness-matched, peaks at or below -1 dBFS; WAV 44.1 kHz / 16-bit and OGG Vorbis.
+- Tuned: stingers in C major / C minor; combo steps and reel stops climb the C major pentatonic scale.
+- Godot 4 sound bank included (one line to play any sound, takes picked for you); Unity notes included.
+- Every v1.0 file is unchanged in v2.0: same names, same folders, same audio.
+
+Free sampler: The free sampler has 20 of the 419 sounds as WAV and OGG: card flip, card deal, shuffle riffle, card reveal rare, hit light, heal, turn start, victory, chip stack, jackpot, card place wood, card flip table, card draw fast, chip riffle, dice roll tray, relic pickup, potion use, slot win small, spinner and slot lever.
+
+Licence: Use the sounds in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, layer, pitch or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the sounds themselves, on their own or as part of another sound library or asset pack, modified or not, and you may not claim them as your own original work in a sound library.
+
+How it was made: Every sound is synthesised from scratch by code that was written with Claude, an AI assistant. No recorded samples and no AI audio-generation models were used.
+
+## Crisp Cozy
+
+- Page: https://anipixels.github.io/packs/crisp-cozy/
+- Kind: Sound effects pack
+- Summary: Crisp Cozy is a library of 1,363 soft, cute sound effects for cozy games: farming and life sims, cafe and shop games, cat cafes, visual novels, decorating, casual puzzle and idle games. Interface sounds, everyday actions, character voices, footsteps, weather, seasons, magic, critters and 25 seamless stereo ambience loops. Every sound comes as WAV and OGG, is loudness-matched and is royalty-free for commercial use.
+- Contents: 1,363 sounds in 30 folders
+- Formats: WAV (44.1 kHz, 16-bit, stereo) and OGG Vorbis
+- Price: $5.99 on itch.io: https://anipixels.itch.io/crisp-cozy ; direct by card on Payhip: https://payhip.com/b/UWqOc
+- Free sampler: 20 sounds, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-cozy-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- Buttons (73): wooden taps and knocks, wooden-button clicks, felt and plush taps, bubble and cork pops, boops, kalimba plucks, soft and pill buttons, leaf and ceramic taps, deep clicks, quiet hovers, press / release, select, back
+- Toggles (34): toggle, switch, checkbox, bubble and bell on / off pairs, dropdowns, tab switches, a five-step slider ladder, slider drag, radio buttons, scroll and knob ticks, stepper up / down
+- Feedback (29): confirm, cancel, gentle errors (no buzzers), warning, denied, locked, save, undo / redo, delete, send / receive, loading tick and done
+- Notifications (45): bell, kalimba and music-box notifications, five tiny tuned bells, message in / out, reminder, mail, clock tick / tock, timer, countdown 3-2-1-go, new day, a friend at the door, quest accept / update / abandon, objective done, waypoint ping, achievement toast, photo shutter
+- Menus (38): menu, popup, panel, drawer, bag, book, inventory, map and journal open / close, page turns, cloth swishes, pencil writing, map pins and zoom, tooltips, journal tabs
+- Rewards (23): level up, achievement, stars 1-2-3 that climb in tune, quest complete, daily reward, chest, unlock, XP, a five-step combo ladder, rank up, streak, badge, friendship up, collection complete, success and a kind 'aww' fail
+- Pickups (27): coins and coin pours, gems, hearts, items, item drops, fruit, seeds, fish, shells, flowers, key, star
+- Shop (12): purchase, small purchase, not enough coins, sell, equip / unequip, upgrade, basket add / remove, gift wrap, shop door bell, coin count
+- Text (25): 'animal talk' syllables in low, mid, high and squeak voices, wooden typewriter keys, space / return / backspace, dialogue advance and end
+- Cozy Actions (38): plant, water, harvest, dig, purr and trill, bird chirps, stir, sizzle, dinner bell, crafting, sleep, door chimes, doors, footsteps on wood and grass, bubbles, fishing cast and bite
+- Farming (47): hoe, shovel, planting and scattering seeds, watering-can pours and fill, harvest plucks, a five-step crop-pop ladder, sprout / growing / grown, hay, scythe, fertiliser, weeds
+- Cooking (49): chops and fast chopping, three seamless sizzle loops, food hitting the pan, stirring, whisking, pouring, two seamless boil loops and bubbles, plates, pot lid, oven dings, egg crack, salt, bites, a sip, dish done
+- Crafting (39): hammer taps and a rising nail ladder, saw, sanding, stitches, scissors, anvil, workbench, brush strokes, rope creaks, craft complete in three sizes, a gentle fail, tool upgrade
+- Fishing (31): casts, bobber plops, reel clicks and runs, splashes from pebble to big fish, bites, flops, line creak and snap, catch jingles in three sizes, two seamless pond loops
+- Animals (41): cartoon farm voices made in code: chick, hen, rooster, cow, sheep, pig, duck, cat meows and purr loops, dog, bird, owl, frog, bumblebee, happy-pet jingles, eating, feed scattering
+- Gathering (40): a five-step pickup ladder, bag drops, coins and a pouch, axe chops and a falling tree, pickaxe taps and breaking rock, bushes, berries, mushrooms, a gem
+- Home and Shop (42): doors, knocks, shop bell, register, buy and sell, footsteps on wood, grass, dirt and stone, drawer, chest, sweeping, bed, seamless fireplace and rain loops
+- Day Cycle (17): stingers: morning, evening, bedtime, level up, quest done, item get, new season, friendship up, festival, a letter, end of day
+- Inventory (26): slot select (a tuned five-step set), pick up, place, swap, stack, split, use, trash, sort, inventory full, add to a crafting queue
+- Cozy Home (105): decorating (place, pick up, rotate, move, wallpaper, flooring), curtains, lamps and light switches, kettle, cuckoo clock and mantel chime, windows, cupboards, chairs, sofa, pillows, blankets, candles, music box, mailbox, rocking chair, fireplace, floorboards, picture hanging, books, bed, door lock / unlock
+- Cafe (59): coffee grinder, espresso steam, milk frothing, tea pouring, cups on saucers, spoons, sugar, ice, the counter bell, till, receipt, tip jar, contactless tap, cake, plates, trays, toaster, oven, takeaway bags, stocking shelves, 'order up'
+- Dialogue (113): 11 character voices with 5 syllables each (grandma, kid, bear, bird, frog, cat, ghost, toy robot, bubbly, kalimba, fairy), text box open / close, name tag, choices, skip, auto-play, log, scene transitions, chapter start, flashback, portrait change and 15 emotes in two takes
+- Footsteps (72): 12 surfaces with 6 takes each: snow, sand, gravel, leaves, puddle, carpet, tile, mud, hay, wooden bridge, wading and ice
+- Weather (43): distant thunder, rain starting and stopping, drops on the window, drips, wind gusts, leaves blowing, snow falling off a branch, rainbow, sun coming out, umbrellas, a puddle jump, five 'weather changed' stingers
+- Seasons (52): spring blossom, bee, birdsong and bloom; summer cicada, fireflies, melon and sprinkler; autumn leaves, acorns, apples, pumpkin and chestnuts; winter snowballs, ice, icicles, sleigh bells and a snowman; four new-season stingers
+- Magic (59): sparkles, wand waves, small and big spells, potion brewing and drinking, enchanting, teleport out / in, poofs, heal, buff, debuff, mana, runes, portal open / close, fizzles, summoning, fairy dust, star bursts, crystals
+- Critters (65): kitten mews, puppy yips, bunny hops, hamster squeaks and wheel, mice, squirrels, hedgehog, crickets, butterflies, fish, snail, guinea pig, ducklings, a fox, pet bowl, squeaky toys, a ball, collar bell, tail wag
+- Seaside (44): waves washing in, lake laps, sand digging, crabs, gulls, buoy bell, boat creaks, oars, pebble skips, diving, swimming, underwater bubbles, a soft foghorn, message in a bottle, sandcastles, beach ball
+- Festival (50): gentle fireworks, confetti, party horns, lanterns, festival drums, stall bells, prizes, raffle wheel, balloons, stickers, stamp cards, album pages, capsule toys, bug net, museum donation, trophy, ribbon
+- Ambience (25): 25 seamless stereo loops: rain on the roof and window, a far storm, fireplace, campfire night, cafe, forest day and night, river, lake, ocean, wind, wind chimes, snow, market, kitchen, ticking clock, summer meadow, night pond, cave, library, greenhouse rain, festival night, a cat napping by the fire
+
+Files and formats:
+- WAV: 44.1 kHz, 16-bit, stereo (for editing and highest quality).
+- OGG Vorbis: small files, ready for Godot, Unity, GameMaker and web.
+- Every sound is loudness-matched, starts on its first sample (no dead air) and peaks at or below -1 dBFS.
+
+Works with: Godot (sound bank included), Unity, Unreal, GameMaker, Construct, RPG Maker, Ren'Py, Phaser and other web frameworks: anything that plays WAV or OGG.
+
+Details:
+- Version 2.0 (26 October 2026): the pack grew from 261 to 1,363 sounds, a free update for existing owners. Every v1.0 file is unchanged.
+- 1,363 sounds in 30 folders (574 named sounds; 398 of them come in several takes).
+- All 306 sounds of Crisp Cozy Life are included, unchanged, in their own folders (Farming, Cooking, Crafting, Fishing, Animals, Gathering, Home and Shop, Day Cycle).
+- 36 seamless loops: 25 stereo ambience loops of 12 to 14 s, plus cooking, fishing, purr, fire and rain loops.
+- 21 minutes of audio. One-shots are loudness-matched, start on their first sample and peak at or below -1 dBFS.
+- Downloads: everything in one 193 MB zip, or OGG only (17 MB), or WAV in 4 parts (227 MB of WAV and 20 MB of OGG unzipped).
+- Godot 4 sound bank included: one AudioStreamRandomizer per sound and a one-line play() autoload. Unity notes are included too.
+- Tuned to C major pentatonic, so sounds layered together stay in tune. Footsteps come in 6 takes, voices in 5 syllables; hovers and ticks are mixed quiet.
+- The interface folders use the same names, loudness and key as Crisp UI, so the two packs can be mixed.
+
+Free sampler: The free sampler has 20 of the 1,363 sounds as WAV and OGG: 5 button sounds, 2 toggles, 3 feedback sounds, 1 notification, 3 menu sounds, 1 reward, 2 pickups, 1 'animal talk' syllable and 2 cozy actions (plant seed, water plant).
+
+Licence: Use the sounds in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, layer, pitch or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the sounds themselves, on their own or as part of another sound library or asset pack, modified or not, and you may not claim them as your own original work in a sound library.
+
+How it was made: Every sound is synthesised from scratch by code that was written with Claude, an AI assistant. No recorded samples and no AI audio-generation models were used.
+
+## Crisp Cozy Life
+
+- Page: https://anipixels.github.io/packs/crisp-cozy-life/
+- Kind: Sound effects pack
+- Summary: Crisp Cozy Life is a pack of 306 cozy gameplay sound effects for farming games, life sims, cooking and crafting games: the sounds of doing things, not of pressing buttons. They are stylised, synthesised sounds (soft, warm, a little cartoon-like), not field recordings. Every sound comes as WAV and OGG, is loudness-matched and is royalty-free for commercial use.
+- Contents: 306 sounds in 8 folders
+- Formats: WAV (44.1 kHz, 16-bit, stereo) and OGG Vorbis
+- Price: $2.99 on itch.io: https://anipixels.itch.io/crisp-cozy-life ; direct by card on Payhip: https://payhip.com/b/PsUND
+- Free sampler: 20 sounds, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-cozy-life-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- Farming (47): hoe into soil, shovel digs, planting a seed, scattered seeds, watering-can pours and a can filling up, harvest plucks, a five-step crop-pop ladder, sprout / growing / grown, hay rustles, scythe swishes, fertiliser, pulling weeds
+- Cooking (49): knife chops and fast chopping runs, three seamless sizzle loops, food hitting the pan, stirring, whisking, pouring, two seamless boil loops and single bubbles, plates set down, pot lid, oven dings, egg crack, salt, bites, a sip, 'dish done' jingles
+- Crafting (39): wooden hammer taps, a nail ladder that rises as it goes in, saw push / pull, sanding, stitches, scissors, anvil, parts set on the bench, brush strokes, rope creaks, craft-complete chimes in three sizes, a gentle fail, tool upgrade
+- Fishing (31): casts, bobber plops, single reel clicks and reel-in runs, splashes from pebble to big fish, bites, fish flops, line creak and snap, catch jingles in three sizes, two seamless pond loops
+- Animals (41): cartoon voices made in code: chick, hen, rooster, cow, sheep, pig, duck, cat meows and two seamless purr loops, dog, bird tweets, owl, frog, bumblebee, plus happy-pet jingles, eating and feed scattering
+- Gathering (40): a five-step pickup ladder, items dropped in a bag, coins and a coin pouch, axe chops and a falling tree, pickaxe taps and breaking rock, bush rustles, berries, mushrooms, finding a gem
+- Home and Shop (42): doors opening and closing, knocks, the bell over the shop door, register dings, buy and sell, footsteps on wood, grass, dirt and stone, drawer, chest, sweeping, flopping into bed, seamless fireplace and rain-on-the-roof loops
+- Day Cycle (17): short stingers: morning, evening, bedtime, level up, quest done, item get, new season, friendship up, festival, a letter arriving, end of day
+
+Files and formats:
+- WAV: 44.1 kHz, 16-bit, stereo (for editing and highest quality).
+- OGG Vorbis: small files, ready for Godot, Unity, GameMaker and web.
+- Every sound is loudness-matched, starts on its first sample (no dead air) and peaks at or below -1 dBFS.
+
+Works with: Godot, Unity, Unreal, GameMaker, Construct, RPG Maker, Ren'Py, Phaser and other web frameworks: anything that plays WAV or OGG.
+
+Details:
+- 306 sounds in 8 folders (112 named sounds; 288 of the files belong to numbered sets, which are variations or tuned steps).
+- 3.9 minutes of audio in total; 184 of the 295 one-shots are 0.6 s or shorter, and the longest jingle is 2.3 s.
+- 11 seamless loops (2.4 to 3.6 s): sizzle, boil, cat purr, pond, fireplace and rain, marked _loop in the file name.
+- Download size: 35 MB (one zip with both formats; 42 MB of WAV and 3.6 MB of OGG unzipped).
+- Anything heard often has 2 to 6 variations; footsteps, rustles and sweeping are mixed quiet, because they play constantly.
+- Ladders: crop_pop_01 to 05 and pick_up_01 to 05 climb a scale, hammer_nail_01 to 04 rise as the nail goes in, crop_grow_01 to 03 are sprout / growing / grown, and splash_01 to 04 go from pebble to big fish.
+- Jingles, coins, bells and pickups are tuned to C major pentatonic, so they stay in tune with each other and with the other Crisp packs.
+- All 306 sounds are also included, unchanged, in Crisp Cozy 2.0, which adds the interface sounds and 1,057 more; both share the same loudness and key.
+
+Free sampler: The free sampler has 20 of the 306 sounds as WAV and OGG: 5 farming sounds, 3 cooking sounds (one of them a sizzle loop), 1 crafting sound, 3 fishing sounds, 2 animal calls, 3 gathering sounds, 2 home and shop sounds and 1 day-cycle stinger.
+
+Licence: Use the sounds in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, layer, pitch or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the sounds themselves, on their own or as part of another sound library or asset pack, modified or not, and you may not claim them as your own original work in a sound library.
+
+How it was made: Every sound is synthesised from scratch by code that was written with Claude, an AI assistant. No recorded samples and no AI audio-generation models were used.
+
+## Crisp Juice
+
+- Page: https://anipixels.github.io/packs/crisp-juice/
+- Kind: VFX sprite sheets
+- Summary: Crisp Juice is a pack of 149 casual-game visual effects as transparent PNG sprite sheets: gem bursts, match pops, line blasts, coins, stars, confetti, impacts, magic, highlights, text pops, elements, auras, emotes, trails and cozy ambience. Bright, chunky and easy to read at small sizes, with a sheets.json of frame data and a Godot 4 project with a ready-made scene for each effect.
+- Contents: 149 sprite-sheet effects in 12 folders
+- Formats: Transparent PNG sprite sheets, sheets.json, Godot 4 project
+- Price: $6.99 on itch.io: https://anipixels.itch.io/crisp-juice ; direct by card on Payhip: https://payhip.com/b/wIAH3
+- Free sampler: 12 effects, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-juice-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- Gems (30): gem bursts and match pops in 8 colours, line blasts, bombs, lightning zaps, bubble pops
+- Rewards (20): star bursts, coins, hearts, level-up beams, sunburst rays, collect-to-UI arcs
+- Celebration (7): confetti bursts, a falling-confetti loop, fireworks
+- Impacts (14): shockwaves, smoke, landing dust, tap ripple, hit sparks, a critical hit, spawn poofs, dash dust
+- Magic (12): magic swirls, twinkle loops, rotating magic circles, swirling portals
+- Highlights (14): glow pulses, hint rings, glint sweep, charge rings, loading spinners, selection corners, a tutorial arrow
+- Text (17): NICE! GREAT! AWESOME! PERFECT! WOW! COMBO! LEVEL UP! READY? GO! MISS, x2 x3 x5 x10, +1 +10 +100
+- Elements (9): fire (orange and blue), ice, leaves, water splash, lightning strikes, poison, wind gust
+- Status (8): heal burst, rising heal, buff and debuff arrows, auras in 4 colours
+- Emotes (8): ! ? heart, anger mark, sweat drops, idea bulb, typing dots, music notes
+- Trails (5): small star, heart, sparkle and puff bits to drop behind anything that moves
+- Cozy (5): steam, rain splash, water ripple, snow puff, leaf swirl
+
+Files and formats:
+- Transparent PNG sprite sheets, sorted by category, usable in any engine.
+- sheets.json with frame count, cell size, columns, rows, fps and loop flag for every sheet.
+- A Godot 4 project you can open and play, with the addon in Godot/addons/crisp_vfx.
+
+Works with: Godot 4 (4.3 or newer): copy the addon folder into your project and drag an effect scene into your level, or call CrispVfx.spawn(); each scene plays when it appears and removes itself when it finishes. Unity, GameMaker, Construct, Phaser, Defold and others: import a sheet and slice it as a grid using the cell size from sheets.json (Unity: Sprite Mode Multiple, Slice, Grid By Cell Size; GameMaker: Import Strip Image; Phaser: load.spritesheet with frameWidth and frameHeight), then play the frames at 30 fps. No Unity prefabs or animation clips are included.
+
+Details:
+- Version 2.0: 81 new effects (149 in total), a free update for existing owners. Everything that was in v1.0 is unchanged.
+- 149 sprite sheets in 12 folders. Frames run left to right, top to bottom, and every cell is square.
+- Cell sizes: 192 px (101 sheets), 256 px (30 sheets) and 128 px (18 sheets). 12 to 48 frames per effect, drawn for 30 frames per second.
+- Transparent PNG with straight (non-premultiplied) alpha.
+- 37 sheets are seamless loops (flagged in sheets.json); the other 112 play once.
+- 21 sheets (glows, sparkles, lightning, fireworks and similar) are marked "additive": true in sheets.json: they look best with additive blending on dark backgrounds and also work with normal blending.
+- The text pops are English words drawn as shapes (not a font), with a dark outline and shadow so they read on light and dark backgrounds.
+- sheets.json lists frame count, cell size, columns, rows, fps, loop and additive flags for every sheet.
+- Download size: CrispJuice_Full.zip is 51 MB.
+
+Free sampler: The free sampler has 12 of the 149 effects, with sheets.json and the Godot 4 project: gem_burst_blue, match_pop_pink, star_burst_gold, coin_burst_gold, sunburst_rays_gold_loop, confetti_burst_01, ring_shockwave_white, tap_ripple, sparkle_twinkle_white_loop, text_great, fire_burst_orange and emote_heart.
+
+Licence: Use the effects in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, recolour, resize or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the effects themselves, on their own or as part of another asset pack, modified or not, and you may not claim them as your own original work in an asset pack.
+
+How it was made: Every frame is drawn by code that was written with the help of Claude, an AI assistant. No AI image generators, no traced or third-party art.
+
+## Crisp Kit
+
+- Page: https://anipixels.github.io/packs/crisp-kit/
+- Kind: Game UI kit
+- Summary: Crisp Kit is a flat, rounded UI kit for casual and mobile-style games: 100 pieces in each of 8 colour themes, 127 icons and 93 keyboard, mouse and gamepad prompts. Everything comes as PNG (1x and 2x) and SVG with 9-slice borders listed, plus ready-made Godot 4 themes.
+- Contents: 1,255 images: 100 pieces x 8 themes, 127 icons, 93 input prompts, 15 colour pieces
+- Formats: PNG 1x + 2x, SVG, sheets.json, Godot 4 themes
+- Price: $6.99 on itch.io: https://anipixels.itch.io/crisp-kit ; direct by card on Payhip: https://payhip.com/b/XH3Av
+- Free sampler: 57 pieces, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-kit-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- 800 themed pieces: 100 per theme in 8 themes (mint, sky, gold, coral, violet, pink, slate, light), with the same file names in every theme so you can swap a whole look.
+- Per theme: buttons (33), panels (9), bubbles (4), bars (5), sliders (5), toggles (12), tabs (4), inputs (3), badges (7), level select (4), misc (14).
+- Buttons in 7 shapes (large, medium, small, pill, square, round, flat outline) with normal, hover, pressed and disabled states, plus close and plus buttons.
+- Panels, window and modal frames, cards, 9-slice frames, tabs, text inputs, tooltip and speech bubbles, ribbons, badges, a resource pill, progress bars and fills (plain, striped, thin), slider track / fill / knob, check boxes, radio buttons, toggles, level-select tiles (unlocked, pressed, current, locked), list rows, slots, scroll bars, page dots.
+- 127 icons in white and dark: settings, home, play, pause, restart, sound, music, shop, cart, coin, gem, heart, star, trophy, lock, key, gift, chest, clock, shield, sword, map, user, friends, chat, mail, bell, leaderboard, calendar and many more.
+- 93 input prompts in a light and a dark style: 50 keyboard keys (A-Z, 0-9, arrows, Space, Enter, Shift, Ctrl, Alt, Esc, Tab, Backspace), 7 mouse glyphs and 36 generic gamepad glyphs (A/B/X/Y, plain face buttons, d-pad, LB/RB/LT/RT, sticks, Start/Select). No console logos.
+- 15 colour pieces that fit any theme: stars (full, half, empty, two sizes), coin, gem, heart, energy, crown, trophy, gift, key, alert badge.
+- Godot 4 project: one Theme resource per colour theme (1x and 2x versions) that styles Button, CheckBox, CheckButton, ProgressBar, HSlider, LineEdit, TabContainer, panels, tooltips and more, with type variations for every extra shape, and a demo scene (main menu, shop, level select, widgets, settings popup, theme picker).
+
+Files and formats:
+- PNG at 1x (made for roughly 960 x 540 to 1280 x 720 layouts) and 2x (1080p and up, phones, HiDPI).
+- SVG vector files of the same pieces.
+- sheets.json listing every piece: file paths, sizes, 9-slice borders, content padding and notes.
+- Godot 4 Theme resources and a demo scene.
+
+Works with: Any engine that loads PNG or SVG. Godot 4 (4.3 or newer, tested in 4.7) gets ready-made themes. Unity, GameMaker, Construct, Phaser and others use the PNGs with their nine-slice feature and the border values from sheets.json. Unity: sprites only, no prefabs; UNITY.txt gives the border values to type into the Sprite Editor.
+
+Details:
+- 3765 image files: 1255 images, each as PNG 1x, PNG 2x and SVG. That is 335 different designs (100 themed + 15 colour + 127 icons + 93 prompts); the themes, the two icon colours and the two prompt styles multiply them.
+- 65 of the 100 themed pieces are 9-slice / 3-slice. Borders are in sheets.json and in UNITY.txt.
+- Icons are 32 px (1x) and 64 px (2x). Transparent PNG, straight alpha.
+- palette.json lists the hex colours of every theme.
+- No font is bundled. The demo and screenshots use the system font; any rounded bold font fits (Baloo 2, Fredoka and Nunito are free).
+- Download size: CrispKit_Full.zip is 8.95 MB.
+
+Free sampler: The free sampler has 57 pieces as PNG (1x and 2x) and SVG, with a sheets.json of sizes and 9-slice borders: 26 pieces from the mint theme, 3 colour pieces (star full, star empty, coin), 20 white icons and 8 input prompts.
+
+Licence: Use the graphics in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, recolour, resize or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the graphics themselves, on their own or as part of another asset pack, UI kit or template, modified or not, and you may not claim them as your own original work in an asset pack.
+
+How it was made: Every shape is drawn procedurally by code that was written with the help of Claude, an AI assistant. No AI image generators, no traced or third-party art, no font files.
+
+## Crisp Quest
+
+- Page: https://anipixels.github.io/packs/crisp-quest/
+- Kind: Fantasy RPG UI kit
+- Summary: Crisp Quest is a fantasy RPG UI kit: 135 pieces in each of 6 material themes (Carved Wood, Parchment & Ink, Stone & Iron, Royal Gold, Elven Silver, Arcane), 147 fantasy icons in white and dark and 37 colour icons. Everything comes as PNG (1x and 2x) and SVG with 9-slice borders listed, plus ready-made Godot 4 themes.
+- Contents: 1,141 images: 135 pieces x 6 themes, 147 icons in white and dark, 37 colour icons
+- Formats: PNG 1x + 2x, SVG, sheets.json, Godot 4 themes
+- Price: $6.99 on itch.io: https://anipixels.itch.io/crisp-quest ; direct by card on Payhip: https://payhip.com/b/y2LMq
+- Free sampler: 52 pieces, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-quest-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- 810 themed pieces: 135 per theme in 6 themes, with the same file names and sizes in every theme so you can swap a whole look.
+- The themes are different drawings, not recolours: each has its own corner shape and corner ornaments (brass brackets on carved wood, ink flourishes on parchment, riveted iron on stone, rubies on a gold frame, silver leaves, glowing arcane diamonds).
+- Per theme: buttons (33), panels (8), dialogue (5), inventory (18), hotbar (9), bars (13), quest (5), tabs (4), toggles (7), sliders (5), scrollbar (3), inputs (6), banners (4), dividers (3), hud (11), texture (1).
+- Buttons in large, medium, small and square sizes plus a secondary style and a round button, each with normal, hover, pressed and disabled states; close, arrow, plus and minus buttons.
+- Panels and windows: panel, inset panel, ornate panel, window with a title bar, title plate, two hollow frames, tooltip.
+- Dialogue: dialogue box, name plate, continue arrow, choice rows (normal and selected).
+- Inventory: 48 px slots: empty, hover, selected, locked, five rarity borders (common, uncommon, rare, epic, legendary), eight equipment slots with ghost icons (head, chest, hands, feet, weapon, off-hand, ring, amulet) and a stack-count badge.
+- Hotbar and skills: hotbar slot (normal and active), tray, round skill slot and ring, three cooldown overlays, hotkey cap.
+- Bars and orbs: bar frame, ornate bar frame, thin bar, fills for health, mana, stamina and experience; orb frame, back, gloss and health / mana fills.
+- Also: quest tracker rows and header, tabs, check box, radio, switch, slider, scroll bar, text input, dropdown, ribbons, hanging banner, heraldic shield, dividers, round and square minimap frames, three portrait frames, currency plate, level badge, toast, notification dot, list rows and a seamless background tile.
+- 147 fantasy icons in white and dark: weapons (16), armour (11), consumables (14), loot (14), tools (12), magic (10), status (17), map (18), classes (8), interface (27).
+- 37 colour icons where colour matters: potions, gems, coins, rarity marks, elements and a few more.
+- Godot 4 project: one Theme resource per theme (1x and 2x versions) that styles Button, CheckBox, CheckButton, ProgressBar, HSlider, LineEdit, OptionButton, TabContainer, panels, tooltips and more, with type variations for the extra shapes (slots, rarity borders, window, dialogue box, hotbar...), and a demo scene.
+
+Files and formats:
+- PNG at 1x (made for roughly 960 x 540 to 1280 x 720 layouts) and 2x (1080p and up, phones, HiDPI).
+- SVG vector files of the same pieces.
+- sheets.json listing every piece: file paths, sizes, 9-slice borders, content padding and notes.
+- Godot 4 Theme resources and a demo scene.
+
+Works with: Any engine that loads PNG or SVG. Godot 4 (4.3 or newer; themes and demo scene load-tested headless in 4.7) gets ready-made themes. Unity, GameMaker, Construct, Phaser and others use the PNGs with their nine-slice feature and the border values from sheets.json. Unity: sprites only, no prefabs and no pre-set borders; UNITY.txt gives the border values to type into the Sprite Editor.
+
+Details:
+- 3423 image files: 1141 images, each as PNG 1x, PNG 2x and SVG. That is 319 different designs (135 themed + 184 icons); the 6 themes and the two icon colours multiply them.
+- 81 of the 135 themed pieces are 9-slice / 3-slice. Borders are in sheets.json and in UNITY.txt. Ornaments sit inside the borders, so the middles stretch cleanly.
+- Slots are 48 px and icons 32 px at 1x (96 px and 64 px at 2x). Transparent PNG, straight alpha.
+- palette.json lists the hex colours of every theme, the rarity colours and the bar colours.
+- No font is bundled and no piece has lettering baked in. The demo and screenshots use the system serif; any bold serif fits (Cinzel, Alegreya and EB Garamond are free).
+- Download size: CrispQuest_Full.zip is 11.21 MB.
+
+Free sampler: The free sampler has 52 pieces as PNG (1x and 2x) and SVG, with a sheets.json of sizes and 9-slice borders: 34 pieces from the Carved Wood theme, 15 white icons and 3 colour icons.
+
+Licence: Use the graphics in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, recolour, resize or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the graphics themselves, on their own or as part of another asset pack, UI kit or template, modified or not, and you may not claim them as your own original work in an asset pack.
+
+How it was made: Every shape is drawn procedurally by code that was written with the help of Claude, an AI assistant. No AI image generators, no traced or third-party art, no font files.
+
+## Crisp Pixel
+
+- Page: https://anipixels.github.io/packs/crisp-pixel/
+- Kind: Pixel-art RPG UI kit
+- Summary: Crisp Pixel is a pixel-art fantasy RPG UI kit: 139 pieces in each of 6 themes (Oak & Brass, Stone & Ember, Parchment & Ink, Royal Gold, Arcane, Classic Blue) and 157 colour icons at 16 x 16. It is true pixel art on a 16 px grid (no anti-aliasing, 1 px outlines, a 16-colour palette per theme) and comes as PNG at 1x, 2x, 3x and 4x with 9-slice borders listed, sprite sheets, two pixel fonts and ready-made Godot 4 themes.
+- Contents: 991 sprites: 139 pieces x 6 themes, 157 colour icons at 16 x 16
+- Formats: PNG 1x, 2x, 3x and 4x, sprite sheets, sheets.json, 2 pixel fonts, Godot 4 themes
+- Price: $6.99 on itch.io: https://anipixels.itch.io/crisp-pixel ; direct by card on Payhip: https://payhip.com/b/RPQfc
+- Free sampler: 53 pieces, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-pixel-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- 834 themed pieces: 139 per theme in 6 themes, with the same file names and sizes in every theme so you can swap a whole look.
+- The themes are different drawings, not recolours: each has its own corner shape, frame and corner ornaments (brass brackets on walnut, stone cornerstones with studs, ink marks and a curled corner on parchment, jewels in a gold frame, glowing arcane runes, and the classic blue window with a white border).
+- Per theme: buttons (33), panels (8), dialogue (5), inventory (18), hotbar (9), bars (13), quest (5), tabs (4), toggles (7), sliders (5), scrollbar (3), inputs (7), banners (4), dividers (3), hud (11), texture (1), cursors (3).
+- Buttons in large, medium, small and square sizes plus a secondary style and a round button, each with normal, hover, pressed and disabled states; close, arrow, plus and minus buttons.
+- Panels and windows: panel, inset panel, ornate panel, window with a title bar, title plate, two hollow frames, tooltip.
+- Dialogue: dialogue box, name plate, continue arrow, choice rows (normal and selected).
+- Inventory: 20 px slots with a 16 px icon area: empty, hover, selected, locked, five rarity borders (common, uncommon, rare, epic, legendary), eight equipment slots with ghost icons (head, chest, hands, feet, weapon, off-hand, ring, amulet) and a stack-count badge.
+- Hotbar and skills: hotbar slot (normal and active), tray, round skill slot and ring, three cooldown overlays, hotkey cap.
+- Bars and orbs: bar frame, ornate bar frame, thin bar, fills for health, mana, stamina and experience; orb frame, back, gloss and health / mana fills.
+- Also: quest tracker rows and header, tabs, check box, radio, switch, slider, scroll bar, text input, dropdown, ribbons, hanging banner, heraldic shield, dividers, round and square minimap frames, three portrait frames, currency plate, level badge, toast, notification dot, list rows, three cursors (pointer, hand, sword) and a seamless background tile.
+- 157 colour icons, 16 x 16 with a 1 px outline: weapons (16), armour (12), consumables (17), loot (20), tools (12), magic (10), status (17), map (18), classes (8), interface (27).
+- Two pixel fonts drawn for the kit, as .ttf and as PNG glyph strips: Crisp Pixel (5 x 7 capitals, lower case, digits, punctuation) and Crisp Pixel Tiny (3 x 5, for stack counts and key caps). Basic Latin only.
+- Sprite sheets: one sheet per theme and one for the icons at every scale, each with a .json of frame rectangles and borders.
+- Palette files: .hex and .gpl for every theme, for the icons and for the whole kit.
+- Godot 4 project: one Theme resource per theme (for 1x, 2x, 3x and 4x textures) that styles Button, CheckBox, CheckButton, ProgressBar, HSlider, LineEdit, OptionButton, TabContainer, panels, tooltips and more, with type variations for the extra shapes (slots, rarity borders, window, dialogue box, hotbar...), and a demo scene with nearest-neighbour filtering.
+
+Files and formats:
+- PNG at 1x, 2x, 3x and 4x. The larger sizes are exact enlargements with no smoothing.
+- Sprite sheets: one sheet per theme and one for the icons at every scale, each with a .json of frame rectangles and borders.
+- sheets.json listing every piece: file paths, size, 9-slice borders, content padding, position on its sprite sheet and notes.
+- Two pixel fonts as .ttf and as PNG glyph strips, and palette files (.hex and .gpl) for every theme, for the icons and for the whole kit.
+- Godot 4 Theme resources and a demo scene with nearest-neighbour filtering.
+
+Works with: Any engine that loads PNG. Godot 4 (4.3 or newer; themes and demo scene load-tested headless in 4.7) gets ready-made themes. Unity, GameMaker, Construct, Phaser and others use the PNGs or the sprite sheets with their nine-slice feature and the border values from sheets.json. Unity: sprites only, no prefabs and no pre-set borders; UNITY.txt gives the import settings and the border values to type into the Sprite Editor.
+
+Details:
+- 3964 PNG files: 991 sprites, each at 1x, 2x, 3x and 4x. That is 296 different designs (139 themed + 157 icons); the 6 themes multiply the themed ones.
+- Base scale: 16 px grid. Slots are 20 px with a 16 px icon area, icons 16 px, buttons 14 to 22 px tall, bars 8 px.
+- 81 of the 139 themed pieces are 9-slice / 3-slice. Borders are in sheets.json and in UNITY.txt. Ornaments sit inside the borders and the middles are flat colour, so they stretch or tile cleanly.
+- Every pixel is fully opaque or fully transparent. Each theme uses 16 colours; icons, rarity borders and bar fills share a 41-colour palette.
+- The 1x files suit 320 x 180 to 640 x 360 games; use 2x, 3x or 4x (or scale 1x in your engine) for larger screens. Use whole-number scales with texture filtering off.
+- No piece has lettering baked in.
+- Download size: CrispPixel_Full.zip is 4.42 MB.
+
+Free sampler: The free sampler has 53 pieces as PNG at 1x, 2x, 3x and 4x, with a sheets.json of sizes and 9-slice borders: 35 pieces from the Oak & Brass theme and 18 icons.
+
+Licence: Use the graphics in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, recolour, resize or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the graphics themselves, on their own or as part of another asset pack, UI kit or template, modified or not, and you may not claim them as your own original work in an asset pack.
+
+How it was made: Every pixel is placed procedurally by code that was written with the help of Claude, an AI assistant. No AI image generators, no traced or third-party art.
+
+## Crisp Cute
+
+- Page: https://anipixels.github.io/packs/crisp-cute/
+- Kind: Cozy game UI kit
+- Summary: Crisp Cute is a soft, chunky UI kit for cozy games (farming, life-sim, cafe, pet and cozy puzzle games): 130 pieces in each of 6 pastel themes (Strawberry Milk, Matcha, Honey, Lavender, Cloud, Peach) and 138 cozy colour icons. Everything comes as PNG (1x and 2x) and SVG with 9-slice borders listed, plus ready-made Godot 4 themes and the free Fredoka font.
+- Contents: 918 images: 130 pieces x 6 pastel themes, 138 colour icons
+- Formats: PNG 1x + 2x, SVG, sheets.json, Fredoka font (OFL), Godot 4 themes
+- Price: $6.99 on itch.io: https://anipixels.itch.io/crisp-cute ; direct by card on Payhip: https://payhip.com/b/VLN5E
+- Free sampler: 54 images, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-cute-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- 780 themed pieces: 130 per theme in 6 themes, with the same file names and sizes in every theme so you can swap a whole look.
+- The look: round, chunky shapes with a thick soft outline in a darker tint of each colour (never black), a gentle glint and a soft bottom shade. Small cute details where they fit: stitched panels, a cloud-topped panel, a window with round ears, a striped shop awning, hearts on radio buttons, toggles, slider knobs and name tags.
+- Per theme: buttons (35), panels (10), dialogue (8), tabs (4), toggles (12), sliders (5), bars (10), inputs (5), scroll (3), lists (2), inventory (9), currency (3), badges (6), hud (5), rating (6), misc (7).
+- Buttons: large, medium, small, square, round and a secondary-colour button, each with normal, hover, pressed and disabled states; close, plus, minus and arrow buttons.
+- Panels and windows: plain, stitched, cloud-top, inset and accent panels, a window with a title bar, a window with round ears, a shop window with a striped awning, a card and a hollow frame.
+- Dialogue: dialogue box, name tag, continue arrow, speech bubbles (tail left or right), tooltip, notification bubble, round avatar frame.
+- Cozy HUD: day and weather plate, clock plate, coin plate, price tag, calendar tiles (day, today, festival, past), hotbar tray and slots, inventory slots (hover, selected, locked) with a count badge, a scalloped item frame.
+- Bars: track and fills for progress, health, stamina and gold, a thin bar, and round heart / energy / star end caps.
+- Also: tabs, check boxes, heart radio buttons, toggles, slider, text inputs, dropdown, scroll bar, list rows, ribbons, a hanging banner, a rosette sticker, badges, star and heart ratings, dividers, page dots and two cursors.
+- 138 colour icons in the same soft style: interface (27), rewards (14), farming (18), nature (12), animals (13), food (19), tools (10), weather (13), world (12). Seeds, watering can, crops, flowers, mushrooms, fish, eggs, milk, cakes, tea, yarn, cats, dogs, bunnies, chicks, bees, weather, calendar, mail, quest scroll, backpack, shop and the usual interface icons.
+- Godot 4 project: one Theme resource per theme (1x and 2x versions) with the Fredoka font set up, styling Button, CheckBox, CheckButton, ProgressBar, HSlider, LineEdit, OptionButton, TabContainer, panels, tooltips and more, with type variations for the extra shapes, and a demo scene.
+
+Files and formats:
+- PNG at 1x (made for roughly 960 x 540 to 1280 x 720 layouts) and 2x (1080p and up, phones, HiDPI).
+- SVG vector files of the same pieces and icons.
+- sheets.json listing every piece: file paths, sizes, 9-slice borders, content padding, tiling and notes.
+- palette.json with the colours of every theme and their measured contrast ratios.
+- The free Fredoka font (SIL Open Font License 1.1), included unchanged with its licence.
+- Godot 4 Theme resources (1x and 2x) with Fredoka set up, and a demo scene.
+
+Works with: Any engine that loads PNG or SVG. Godot 4 (4.3 or newer; themes and demo scene load-tested headless in 4.7) gets ready-made themes. Unity, GameMaker, Construct, RPG Maker, Phaser and others use the PNGs with their nine-slice feature and the border values from sheets.json. Unity: sprites only, no prefabs and no pre-set borders; UNITY.txt gives the border values to type into the Sprite Editor.
+
+Details:
+- 2754 image files: 918 images, each as PNG 1x, PNG 2x and SVG. That is 268 different designs (130 themed + 138 icons); the 6 themes multiply the themed ones.
+- 73 of the 130 themed pieces are 9-slice / 3-slice, with every decoration inside the borders. Borders are in sheets.json and UNITY.txt. 4 pieces with stitches, bumps or stripes have middles that tile evenly.
+- Icons are 32 px at 1x and 64 px at 2x. Transparent PNG, straight alpha.
+- Every theme was checked for contrast: body text on the paper colour is 7:1 or better, and button labels use white with an outline in the art's own line colour. palette.json lists the numbers.
+- Font: Fredoka (free, SIL Open Font License 1.1) is included unchanged with its licence. No piece has text baked in.
+- Download size: CrispCute_Full.zip is 10.22 MB.
+
+Free sampler: The free sampler has 54 images as PNG (1x and 2x) and SVG, with a sheets.json of sizes and 9-slice borders and the free Fredoka font: 34 pieces from the Strawberry Milk theme and 20 colour icons.
+
+Licence: Use the graphics in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, recolour, resize or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the graphics themselves, on their own or as part of another asset pack, UI kit or template, modified or not, and you may not claim them as your own original work in an asset pack.
+
+How it was made: Made with AI assistance: every shape is drawn procedurally by code that was written with the help of Claude, an AI assistant. No AI image generators, no traced or third-party art. The only third-party file is the free Fredoka font (SIL Open Font License 1.1), included unchanged.
+
+## Crisp Icons
+
+- Page: https://anipixels.github.io/packs/crisp-icons/
+- Kind: Game icon pack
+- Summary: Crisp Icons is a set of 590 game icons in one rounded, bold style, made for casual, mobile and indie game UI. Every icon comes in white, in dark and as a coloured badge, as PNG at 32, 64, 128 and 256 px, with SVG files for the flat versions.
+- Contents: 590 icons in 13 categories, each in white, dark and as a coloured badge
+- Formats: PNG at 32, 64, 128 and 256 px, SVG for the flat versions, sprite-sheet atlases, Godot 4 project
+- Price: $4.99 on itch.io: https://anipixels.itch.io/crisp-icons ; direct by card on Payhip: https://payhip.com/b/THhr8
+- Free sampler: 42 icons, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-icons-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- 590 icons in 13 category folders, with lowercase snake_case names that never repeat.
+- Interface (100): close, check, menu, home, settings, search, share, lock, download, cloud save, language globe, accessibility, info, warning, toggles, check boxes and more.
+- Arrows (52): arrows in eight directions, chevrons, carets, undo / redo, refresh, swap, expand, shuffle, repeat and more.
+- Media & audio (34): play, pause, stop, record, skip, sound on / low / off, music, mic, headphones, camera, video and more.
+- Game states & rewards (57): restart, level select, trophy, medals 1-2-3, crown, star ratings, hearts, energy, shield, skull, flags, target, dice, cards, joystick, gamepad, stopwatch, puzzle and more.
+- Economy & shop (37): coin, coin stack, gem, cash, wallet, cart, bag, shop, gift, chest, key, ticket, coupon, sale tag, piggy bank, watch ad, no ads, package and more.
+- Social (29): user, friends, group, clan, chat bubbles, mail, send, thumbs, leaderboard, podium, megaphone and more.
+- Tools & items (63): hammer, wrench, pickaxe, bomb, magnet, rocket, booster bottle, compass, map, backpack, lantern, first aid, car, boat, tent and more.
+- Food & drink (22): apple, cherry, carrot, burger, pizza, cake, candy, coffee and more.
+- Actions (32): run, jump, dash, swim, attack, block, heal, build, craft, fish, dig, plant, harvest, sleep and more.
+- Devices & input (43): phone, tablet, laptop, keyboard, mouse buttons, tap, swipes, pinch, tilt, vibrate, VR, d-pad, WASD and arrow keys, batteries and more.
+- Weather & nature (50): sun, moon, rain, snow, storm, wind, fire, water drop, leaf, trees, mountain, paw, fish, bird, cat, dog and more.
+- Faces & creatures (20): smile, grin, laugh, wink, love, cool, sad, cry, angry, surprised, robot, alien, monster and more.
+- Numbers, labels & shapes (51): numbers 0-9, NEW / FREE / HOT / MAX / VIP / x2 labels, sparkles, burst, seal, basic shapes and more.
+- White and dark flat icons: 4,720 PNG files (4 sizes) and 1,180 SVG files. Tint the white ones any colour in your engine.
+- Badge icons: the white icon on a coloured rounded square with a soft bevel. Each icon comes on its home colour at all four sizes (2,360 PNG), and on all 8 colours (mint, sky, gold, coral, violet, pink, orange, slate) at 64 px (4,720 PNG). The blank tiles are included too.
+- Sprite-sheet atlases: white, dark and badge grids at 64 and 128 px, each with a json of cell positions.
+- manifest.json with name, category and search keywords for every icon, and a searchable index.html icon browser.
+- Godot 4 project: an import-ready folder with the 64 px icons, a small lookup helper (CrispIcons.tex("coin")) and an icon browser scene.
+
+Files and formats:
+- PNG at 32, 64, 128 and 256 px for the white, dark and badge versions. Transparent PNG, straight alpha.
+- SVG files for the flat white and dark versions, with a 64 x 64 viewBox and one colour per file. The badges are PNG only.
+- Sprite-sheet atlases: white, dark and badge grids at 64 and 128 px, each with a json of cell positions.
+- manifest.json with name, category and search keywords for every icon, and a searchable index.html icon browser.
+- Godot 4 project: an import-ready folder with the 64 px icons, a small lookup helper and an icon browser scene.
+
+Works with: Any engine that loads PNG or SVG: Godot, Unity, GameMaker, Construct, Phaser, Defold, Unreal, the web. Godot 4 gets a ready-made folder and helper script.
+
+Details:
+- 13,012 image files in the main download: 11,832 PNG and 1,180 SVG. That is 590 different icon designs; the versions, sizes and colours multiply them.
+- Designed on a 64-unit grid with an even stroke weight. Checked for readability at 32 px and 24 px.
+- Transparent PNG, straight alpha. SVGs have a 64 x 64 viewBox and one colour per file.
+- Godot 4.3 or newer (the project was import-tested headless in 4.7.2). Unity: sprites only - drag the PNGs in and set Texture Type to Sprite. No prefabs or scripts.
+- No brand, console or store logos. No font is bundled: the few icons with lettering (AD, NEW, x2, the numbers) are drawn as shapes.
+- Download size: CrispIcons_Full.zip is 38.31 MB.
+
+Free sampler: The free sampler has 42 icons you can use in your own projects, in white and dark: 84 PNG files (64 px, white and dark) and 84 SVG files, in category folders, plus a manifest.json. The white SVGs of those 42 icons are shown here.
+
+Licence: Use the graphics in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, recolour, resize or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the graphics themselves, on their own or as part of another asset pack, icon set, UI kit or template, modified or not, and you may not claim them as your own original work in an asset pack.
+
+How it was made: Made with AI assistance: every icon is drawn by code (vector shapes written in Python with the help of Claude, an AI assistant), then looked at and corrected sheet by sheet. No AI image generators, no traced, downloaded or third-party icons.
+
+## Crisp PSX Cozy Cabin
+
+- Page: https://anipixels.github.io/packs/crisp-psx-cozy-cabin/
+- Kind: 3D prop pack
+- Summary: Crisp PSX Cozy Cabin is a cozy PS1-style 3D prop pack: a little log cabin you can furnish and build, its kitchen, a pile of cozy clutter and an autumn yard full of pumpkins. 63 low-poly props share one crunchy 512 px texture atlas. It is not horror: warm wood, patchwork quilts, gingham curtains, a crackling fire and a sleeping cat. Every prop comes as .glb, .fbx and .obj, with a .blend and a Godot 4 demo with a PSX shader.
+- Contents: 63 low-poly 3D props in 5 categories, one 512 px texture atlas
+- Formats: .glb, .fbx, .obj, .blend, Godot 4 demo project with a PSX shader
+- Price: $4.99 on itch.io: https://anipixels.itch.io/crisp-psx-cozy-cabin ; direct by card on Payhip: https://payhip.com/b/9y1uU
+- Free sampler: 8 props: https://anipixels.itch.io/crisp-psx-cozy-cabin-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- Furniture (14): bed, nightstand, table, chair, armchair, rocking chair, bookcase, wall shelf, wardrobe, wood stove, fireplace, kitchen counter, rug, table lamp
+- Kitchen (11): pot, kettle, teapot, mug, plate stack, bread loaf, pie, jam jar, utensil crock, cutting board, apple basket
+- Cozy clutter (12): book stack, potted fern, potted flowers, candle holder, candles trio, quilt stack, yarn basket, cat bed, cat sleeping, picture frame, wall clock, cushion
+- Yard (18): picket fence, fence post, garden gate, crate, crate of apples, barrel, stone well, mailbox, flower box, autumn tree, pine tree, bush, pumpkin, large pumpkin, hay bale, wheelbarrow, lantern, firewood pile
+- Cabin (8): modular log cabin: log wall, window wall, door wall, gable, corner post, floor planks, roof slope, roof ridge
+
+Files and formats:
+- Every prop as .glb (texture embedded), .fbx and .obj (with .mtl), with the texture atlas next to them.
+- A .blend file with every prop.
+- manifest.json listing every prop: category, description, triangle count, size in metres and file paths.
+- Godot 4 demo project: the furnished cabin and yard to orbit or walk around, day / night, plus a gallery of every prop, with a PSX shader (vertex snapping, affine texture warp, low-res render with 15-bit colour and dither) you can reuse. Load-tested headless in Godot 4.7.
+
+Works with: Godot 4, Unity, Unreal, GameMaker 3D, three.js, Blender and anything else that loads glTF, FBX or OBJ. Use point / nearest texture filtering and no mipmaps for the crisp PSX look.
+
+Details:
+- 63 props in 5 categories, 11081 triangles for the whole pack. 59 of the 63 props are 400 triangles or fewer (median 168; the largest, a tree, is 528).
+- One 512 x 512 atlas of pixel textures (64 and 32 px cells, ordered dithering, warm palette), plus an emission atlas for the fire, flames, lamp shade, lantern and lit windows. One material for everything.
+- Soft baked shading in vertex colours, so props sit nicely even with flat or vertex lighting.
+- Modular cabin on a 2 m grid: log wall, window wall (with gingham curtains), door wall (with a heart in the door), gable, interlocking corner logs, plank floor, shingle roof and ridge. Textures line up across pieces.
+- Real-world metres, origins at the base, fronts facing the same way. Wall props (picture frame, wall clock, wall shelf, fireplace, flower box) have their back on the origin, so they snap straight onto a wall.
+- The fern fronds and leaf cards use alpha clip (cut-out, threshold 0.5).
+- The scene screenshots are Blender renders of the real files at 480 x 270 with 15-bit colour and dithering, shown 4x.
+- Download size: CrispPSXCozyCabin_Full.zip is 22.40 MB.
+
+Free sampler: The free sampler has 8 of the 63 props as .glb, .fbx and .obj with the shared 512 px texture atlas: chair, mug, bread loaf, jam jar, crate, barrel, pumpkin and lantern.
+
+Licence: Use the models and textures in any number of commercial or non-commercial projects (games, apps, videos, renders, streams, game jams). Edit, recolour, re-texture, combine or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the models or textures themselves, on their own or as part of another asset pack, kit or template, modified or not, and you may not claim them as your own original work in an asset pack.
+
+How it was made: Made with AI assistance: every prop is modelled and textured procedurally by code written with the help of Claude, an AI assistant. No AI image or 3D generators, no scans, no third-party models or textures.
+
+## Crisp Cute VN
+
+- Page: https://anipixels.github.io/packs/crisp-cute-vn/
+- Kind: UI kit (Ren'Py)
+- Summary: Crisp Cute VN is a soft, chunky, pastel GUI for Ren'Py 8, made for cozy, slice-of-life, romance and cute visual novels. It is a complete Ren'Py project: open it in the launcher and every screen is already styled, in 6 colour themes (Strawberry Milk, Matcha, Honey, Lavender, Cloud, Peach) that players can switch in Preferences.
+- Contents: A complete Ren'Py 8 project: every screen restyled in 6 switchable themes (81 images per theme), Fredoka font, demo script
+- Formats: Ren'Py 8 project (gui.rpy, screens.rpy, theme script), PNG images drawn for 1920 x 1080, Fredoka font (OFL)
+- Price: $6.99 on itch.io: https://anipixels.itch.io/crisp-cute-vn ; direct by card on Payhip: https://payhip.com/b/Xtlbs
+- Free sampler: 17 images: https://anipixels.itch.io/crisp-cute-vn-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- Dialogue: textbox with stitched edges, heart name tag, bouncing heart click-to-continue, narration, text input.
+- Choices: idle, hover and locked (insensitive) choice buttons.
+- Quick menu in a little paper tray: Back, History, Skip, Auto, Save, Q.Save, Q.Load, Prefs.
+- Main menu: a pastel sky background with clouds, a scalloped button card and a big sticker-style title.
+- Game menu: a window with round ears and a stitched header, used by Save, Load, Preferences, History, About and Help.
+- Save / Load: 6 slots per page with thumbnail wells, hover badges and page buttons.
+- Preferences: heart radio buttons, check boxes, sliders with a filled track and heart knob, and a theme picker.
+- Also: confirm box with round ears, notify pop-up, skip indicator, NVL diary page, scroll bars, bars, speech bubbles and thought bubbles (for Ren'Py's bubble feature), a cursor per theme and a window icon.
+- 6 themes: Strawberry Milk, Matcha, Honey, Lavender, Cloud and Peach. Players switch theme in Preferences and the choice is remembered.
+- Demo script: a short cozy picnic scene with placeholder characters that reaches every screen.
+
+Files and formats:
+- A complete Ren'Py 8 project: the default Ren'Py template with the art and settings filled in (gui.rpy, screens.rpy, crispcute_themes.rpy, options.rpy and a demo script.rpy).
+- 486 PNG images: 81 per theme in 6 theme folders, drawn for 1920 x 1080.
+- The free Fredoka font (SIL Open Font License 1.1), included unchanged with its licence.
+- README.txt with a quick start, how to copy the kit into an existing project, how to lock a game to one theme, and notes on resolution.
+
+Works with: Ren'Py 8 (tested in 8.5.3). The images are plain PNGs, but the screens and theme switching are Ren'Py code, so this kit is made for Ren'Py only.
+
+Details:
+- Drop-in: it is the default Ren'Py template with the art and settings filled in, so the screens work like stock Ren'Py and the Ren'Py documentation applies.
+- One line picks the starting theme; one more hides the picker and locks your game to it (you can then delete the other theme folders).
+- Text is real Ren'Py text in the free Fredoka font. Nothing is baked into the images, so every language and every button label works.
+- Drawn for 1920 x 1080 (the Ren'Py default). Ren'Py scales it to any window, including 1280 x 720 and fullscreen. There is no separate 1280 x 720 layout.
+- Tested in Ren'Py 8.5.3: lint passes with no errors, and every screen was rendered in all six themes (the screenshots are those renders).
+- Download size: CrispCuteVN_Full.zip is 2.77 MB.
+
+Free sampler: The free sampler has 17 images from the Strawberry Milk theme at 1920 x 1080 scale, with set-up notes: the dialogue textbox, heart name tag, click-to-continue heart, choice buttons (idle, hover, locked), quick menu tray, confirm box, notify and skip pop-ups and the cursor.
+
+Licence: Use the graphics and the project in any number of commercial or non-commercial games and visual novels (including game jams). Edit, recolour, resize or otherwise modify everything, and ship the images inside your finished game. Credit is appreciated but never required. You may not resell, redistribute or give away the kit itself, on its own or as part of another asset pack, GUI kit or template, modified or not, and you may not claim the graphics as your own original work in an asset pack. The bundled Fredoka font keeps its own open licence (OFL).
+
+How it was made: Claude (an AI assistant) designed everything in this pack: every image is drawn procedurally by code it wrote. No AI image generators, no traced or third-party art. The only third-party file is the free Fredoka font (SIL Open Font License 1.1), included unchanged. The screenshots are real Ren'Py renders of the included project; the demo characters are simple placeholder shapes.
+
+## Crisp Pixel Icons
+
+- Page: https://anipixels.github.io/packs/crisp-pixel-icons/
+- Kind: Pixel-art icon pack
+- Summary: Crisp Pixel Icons is a set of 485 pixel-art fantasy RPG icons at 16 x 16: items, equipment, loot, spells, status effects and UI glyphs. That is 361 base designs plus 124 variants (116 material-tier and colour recolours such as bronze / steel / gold / crystal gear and potion colours, 5 hand-edited variants, 3 mirrored arrows). It is true pixel art: 1 px dark outline, light from the top-left, one shared 41-colour palette, no anti-aliasing.
+- Contents: 485 icons at 16 x 16 in 14 categories: 361 base designs + 124 variants
+- Formats: PNG at 1x, 2x, 3x and 4x (16-64 px), grid atlases, JSON + CSV index, Godot 4 project, Unity package, palette files
+- Price: $4.99 on itch.io: https://anipixels.itch.io/crisp-pixel-icons ; direct by card on Payhip: https://payhip.com/b/odIOE
+- Free sampler: 42 icons, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-pixel-icons-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- Weapons (56): 40 base designs: sword, broadsword, greatsword, rapier, scimitar, katana, dagger, kris, throwing knife, cleaver, hand axe, battle axe, halberd, pike, trident, lance, mace, morningstar, warhammer, club, staff orb, staff crook, wand, scythe, whip, longbow, shortbow, crossbow, arrow, quiver, throwing star, boomerang, bomb, flintlock, claws, knuckles, flail, nunchaku, harpoon, cannonball
+- Armour & Shields (39): 20 base designs: helmet, great helm, horned helmet, wizard hat, hood, feather cap, mask, chestplate, chainmail, leather tunic, robe, cape, gauntlet, boots, leggings, belt, heater, round, tower and wooden shields
+- Potions & Elixirs (28): 14 base designs: red potion, red vial, large red potion, green flask, purple bottle, love potion, poison, medicine, elixir, bubbling flask, empty vial, test tube, holy water, bandage
+- Food & Drink (29): apple, cherries, grapes, strawberry, pear, orange, watermelon, banana, drumstick, steak, sausage, cooked fish, egg, fried egg, baguette, cheese, pie, cake slice, cookie, candy, honey jar, milk bottle, ale mug, wine bottle, goblet, soup bowl, kebab, canteen, teacup
+- Materials & Ores (35): 19 base designs: copper ore, iron ingot, gold nugget, coal, stone, brick, wood log, planks, stick, leather, red cloth, thread spool, wool, rope, gear, nails, flint, clay, magic dust
+- Gems & Jewellery (32): 17 base designs: ruby, cut emerald, teardrop sapphire, diamond, crystal, pearl, amber, gem heart, trillion topaz, geode, sapphire ring, necklace, amulet, earrings, bracelet, crown, tiara
+- Tools (33): pickaxe, shovel, hoe, hammer, saw, anvil, fishing rod, bug net, sickle, watering can, bucket, torch, lantern, candle, lockpick, spyglass, compass, scissors, needle, mortar, cauldron, frying pan, broom, wrench, bell, tent, bedroll, lute, pan flute, horn, drum, balance scale, pocket watch
+- Keys, Books & Quest Items (40): 29 base designs: gold key, skeleton key, key ring, padlock, sealed scroll, open scroll, map, letter, note, red book, grimoire, open book, necro tome, quill and ink, contract, idol, crystal ball, ankh, rune stone, magic lamp, hourglass, dice, medal, trophy, banner, hand mirror, horseshoe, voodoo doll, message in a bottle
+- Magic & Skills (32): fireball, flame, meteor, explosion, ice spike, snowflake, lightning bolt, storm cloud, water splash, wave, bubbles, wind gust, tornado, rock spike, leaf spell, thorn vine, holy light, heal, revive, shadow orb, arcane star, magic circle, portal, eye spell, moon, sun, slash, claw slash, fist, multi arrow, shield spell, music note
+- Status Effects (30): 28 base designs: poisoned, burning, frozen, stunned, asleep, confused, blind, silenced, cursed, bleeding, slowed, haste, attack up, defense up, regen, invisible, fear, charm, rage, armor break, marked, rooted, petrified, lucky, doom, shocked, level up, dead
+- Currency & Loot (23): 17 base designs: gold coin, coin stack, coin pile, ancient coin, money bag, coin pouch, chest, open chest, crate, barrel, sack, backpack, gift box, gold bars, urn, strongbox, mystery box
+- Nature & Farming (37): 31 base designs: oak tree, pine tree, berry bush, red flower, sunflower, rose, red mushroom, herb bundle, leaf, acorn, pinecone, seed bag, sprout, wheat, corn, carrot, potato, tomato, pumpkin, turnip, cabbage, chili, garlic, cactus, seashell, starfish, hay bale, nest with eggs, honeycomb, butterfly, raw fish
+- Monster Parts & Trophies (28): 22 base designs: bone, skull, demon skull, fang, claw, beast horn, antler, feather, slime, eyeball, tentacle, bat wing, spider web, stinger, dragon egg, beast heart, tusk, turtle shell, venom sac, ectoplasm, beast paw, ribcage
+- UI Glyphs (43): 30 base designs: heart, star, check, cross, plus, minus, arrow up, quest mark, quest turn-in, info, home, search, speech bubble, trash, sound on, play, pause, menu, map pin, flag, clock, cursor arrow, cursor hand, eye show, pencil, refresh, exit door, power, gamepad, health orb
+
+Files and formats:
+- PNG at 1x, 2x, 3x and 4x (16, 32, 48 and 64 px), one file per icon, in a folder per category. The larger sizes are exact enlargements of the 16 px art, not redrawn.
+- Grid atlases with 16 px and 32 px cells (plus 48 and 64), 24 columns wide, with a JSON and CSV index: name, category, cell, and whether the icon is a base design or a variant of one.
+- Godot 4 project: one AtlasTexture resource per icon, a lookup script (CrispPixelIcons.tex("sword_gold")) and an icon browser scene.
+- Unity package with the 16 px PNGs and the atlases as plain textures, plus the import settings to use (nothing is pre-sliced).
+- Palette files (.hex and .gpl) so you can match your own art or recolour.
+
+Works with: Any engine that loads PNG. Godot 4 (4.3 or newer; resources load-tested headless in 4.7) gets ready-made AtlasTextures; Unity (plain PNG textures, no prefabs and no pre-set slicing), GameMaker, RPG Maker-style tools, Phaser and others use the single PNGs or slice the atlas on a 16 or 32 px grid.
+
+Details:
+- 1940 PNG files: 485 icons at each of 4 sizes. 16 x 16 is the drawn size.
+- 361 different drawings. The other 124 are variants of those: mostly a colour ramp swapped (a gold sword, a blue potion), a few small hand edits, and the mirrored arrows. Variants are marked in the index file.
+- Every pixel is fully opaque or fully transparent. 41 colours in the whole set, at most 14 in one icon.
+- Drawings are up to 14 x 14 with a 1 px outline, so the largest icons fill the 16 x 16 cell edge to edge.
+- Atlas cells have no padding: use nearest-neighbour (point) filtering and whole-number scales.
+- Same palette, outline and light direction as the Crisp Pixel UI kit, and the icons fit its 20 px slots. They are new drawings, not the icons from that kit.
+- Icons only: the slot frames in the screenshots are not part of the pack.
+- Download size: CrispPixelIcons_Full.zip is 1.53 MB.
+
+Free sampler: The free sampler has 42 of the 485 icons as PNG at 1x, 2x, 3x and 4x, with an icons.json of names and categories. The 16 px PNGs of those 42 icons are shown here, enlarged 3x with no smoothing.
+
+Licence: Use the graphics in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, recolour, resize or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the graphics themselves, on their own or as part of another asset pack, icon set, UI kit or template, modified or not, and you may not claim them as your own original work in an asset pack.
+
+How it was made: Claude (an AI assistant) designed everything in this pack: every icon is written out pixel by pixel as code (rows of palette characters). No AI image generators, no traced or third-party art.
+
+## Crisp Juice Particles
+
+- Page: https://anipixels.github.io/packs/crisp-juice-particles/
+- Kind: Real-time VFX for Godot 4
+- Summary: Crisp Juice Particles is a set of 41 real-time visual effects for Godot 4.3+, made with GPUParticles and the pack's own shaders, not sprite sheets. Every effect comes as a 2D scene and a 3D scene (82 scenes), in the bright, chunky Crisp style made for casual, cozy and action games: hits and explosions, coins and level-ups, magic and status effects, fire and smoke, footstep dust, rain, snow and fireflies.
+- Contents: 41 effects in 6 categories, each as a 2D and a 3D scene (82 scenes)
+- Formats: Godot 4 addon (GPUParticles2D and GPUParticles3D scenes, shaders, textures) with a showcase project
+- Price: $7.99 on itch.io: https://anipixels.itch.io/crisp-juice-particles ; direct by card on Payhip: https://payhip.com/b/o6YJu
+- Free sampler: 5 effects: https://anipixels.itch.io/crisp-juice-particles-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- Combat (10): hit impact, hit crit, slash arc, muzzle flash, explosion, ground crack, lightning zap, shockwave, dash trail, magic missile
+- Rewards & pickups (8): coin pickup, coin burst, gem pickup, level up, star burst, heart burst, confetti burst, hearts loop
+- Magic & status (9): magic sparkles, heal, buff aura, portal, shield bubble, teleport, poison bubbles, sleepy zzz, dizzy stars
+- Elements (5): fire, smoke puff, smoke column, water splash, bubbles
+- Movement (4): dust trail, footstep puff, jump land, sparkle trail
+- Weather & ambience (5): rain, snow, leaves falling, petals, fireflies
+
+Files and formats:
+- A Godot 4 addon (addons/crisp_juice_fx, with its own README) that drops into any project: 41 GPUParticles2D scenes and 41 GPUParticles3D scenes, sorted by category.
+- 10 effect shaders (flash / star burst, ring, slash, beam, portal, shield, lightning, ground crack, pickup pop, orbiting stars), each in a canvas_item and a spatial version, plus a ribbon-trail shader.
+- 24 small textures and flip-books (spinning coin, flipping confetti, fluttering leaves and petals, fireball billows that break up into smoke, rocks, snow), drawn by code.
+- A showcase project: press Play to see every 2D effect in a labelled grid and every 3D effect row by row, on light or dark backgrounds, with recolors.
+
+Works with: Godot 4 only (4.3 or newer; tested on 4.7.2), in 2D and 3D, in the Forward+, Mobile and Compatibility renderers. The effects are Godot particle scenes and shaders, so they do not work in other engines; for sprite sheets that work anywhere, see Crisp Juice.
+
+Details:
+- 21 one-shot effects and 20 loops. One-shots free themselves when they finish; loops run until stop().
+- Drop a scene into your level, or call CrispFx2D.spawn(scene, parent, position). Every effect has play(), stop(), a finished signal, free_on_finish, autoplay, and an editor preview that loops one-shots while you tweak.
+- Recolor in one click: pick a colour and the effect's hues shift to it, keeping the white-hot cores and the shading. Every effect also has a plain tint, size, amount and speed.
+- Tested in all three Godot renderers (Forward+, Mobile and Compatibility, the OpenGL one used for web and low-end devices) with zero errors. Trails are mesh ribbons, so they work in Compatibility too.
+- Light on the GPU: 1-5 emitters per effect, small textures (the largest is 1024 x 128), and an amount slider for mobile.
+- Godot 4.3 or newer (tested on 4.7.2). GDScript only, no C# needed.
+- Effects only: the cabin and props in the cozy 3D screenshot are from Crisp PSX Cozy Cabin, and the level art in the 2D game screenshot was drawn for the screenshot. Neither is included.
+- Download size: CrispJuiceParticles_Full.zip is 0.30 MB.
+
+Free sampler: The free sampler has 5 of the 41 effects, each as a 2D and a 3D scene, with the addon, the showcase scenes and set-up notes: hit impact, coin pickup, smoke puff, magic sparkles and fire.
+
+Licence: Use the effects in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, recolour, resize or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the effects themselves, on their own or as part of another asset pack, modified or not, and you may not claim them as your own original work in an asset pack.
+
+How it was made: Claude (an AI assistant) designed everything in this pack: the particle setups, the shaders and every texture are generated by code it wrote, and every effect was checked in real Godot renders. No AI image generators, no traced or third-party art or code.
+
+## Crisp Cozy Winter
+
+- Page: https://anipixels.github.io/packs/crisp-cozy-winter/
+- Kind: Sound effects pack
+- Summary: Crisp Cozy Winter is 472 soft, cozy winter and holiday sound effects for games: footsteps on 8 snow and ice surfaces, snowball fights and snowmen, skating and frozen lakes, the fireside and hot cocoa, wrapping and opening presents, sleigh bells, decorating the tree, a full winter UI set, winter magic, original jingles and 12 seamless stereo ambience loops. Built for cozy games, farming and life sims, holiday jams and seasonal events. Every sound comes as WAV and OGG, is loudness-matched and is royalty-free for commercial use.
+- Contents: 472 sounds in 12 folders
+- Formats: WAV (44.1 kHz, 16-bit, stereo) and OGG Vorbis
+- Price: $4.99 on itch.io: https://anipixels.itch.io/crisp-cozy-winter ; direct by card on Payhip: https://payhip.com/b/WGn7h
+- Free sampler: 24 sounds, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-cozy-winter-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- Footsteps (80): 8 surfaces, 12 footstep sets with 6 takes each: walk and run on powder snow, packed (squeaky) snow, icy crust and ice; walk on deep snow, slush, frosty grass and a snowy wooden porch; plus boot stomps and landing in snow
+- Snow Play (59): packing, throwing and four kinds of snowball hit (coat, fence, snowbank, ice), shovelling, digging, snow falling off a branch, snow angels, rolling, patting and finishing a snowman, snowman poof and appear, sledding, sled stops and a seamless sled loop
+- Ice (42): small and big cracks, the 'singing' of a frozen lake, skating strides and stops, sliding, icicles snapping, tinkling and shattering, frost spreading over glass, an ice block pushed, a seamless skating loop
+- Fireside (52): striking a match, lighting the fire, logs, pokes and sap pops, a kettle set down and whistling, cocoa poured, marshmallows, stirring, mugs clinking and set down, a sip, gingerbread, a baking tray, a blanket and the armchair
+- Gifts (41): wrapping paper unrolled, cut, folded and taped, ribbons curled and tied, presents shaken (four different things inside), unwrapped, opened and revealed, set under the tree, tissue paper
+- Bells (30): sleigh-bell shakes from one flick to a long jingle, quick jingles, a sleigh passing by, a five-note handbell ladder, bell-tree glissandos, the shop-door bell, far church bells, a harness bell
+- Decorations (40): glass baubles hung, touching and dropped on the rug, tree lights on / off and twinkling, the star on top, tinsel, garland, pine branches, a wreath, a snow globe, stockings, a music box being wound
+- Winter UI (55): a full interface set in celesta, glockenspiel, mitten-soft taps and a pinch of sleigh bells: hover, select, confirm, back, cancel, gentle errors, toggles, menus, tabs, a tuned slider, coins, purchase, notifications, level up, achievement, advent-calendar doors, a text blip
+- Winter Magic (23): frost spells, a five-step snowflake-pickup ladder, winter crafting sparkles, a wishing star, freeze and thaw, a little elf 'poof'
+- Jingles (17): original holiday stingers: three festive 'merry' jingles, a snow day, a cozy evening, a gift, a quest done, a kind 'aww', a holiday-event start and three music-box tunes
+- Weather (21): the door opened into a winter gust and shut against it, gusts, a howl round the eaves, a rattling window, snow sliding off the roof, the chimney moaning
+- Ambience (12): 12 seamless 16-second stereo loops: a snowstorm, by the fire, a snowy forest, a winter night, a village square, a frozen lake, Christmas Eve indoors, a cocoa kitchen, a skating rink, a cabin in a gale, soft snowfall and a sleigh ride
+
+Files and formats:
+- WAV: 44.1 kHz, 16-bit, stereo (for editing and highest quality).
+- OGG Vorbis: small files, ready for Godot, Unity, GameMaker and web.
+- Every sound is loudness-matched, starts on its first sample (no dead air) and peaks at or below -1 dBFS.
+
+Works with: Godot (sound bank included), Unity, Unreal, GameMaker, Construct, RPG Maker, Ren'Py, Phaser and other web frameworks: anything that plays WAV or OGG.
+
+Details:
+- 472 sounds in 12 folders (149 named sounds; 133 of them come in several takes).
+- 15 seamless loops: 12 stereo ambience loops of 16 s, plus sled and skating loops.
+- 11 minutes of audio. One-shots are loudness-matched, start on their first sample and peak at or below -1 dBFS.
+- Downloads: everything in one 96 MB zip, or OGG only (8 MB).
+- Godot 4 sound bank included: one AudioStreamRandomizer per sound and a one-line play() autoload.
+- Tuned to C major pentatonic like Crisp Cozy, so the two packs layer in tune. Every jingle and music-box tune is an original melody: no carols.
+- Cozy, never shrill: every file was measured so that none is brighter than Crisp Cozy, and none is a copy of a Crisp Cozy sound.
+
+Free sampler: The free sampler has 24 of the 472 sounds as WAV and OGG: 4 snow and ice footsteps, a snowball throw and hit, an ice crack and an icicle, a log on the fire and mugs clinking, a present unwrapped, sleigh bells and a quick jingle, a bauble and tree lights, 5 winter UI sounds, a snowflake pickup, a festive jingle, a door into the wind and a seamless fireside loop.
+
+Licence: Use the sounds in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, layer, pitch or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the sounds themselves, on their own or as part of another sound library or asset pack, modified or not, and you may not claim them as your own original work in a sound library.
+
+How it was made: Claude (an AI assistant) designed everything in this pack. Every sound is synthesised from scratch by code it wrote, and every melody is original (no carols or existing songs). No recorded samples and no AI audio-generation models were used.
+
+## Crisp Cozy Music
+
+- Page: https://anipixels.github.io/packs/crisp-cozy-music/
+- Kind: Music pack
+- Summary: Crisp Cozy Music is 36 warm, gentle music loops for cozy games: farm mornings, cafes, rainy days, bedtime, villages, shops, festivals, autumn, puzzles, title screens and winter. 50 minutes of music, each loop 1-2 minutes long in A and B sections, with a lite mix (the same music without the melody) for dialogue and menus, and 20 matching stingers. Seamless, loudness-matched, WAV + OGG, with a Godot 4 addon.
+- Contents: 36 loops in 11 moods, a lite mix of each, and 20 stingers
+- Formats: WAV (44.1 kHz, 16-bit, stereo) and OGG Vorbis, Godot 4 addon
+- Price: $6.99 on itch.io: https://anipixels.itch.io/crisp-cozy-music ; direct by card on Payhip: https://payhip.com/b/m2J3R
+- Free sampler: 11 music files, and a playable browser demo of the full pack: https://anipixels.itch.io/crisp-cozy-music-free
+- In the Crisp Everything Bundle: yes
+
+What is included:
+- Farm Morning (4): Sunrise Rows, Dewdrop Lane, Seed Day, Morning Chores
+- Cafe (4): Window Seat, Latte Art, Corner Table, Afternoon Tea
+- Rainy Day (3): Rain on the Glass, Grey Afternoon, Blanket Fort
+- Night and Sleep (4): Firefly Lullaby, Starlit Porch, Moon over the Pond, Goodnight Garden
+- Village (4): Market Square, Bakery Bell, Old Well Waltz, Town Hall Steps
+- Shop (3): Open Sign, Bargain Bin, Counter Chat
+- Festival (3): Lantern Parade, Harvest Fair, Ribbon Dance
+- Autumn (3): Falling Leaves, Apple Cider, Maple Road
+- Cozy Puzzle (3): Tea and Tiles, Little Gears, Thinking Cap
+- Menu and Title (3): Hearth and Home, New Save File, Little Town
+- Winter (2): First Snow, Cocoa by the Fire
+- Stingers (20): level up, day start, quest complete, item get, sleep, game over cozy, new season, friendship up, festival start, shop purchase, achievement, rare find, letter arrived, recipe learned, harvest good, success small, fail gentle, night falls, chapter start, victory cozy
+
+Files and formats:
+- WAV: 44.1 kHz, 16-bit, stereo, with 'smpl' loop points.
+- OGG Vorbis with LOOPSTART / LOOPLENGTH tags and Godot 4 import settings (loop on, bpm, beats).
+- TRACKS.csv: mood, key, bpm, bars and length of every file.
+
+Works with: Anything that plays OGG or WAV: Godot (addon included), Unity, GameMaker, RPG Maker, Construct, Ren'Py, Unreal, Phaser and other web engines.
+
+Details:
+- 36 loops (50 minutes), 64-110 seconds each, in 4/4 and 3/4, from 70 to 120 bpm.
+- 36 lite mixes: the same loop without the lead melody, same length and gain, for cross-fading in sync.
+- 20 stingers (2-8 s): level up, quest complete, item get, day start, sleep, a gentle game over and more.
+- Seamless: exact whole bars, cut to the sample; reverb tails are folded into the start, so nothing clicks or cuts off.
+- Mastered to -16 LUFS integrated, true peak under -1 dBTP: every track sits at the same volume.
+- Downloads: OGG + Godot addon in one 74 MB zip; WAV in 7 parts (1008 MB).
+- Godot 4 addon: play, cross-fade, melody on/off, stingers with ducking, beat position, example scene. Unity and GameMaker notes; a TRACKS.csv cue sheet.
+
+Free sampler: The free sampler has 4 of the 36 loops (farm morning, a lo-fi cafe, a night lullaby and a village market), each with its lite mix, and 3 of the 20 stingers, as OGG with loop tags.
+
+Licence: Use the music in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, cut and remix it as you like. Credit is appreciated but never required. You may not resell, redistribute or give away the music itself, on its own or inside another music or asset pack, and you may not register it with Content ID or any other fingerprinting service.
+
+How it was made: Claude (an AI assistant) designed everything in this pack. Every note was composed and synthesised from scratch by code it wrote. No recorded samples and no AI audio-generation models were used.
+
+## Crisp Cozy Starter
+
+- Kind: Godot 4 game template (no page on this site; the itch.io page is the reference)
+- Summary: A finished cozy first-person game for Godot 4 to open, play and make your own: farming, cooking, dialogue, inventory, day / night, save / load, menus and settings, with a PS1-style look.
+- Contents: A complete Godot 4 project: 40 GDScript files (about 3500 lines, typed and commented), 83 ready-to-place prop scenes, the Crisp Cute UI theme in six colour palettes, 30 item icons, 94 sound files and 111 automated tests
+- Formats: Godot 4 project (pure GDScript, Compatibility renderer)
+- Price: $19.99 on itch.io: https://anipixels.itch.io/crisp-cozy-starter ; direct by card on Payhip: https://payhip.com/b/ozIVO
+- Free browser demo (no download): the real project exported to the web: https://anipixels.itch.io/crisp-cozy-starter-free
+- In the Crisp Everything Bundle: no
+
+Systems included:
+- First-person player: walk, sprint, jump, mouse and right-stick look, footsteps that change with the floor
+- Interaction: doors, beds, the stove, the mailbox, the cat, pickups and garden beds share one Interactable base class
+- Inventory and hotbar: 24 slots (8 on the hotbar), stacking, move / swap / merge with mouse or controller
+- Farming: plant, water, crops grow overnight through 3 model stages, harvest (turnips, wheat, pumpkins)
+- Cooking / crafting: data-driven recipes per station (4 recipes at the wood stove)
+- Dialogue: branching conversations as resources, with flags, item checks, gifts and typewriter text
+- Day / night and sleep: clock from 6 am to 2 am; the bed skips to morning and auto-saves
+- Save / load: one readable JSON file
+- Menus and settings: main menu, pause menu, volumes, mouse and stick speed, invert Y, fullscreen, PSX look on / off
+- Keyboard and controller support for every action and menu
+- PSX look: low-res render, vertex snapping, affine textures, 15-bit colour and dither
+
+Works with: Godot 4.4 or newer, standard or .NET build (pure GDScript). Built and tested in Godot 4.7.2.
+
+Licence: Use the code and the assets in any number of commercial or non-commercial games, no credit needed. You may not resell or redistribute the kit, its code as a template, or its assets on their own. The Fredoka font is under the SIL Open Font License.
+
+How it was made: Claude (an AI assistant) designed everything in this pack. The code was written by Claude, the 3D models were built from code, the UI graphics drawn by code and the sounds synthesized in code. No AI image, 3D or audio generators, no third-party art or sound.

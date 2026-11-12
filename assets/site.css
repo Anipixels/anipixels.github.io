@@ -287,3 +287,24 @@ pre { tab-size: 4; }
 .code-label { font-family: var(--mono); font-size: 0.82rem; color: var(--muted); margin: 0 0 4px; }
 .guide-list { list-style: none; padding: 0; margin: 0; }
 .toc { margin-bottom: 40px; }
+
+/* comparison table (packs/compare/): a table on wide screens, one card per row on phones */
+.cmp { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 0 0 12px; background: var(--card); border: 1px solid var(--line); }
+.cmp th, .cmp td { text-align: left; vertical-align: top; padding: 10px; border-bottom: 1px solid var(--line); overflow-wrap: break-word; }
+.cmp tbody th { width: 15%; }
+.cmp td[data-label="Pack"] { width: 12%; }
+.cmp td[data-label="Price"], .cmp thead th { white-space: nowrap; }
+.cmp thead th { font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); background: var(--bg2); }
+.cmp tbody th { font-weight: 700; }
+.cmp-kind { display: block; color: var(--muted); font-size: 0.8rem; margin-top: 2px; }
+@media (max-width: 900px) {
+  .cmp { background: none; border: 0; }
+  .cmp thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .cmp, .cmp tbody, .cmp tr, .cmp th, .cmp td { display: block; width: 100%; }
+  .cmp tr { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; margin-bottom: 12px; }
+  .cmp th, .cmp td { border: 0; padding: 3px 0; }
+  .cmp tbody th, .cmp td[data-label="Pack"] { width: 100%; }
+  .cmp td[data-label="Price"] { white-space: normal; }
+  .cmp tbody th { font-size: 1.02rem; color: var(--accent); padding-bottom: 6px; }
+  .cmp td::before { content: attr(data-label) ": "; font-weight: 700; color: var(--muted); }
+}
