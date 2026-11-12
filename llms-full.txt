@@ -53,7 +53,7 @@ Details:
 - Godot 4 sound bank included (tested headless in Godot 4.7.2); a Unity package and notes (not tested inside Unity); sounds.csv data sheet.
 - Every 1.x file is unchanged in v2.0: same names, same folders, same audio.
 
-Free sampler: The free sampler has 20 of the 583 sounds as WAV and OGG: click soft, hover soft, toggle on, toggle off, confirm, cancel, error 02, notification 03, menu open, achievement, coin classic, level up, retro confirm, scifi open, fantasy unlock, soft toggle on, scifi notify, item swap, voice mumble mid and level up small.
+Free sampler: The free sampler has 20 of the 583 sounds as WAV and OGG: click soft, click wood, hover soft, toggle on, toggle off, confirm, cancel, error, notification 03, menu open, menu close, achievement, level up, retro confirm, fantasy unlock, soft toggle on, scifi notify, item swap, voice mumble mid and level up small (the nine sounds the Godot UI-sound guide's code loads are all in it).
 
 Licence: Use the sounds in any number of commercial or non-commercial projects (games, apps, websites, videos, streams, game jams). Edit, layer, pitch or otherwise modify them. Credit is appreciated but never required. You may not resell, redistribute or give away the sounds themselves, on their own or as part of another sound library or asset pack, modified or not, and you may not claim them as your own original work in a sound library.
 
