@@ -136,6 +136,23 @@ section { margin-bottom: 52px; }
 .card-btns .btn-alt { grid-column: 1 / -1; }
 .pack-hero .buy-routes { margin-top: -4px; }
 
+/* Home: every free tool and guide by the job it does, just below the hero. */
+.quick { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 6px 36px; padding: 20px 24px 14px; margin-bottom: 40px; }
+.quick h2 { font-size: 1.1rem; margin: 0 0 6px; }
+.quick h2 .muted { font-weight: 600; font-size: 0.92rem; margin-left: 4px; }
+.quick ul { list-style: none; padding: 0; margin: 0 0 6px; }
+.quick-guides ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 28px; }
+.quick li { margin: 0; }
+.quick a { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); color: var(--text); text-decoration: none; font-weight: 600; font-size: 0.97rem; }
+.quick a::after { content: "\2192"; color: var(--accent); flex: none; }
+.quick a:hover { color: var(--accent); }
+@media (max-width: 980px) { .quick { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 600px) { .quick { padding: 16px 18px 10px; } .quick-guides ul { grid-template-columns: minmax(0, 1fr); } }
+/* One line on pack, tool and guide pages linking the matching tool, guide or pack. */
+.pack-line { color: var(--muted); font-size: 0.97rem; margin: 10px 0 0; }
+.pack-line strong { color: var(--text); }
+.guide .pack-line { margin: 0 0 20px; }
+
 .tool-card { padding: 20px; display: flex; flex-direction: column; gap: 8px; }
 .tool-card h3 { margin: 0; font-size: 1.2rem; }
 .tool-card p { margin: 0; color: var(--muted); }
